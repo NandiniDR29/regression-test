@@ -1,0 +1,29 @@
+TestData_Claim: {
+  BenefitsLTDIncidentTab: '@BenefitsLTDIncidentTab',
+  AdditionalPartiesAdditionalPartyTab: ['@Party1', '@Party2']
+}
+
+BenefitsLTDIncidentTab: {
+  'Accident?': 'No',
+  Hospital: 'No',
+  Surgery: 'No',
+  Date of Hire: $<today-6M-5d:MM/dd/yyyy>
+}
+
+Party1: {
+  Benefit: 'contains=John',
+  Party Name: 'contains=John',
+  Social Security Number (SSN): 111-11-1111
+}
+
+Party2: {
+  Add Additional Party: CLICK,
+  Party Name: 'Other Company',
+  Company Name: 'Test Company Name',
+  Contact Preference: Mail,
+  Add Additional Party Association Address: CLICK,
+  Zip / Postal Code: '32011',
+  Address Line 1: '$<static:customerAddressLine1:[rx:Address\d{8}]>',
+  City: '$<static:customerCity:[rx:City\d{8}]>',
+  State / Province: CA
+}

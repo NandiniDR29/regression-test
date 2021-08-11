@@ -1,0 +1,133 @@
+TestData_Group14: {
+  InitiniateDialog: '@InitiniateDialogG14',
+  PolicyInformationTab: '@PolicyInformationTabG14',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanFlexPlus', '@PlanDefinitionTab_FLEXPlusG14'],
+  ClassificationManagementTab: '@ClassificationManagementTab_FLEXPlusG14',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG14: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date:  $<BOM-1M>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG14: {
+  ASO Plan: No,
+  Rate Guarantee (Months): 12,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+#  County Code: 061 - New York County,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '20',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  'Commission Split?': No
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_FLEXPlusG14: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Sponsor/Participant Split,
+    Participant Contribution % Employee Coverage: 50,
+    Participant Contribution % Dependent Coverage: 50,
+   'Required Participation %': 50,
+    'Assumed Participation %': 50,
+#    Minimum Number of Participants: 10,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: None
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'First of the month following date of hire',
+    Dependent Maximum Age: 26,
+    Include Disabled Dependents: No,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Major Waiting Period: 6 months,
+    Prosthodontics Waiting Period: '6 months',
+    EPCOS Waiting Period: 6 months,
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'No'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+     Maximum Extender: true
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': PPO Schedule,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 100%,
+    'Basic - Out of Network': 100%,
+    'Major - In Network': 60%,
+    'Major - Out of Network': 60%,
+    'Prosthodontics - In Network': 60%,
+    'Prosthodontics - Out of Network': 60%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'No'
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTabG14',
+    Basic: '@BasicTab',
+    Major: '@MajorTab',
+    Prosthodontics: '@ProsthodonticsG14',
+  }
+}
+ClassificationManagementTab_FLEXPlusG14: {
+  Plan: 'FLEX-Flex Plus',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 8
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 4
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 4
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 4
+    }
+  ]
+}
+
+SelectPlanFlexPlus: {
+  Plan: Flex Plus
+}
+
+ProsthodonticsG14: {
+  }
+PreventativeAndDiagnosticTabG14: {
+}
+BasicTab: {
+}
+MajorTab: {
+}

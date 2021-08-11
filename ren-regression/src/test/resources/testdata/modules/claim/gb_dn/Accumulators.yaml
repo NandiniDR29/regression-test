@@ -1,0 +1,269 @@
+TestData_Claim3: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_3',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_3',
+}
+
+LossContextTab_3: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_3: {
+  Patient: {
+    Name: index=1
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '02/11/2020',
+    CDT Code: 'D8090',
+    Charge: 200
+  },
+    {
+      DOS: '11/25/2020',
+      CDT Code: 'D8670',
+      Charge: 400
+    },
+    {
+      DOS: '12/13/2020',
+      CDT Code: 'D8670',
+      Charge: 600
+    }
+  ]
+}
+
+TestData_Claim5: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_5',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_5',
+}
+
+LossContextTab_5: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_5: {
+  Patient: {
+    Name: index=1
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '8/8/2019',
+    CDT Code: 'D4341',
+    Charge: 200,
+    Tooth: 20,
+    Oral Cavity: 'UL'
+  },
+
+  ]
+}
+
+TestData_Claim7: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_7',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_7',
+}
+
+LossContextTab_7: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_7: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '5/19/2020',
+    CDT Code: 'D2954',
+    Charge: 200,
+    Tooth: 30,
+
+  },
+
+  ]
+}
+
+TestData_Claim8: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_8',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_8',
+}
+
+LossContextTab_8: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_8: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '10/19/2018',
+    CDT Code: 'D6010',
+    Charge: 200,
+    Tooth: 10,
+  },
+    {
+      DOS: '1/16/2020',
+      CDT Code: 'D6058',
+      Charge: 400,
+      Tooth: 10,
+    },
+
+  ]
+}
+
+TestData_Claim12: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_12',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_12',
+}
+
+LossContextTab_12: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_12: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '12/31/2019',
+    CDT Code: 'D8090',
+    Charge: 200
+  },
+    {
+      DOS: '12/31/2019',
+      CDT Code: 'D8090',
+      Charge: 400
+    },
+    {
+      DOS: '1/1/2020',
+      CDT Code: 'D8670',
+      Charge: 600
+    }
+  ]
+}
+
+TestData_Claim11: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_11',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_11',
+}
+
+LossContextTab_11: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_11: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '03/07/2020',
+    CDT Code: 'D7210',
+    Charge: 200,
+    Tooth: 15,
+  },
+
+  ]
+}

@@ -1,0 +1,137 @@
+TestData_Group13: {
+  InitiniateDialog: '@InitiniateDialogG13',
+  PolicyInformationTab: '@PolicyInformationTabG13',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanALaCarte', '@PlanDefinitionTab_BASEPOSG13'],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG13',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG13: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: 10/01/2020,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG13: {
+  ASO Plan: No,
+  Policy Effective Date: 10/01/2020,
+  Rate Guarantee (Months): 24,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+#  County Code: 061 - New York County,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '20',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  'Commission Split?': No
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_BASEPOSG13: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+   'Required Participation %': 100,
+    'Assumed Participation %': 50,
+#    Minimum Number of Participants: 10,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 2nd Year & 3rd Year,
+    '2nd Year Cap %': 0,
+    '3rd Year Cap %': 7
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'First of the month following date of hire',
+    Dependent Maximum Age: 26,
+    Include Disabled Dependents: No,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: 'Last day of the month when employment is terminated'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'No'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$3,000',
+    'Plan Maximum - Out of Network': '$3,000',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 95th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 100%,
+    'Basic - Out of Network': 100%,
+    'Major - In Network': 100%,
+    'Major - Out of Network': 100%,
+    'Prosthodontics - In Network': 100%,
+    'Prosthodontics - Out of Network': 100%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'No'
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTabG13',
+    Basic: '@BasicTab',
+    Major: '@MajorTab',
+    Prosthodontics: '@ProsthodonticsG13',
+  },
+  Coverage Tiers: [ 'Employee + Family', 'Employee + 1', 'Employee Only' ],
+  Coverage Tiers Change Confirmation: click
+}
+ClassificationManagementTab_BASEPOSG13: {
+  Plan: 'ALACARTE-A La Carte',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 16
+    },
+    {
+      Coverage Tier Key: Employee + 1,
+      Number of Participants: 11
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 14
+    }
+  ]
+}
+
+SelectPlanALaCarte: {
+  Plan: A La Carte
+}
+
+ProsthodonticsG13:
+  {
+    Bridgework: Once Every 3 Years,
+    Dentures: Once Every 3 Years,
+    Relines: Once Every 2 Years,
+    Implants: Once Every 5 Years
+  }
+
+
+PreventativeAndDiagnosticTabG14: {
+
+}
+BasicTab: {
+}
+MajorTab: {
+}

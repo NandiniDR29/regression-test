@@ -1,0 +1,3 @@
+{
+  "cellByIndexHasValueTemplate": "td[position()=%1$s and (normalize-space(.)=%2$s or normalize-space(*/.)=%2$s) or input[@value=%2$s]]"
+}

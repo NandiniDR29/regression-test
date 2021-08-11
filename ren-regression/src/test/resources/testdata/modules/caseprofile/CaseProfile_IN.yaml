@@ -1,0 +1,110 @@
+TestDataTwoLocation: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: ['@ClassificationManagementTabEmployment'],
+  LocationManagementTab: ['@Billing_Location_LOC1', '@Billing_Location_LOC2'],
+  FileIntakeManagementTab:  {}
+}
+
+TestData_Group10: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: [ '@LocationManagementTab' ],
+  FileIntakeManagementTab: []
+}
+TestData_WithOutCensus_Stat: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab_Stat',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: [ '@LocationManagementTab' ],
+  FileIntakeManagementTab: [ '@FileIntakeManagementTab' ]
+}
+
+ProductAndPlanManagementTabGBGB: {
+  Product: Group Benefits
+}
+CaseProfileDetailsTab_Stat: {
+  Case Profile Name: 'CaseProfile_Stat$<rx:\d{5}>',
+  Effective Date: $<today-85d>,
+  Group Domicile State: NY,
+  'Intake Profile Required?': 'true'
+}
+CaseProfileDetailsTab: {
+  Case Profile Name: 'CaseProfile$<rx:\d{5}>',
+  Effective Date: $<today-85d>,
+  Group Domicile State: IN,
+  'Intake Profile Required?': 'true'
+}
+ClassificationManagementTab_1_WithAutoGroups: {
+  Classification Group: {
+    Class Name: All Active Employee,
+    Class Number: 1,
+    Relationship Type: Employment
+  },
+  Group Details: {
+    Job Code: [ALL],
+    Employment Status: [ALL],
+    Employment Type: [ALL],
+    Pay Type: Hourly,
+    Union Member: 'Yes',
+    'Create Sub-Groups?': 'Yes',
+    'Create Sub-Groups Automatically?': 'Yes'
+  }
+}
+
+LocationManagementTab: {
+  Add Billing Location: {
+    Location Name: 'LOC1',
+    Location Number: '1',
+    Tax Identification: '11-6543251',
+    Address Line 1: 'Address Line 1',
+    Address Line 2: 'Address Line 2',
+    Address Line 3: 'Address Line 3',
+    City: 'Fishers',
+    'State/Province': IN,
+    'ZIP / Post Code': '46038'
+  }
+}
+ClassificationManagementTabEmployment: {
+  Classification Group: {
+    Class Name: Employment,
+    Class Number: 1,
+    Relationship Type: Employment
+  },
+  Group Details: {
+    Job Code: [ALL],
+    Employment Status: [ALL],
+    Employment Type: [ALL],
+    'Create Sub-Groups?': 'Yes',
+    'Create Sub-Groups Automatically?': 'Yes'
+  }
+}
+
+Billing_Location_LOC1: {
+  Add Billing Location:{
+    Location Name: 'LOC1',
+    Location Number: '1',
+    Tax Identification: '11-6543271'
+  }
+}
+
+
+Billing_Location_LOC2: {
+  Add Billing Location:{
+    Location Name: 'LOC2',
+    Location Number: '2',
+    Tax Identification: '22-6543201'
+  }
+}
+TestData_ForProductUpdate: {
+  CaseProfileDetailsTab: {},
+  ProductAndPlanManagementTab: [ '@ProductVS'],
+  ClassificationManagementTab: {},
+  LocationManagementTab: {},
+  FileIntakeManagementTab: []
+}
+
+ProductVS: {
+  Product: Group Vision
+}

@@ -1,0 +1,36 @@
+/* Copyright © 2016 EIS Group and/or one of its affiliates. All rights reserved. Unpublished work under U.S. copyright laws.  CONFIDENTIAL AND TRADE SECRET INFORMATION. No portion of this work may be copied, distributed, modified, or incorporated into any other media without EIS Group prior written consent.*/ /* Copyright © 2016 EIS Group and/or one of its affiliates. All rights reserved. Unpublished work under U.S. copyright laws.  CONFIDENTIAL AND TRADE SECRET INFORMATION. No portion of this work may be copied, distributed, modified, or incorporated into any other media without EIS Group prior written consent.*/
+package com.exigen.ren.main.modules.customer.actions;
+
+import com.exigen.istf.data.TestData;
+import com.exigen.ren.common.Action;
+import com.exigen.ren.common.Workspace;
+import com.exigen.ren.common.pages.Page;
+import com.exigen.ren.main.modules.customer.tabs.DeletePendingUpdatesActionTab;
+
+public class DeletePendingUpdatesAction implements Action {
+
+    private Workspace workspace = new Workspace.Builder()
+            .registerTab(DeletePendingUpdatesActionTab.class)
+            .build();
+
+    @Override
+    public String getName() {
+        return "Delete Pending Updates";
+    }
+
+    @Override
+    public Workspace getWorkspace() {
+        return workspace;
+    }
+
+    @Override
+    public Action perform(TestData td) {
+        throw new UnsupportedOperationException("perform(TestData td) method with testData is not supported for this action. Use perform() instead.");
+    }
+
+    @Override
+    public Action submit() {
+        Page.dialogConfirmation.confirm();
+        return this;
+    }
+}

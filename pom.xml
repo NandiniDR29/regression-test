@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.exigen.ren.automation</groupId>
+    <artifactId>ren-automation</artifactId>
+    <version>8.0-SNAPSHOT</version>
+    <name>REN Automation parent</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ren-automation-ui</module>
+        <module>ren-regression</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <time.service.file>src/test/resources/config/timeservice.properties</time.service.file>
+        <timeshift.report.dir>target/test-output/timeshift-report</timeshift.report.dir>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <repositories>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+            <id>ren-central-nexus</id>
+            <name>REN Central artifacts repository</name>
+            <url>https://aws0rennexus01.aws0.rnf.cloud/repository/REN/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+            <id>ren-central-nexus</id>
+            <name>REN Central plugins repository</name>
+            <url>https://aws0rennexus01.aws0.rnf.cloud/repository/REN/</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

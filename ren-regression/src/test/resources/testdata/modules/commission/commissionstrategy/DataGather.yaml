@@ -1,0 +1,71 @@
+TestData: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Flat_CommissionRuleTab']
+}
+
+TestData_With_Flat_CommissionRule: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Flat_CommissionRuleTab']
+}
+
+TestData_With_Tiered_CommissionRule: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Tiered_CommissionRuleTab']
+}
+
+TestData_With_Cumulative_Tiered_CommissionRule: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Cumulative_Tiered_CommissionRuleTab']
+}
+
+TestData_With_Subscriber_Count_CommissionRule: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Subscriber_Count_CommissionRuleTab']
+}
+
+GBCommissionStrategyTab: {
+  Product Code-Name: 'GB_DI_LTD - Long Term Disability',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date',
+  Available for Override: true
+}
+
+Flat_CommissionRuleTab: {
+  Commission Type: 'Flat',
+  AddCommissionRule: {
+    Sales Channel: 'Agency',
+    Geography Selection: 'Defined for All locations',
+    Coverages: All,
+    Commission Rate: 10
+  }
+}
+
+Tiered_CommissionRuleTab: {
+  Commission Type: 'Tiered',
+  AddCommissionRule: {
+    Sales Channel: 'Agency',
+    Geography Selection: 'Defined for All locations',
+    Coverages: All,
+    Tier 1: [0, 0, 0]
+  }
+}
+
+Cumulative_Tiered_CommissionRuleTab: {
+  Commission Type: 'Cumulative Tiered',
+  AddCommissionRule: {
+    Sales Channel: 'Agency',
+    Geography Selection: 'Defined for All locations',
+    Coverages: All,
+    Tier 1: [0, 0, 0]
+  }
+}
+
+Subscriber_Count_CommissionRuleTab: {
+  Commission Type: 'Subscriber Count',
+  AddCommissionRule: {
+    Sales Channel: 'Agency',
+    Geography Selection: 'Defined for All locations',
+    Coverages: All,
+    Rate 1: [0, 0, 0]
+  }
+}

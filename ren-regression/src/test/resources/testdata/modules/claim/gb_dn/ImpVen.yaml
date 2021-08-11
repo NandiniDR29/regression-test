@@ -1,0 +1,2193 @@
+TestData_Inlayonceevery3yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Inlayonceevery3yrs',
+  IntakeInformationTab: '@IntakeInformationTab_Inlayonceevery3yrs',
+}
+
+
+LossContextTab_Inlayonceevery3yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Inlayonceevery3yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '03/25/2018',
+    CDT Code: 'D2650',
+    Charge: '950.00',
+    Tooth: 4,
+    Surface: 'B'
+  }
+}
+
+TestData_Inlayonceevery3yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Inlayonceevery3yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_Inlayonceevery3yrsDeny',
+}
+
+
+LossContextTab_Inlayonceevery3yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Inlayonceevery3yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '09/26/2019',
+    CDT Code: 'D2650',
+    Charge: '950.00',
+    Tooth: 4,
+    Surface: 'B'
+  }
+}
+##################################################################################################
+TestData_Inlayonceevery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Inlayonceevery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_Inlayonceevery5yrs',
+}
+
+
+LossContextTab_Inlayonceevery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Inlayonceevery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '03/25/2018',
+    CDT Code: 'D2650',
+    Charge: '900.00',
+    Tooth: 30,
+    Surface: 'O'
+  }
+}
+
+TestData_Inlayonceevery5yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Inlayonceevery5yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_Inlayonceevery5yrsDeny',
+}
+
+
+LossContextTab_Inlayonceevery5yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Inlayonceevery5yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '07/15/2020',
+    CDT Code: 'D2650',
+    Charge: '950.00',
+    Tooth: 30,
+    Surface: 'O'
+  }
+}
+
+#######################################################################################################
+
+TestData_VeneersOnceEvery5years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_VeneersOnceEvery5years',
+  IntakeInformationTab: '@IntakeInformationTab_VeneersOnceEvery5years',
+}
+
+
+LossContextTab_VeneersOnceEvery5years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_VeneersOnceEvery5years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '07/23/2015',
+    CDT Code: 'D2960',
+    Charge: '1000.00',
+    Tooth: 24,
+  }
+}
+
+TestData_VeneersOnceEvery5yearsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_VeneersOnceEvery5yearsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_VeneersOnceEvery5yearsdeny',
+}
+
+
+LossContextTab_VeneersOnceEvery5yearsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_VeneersOnceEvery5yearsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '09/19/2019',
+    CDT Code: 'D2960',
+    Charge: '1050.00',
+    Tooth: 24,
+  }
+}
+###############################################################################################################
+TestData_Veneersnotcovered: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Veneersnotcovered',
+  IntakeInformationTab: '@IntakeInformationTab_Veneersnotcovered',
+}
+
+
+LossContextTab_Veneersnotcovered: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Veneersnotcovered: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '351517384',
+    'License #': '8724',
+    License NPI: '1063628917',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '4034 E Southport Rd',
+    City: 'Indianapolis',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '07/5/2020',
+    CDT Code: 'D2961',
+    Charge: '500.00',
+    Tooth: 8,
+  }
+}
+####################################################################################################
+TestData_FullMouthDebridementOnceEvery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_FullMouthDebridementOnceEvery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_FullMouthDebridementOnceEvery5yrs',
+}
+
+
+LossContextTab_FullMouthDebridementOnceEvery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_FullMouthDebridementOnceEvery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '07/1/2015',
+    CDT Code: 'D4355',
+    Charge: '225.00',
+  }
+}
+
+TestData_FullMouthDebridementOnceEvery5yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_FullMouthDebridementOnceEvery5yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_FullMouthDebridementOnceEvery5yrsDeny',
+}
+
+
+LossContextTab_FullMouthDebridementOnceEvery5yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_FullMouthDebridementOnceEvery5yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '04/25/2018',
+    CDT Code: 'D4355',
+    Charge: '225.00',
+  }
+}
+
+###################################################################################################################
+TestData_FullMouthDebridementinlifetime: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_FullMouthDebridementinlifetime',
+  IntakeInformationTab: '@IntakeInformationTab_FullMouthDebridementinlifetime',
+}
+
+
+LossContextTab_FullMouthDebridementinlifetime: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_FullMouthDebridementinlifetime: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/20/2015',
+    CDT Code: 'D4355',
+    Charge: '225.00',
+  }
+}
+
+TestData_FullMouthDebridementinlifetimeDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_FullMouthDebridementinlifetimeDeny',
+  IntakeInformationTab: '@IntakeInformationTab_FullMouthDebridementinlifetimeDeny',
+}
+
+
+LossContextTab_FullMouthDebridementinlifetimeDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_FullMouthDebridementinlifetimeDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '01/20/2020',
+    CDT Code: 'D4355',
+    Charge: '225.00',
+  }
+}
+
+############################################################################################
+TestData_PeriodontalSurgery2timesevery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PeriodontalSurgery2timesevery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_PeriodontalSurgery2timesevery5yrs',
+}
+
+
+LossContextTab_PeriodontalSurgery2timesevery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PeriodontalSurgery2timesevery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '01/01/2015',
+    CDT Code: 'D4260',
+    Charge: '325.00',
+    Surface: 'U,R'
+  }
+}
+
+TestData_PeriodontalSurgery2timesevery5yrs1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PeriodontalSurgery2timesevery5yrs1',
+  IntakeInformationTab: '@IntakeInformationTab_PeriodontalSurgery2timesevery5yrs1',
+}
+
+
+LossContextTab_PeriodontalSurgery2timesevery5yrs1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PeriodontalSurgery2timesevery5yrs1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '02/10/2018',
+    CDT Code: 'D4260',
+    Charge: '325.00',
+    Surface: 'U,R'
+  }
+}
+
+TestData_PeriodontalSurgery2timesevery5yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PeriodontalSurgery2timesevery5yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_PeriodontalSurgery2timesevery5yrsDeny',
+}
+
+
+LossContextTab_PeriodontalSurgery2timesevery5yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PeriodontalSurgery2timesevery5yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/20/2019',
+    CDT Code: 'D4260',
+    Charge: '325.00',
+    Surface: 'U,R'
+
+  }
+}
+
+########################################################################################################
+
+TestData_PeriodontalSurgery1in3years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PeriodontalSurgery1in3years',
+  IntakeInformationTab: '@IntakeInformationTab_PeriodontalSurgery1in3years',
+}
+
+
+LossContextTab_PeriodontalSurgery1in3years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PeriodontalSurgery1in3years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '731326596',
+    'License #': '4882',
+    License NPI: '1407950744',
+    License State/Province: 'OK',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '6801 NW 39th Expy Ste A',
+    City: 'Bethany',
+    State/Province: 'OK',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '02/01/2018',
+    CDT Code: 'D4260',
+    Charge: '325.00',
+    Surface: 'U,L'
+  }
+}
+
+TestData_PeriodontalSurgery1in3yearsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PeriodontalSurgery1in3yearsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_PeriodontalSurgery1in3yearsDeny',
+}
+
+
+LossContextTab_PeriodontalSurgery1in3yearsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PeriodontalSurgery1in3yearsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '731326596',
+    'License #': '4882',
+    License NPI: '1407950744',
+    License State/Province: 'OK',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '6801 NW 39th Expy Ste A',
+    City: 'Bethany',
+    State/Province: 'OK',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '02/01/2018',
+    CDT Code: 'D4260',
+    Charge: '325.00',
+    Surface: 'U,L'
+  },
+    {
+      DOS: '03/15/2020',
+      CDT Code: 'D4260',
+      Charge: '325.00',
+      Surface: 'U,R'
+    }
+  ]
+}
+
+
+#########################################################################################################
+
+TestData_RootCanalOnceEvery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RootCanalOnceEvery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_RootCanalOnceEvery5yrs',
+}
+
+
+LossContextTab_RootCanalOnceEvery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RootCanalOnceEvery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '05/04/2018',
+    CDT Code: 'D3330',
+    Charge: '400.00',
+    Tooth: 23,
+  }
+}
+
+TestData_RootCanalOnceEvery5yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RootCanalOnceEvery5yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_RootCanalOnceEvery5yrsDeny',
+}
+
+
+LossContextTab_RootCanalOnceEvery5yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RootCanalOnceEvery5yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '07/23/2020',
+    CDT Code: 'D3330',
+    Charge: '400.00',
+    Tooth: 23,
+
+  }
+}
+##########################################################################################################
+
+TestData_RootCanalOnceEvery2yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RootCanalOnceEvery2yrs',
+  IntakeInformationTab: '@IntakeInformationTab_RootCanalOnceEvery2yrs',
+}
+
+
+LossContextTab_RootCanalOnceEvery2yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RootCanalOnceEvery2yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '12/1/2018',
+    CDT Code: 'D3310',
+    Charge: '1000.00',
+    Tooth: 10,
+  }
+}
+
+TestData_RootCanalOnceEvery2yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RootCanalOnceEvery2yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_RootCanalOnceEvery2yrsDeny',
+}
+
+
+LossContextTab_RootCanalOnceEvery2yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RootCanalOnceEvery2yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '7/20/2020',
+    CDT Code: 'D3310',
+    Charge: '1000.00',
+    Tooth: 10,
+
+  }
+}
+###########################################################################################################
+TestData_ScalingandRootPlaningOnceEvery3yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_ScalingandRootPlaningOnceEvery3yrs',
+  IntakeInformationTab: '@IntakeInformationTab_ScalingandRootPlaningOnceEvery3yrs',
+}
+
+
+LossContextTab_ScalingandRootPlaningOnceEvery3yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_ScalingandRootPlaningOnceEvery3yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/20/2018',
+    CDT Code: 'D4341',
+    Charge: '275.00',
+    Surface: 'L,L'
+
+  }
+}
+
+TestData_ScalingandRootPlaningOnceEvery3yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_ScalingandRootPlaningOnceEvery3yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_ScalingandRootPlaningOnceEvery3yrsDeny',
+}
+
+
+LossContextTab_ScalingandRootPlaningOnceEvery3yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_ScalingandRootPlaningOnceEvery3yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/20/2018',
+    CDT Code: 'D4341',
+    Charge: '275.00',
+    Surface: 'L,L'
+
+  }
+}
+########################################################################################################################
+TestData_TissueConditioningOnceEvery2yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TissueConditioningOnceEvery2yrs',
+  IntakeInformationTab: '@IntakeInformationTab_TissueConditioningOnceEvery2yrs',
+}
+
+
+LossContextTab_TissueConditioningOnceEvery2yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TissueConditioningOnceEvery2yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '10/30/2016',
+    CDT Code: 'D5850',
+    Charge: '145.00',
+  }
+}
+
+TestData_TissueConditioningOnceEvery2yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TissueConditioningOnceEvery2yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_TissueConditioningOnceEvery2yrsDeny',
+}
+
+
+LossContextTab_TissueConditioningOnceEvery2yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TissueConditioningOnceEvery2yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '9/14/2018',
+    CDT Code: 'D5850',
+    Charge: '145.00',
+
+  }
+}
+##############################################################################
+TestData_ScalingandRootPlaning1Every2years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_ScalingandRootPlaning1Every2years',
+  IntakeInformationTab: '@IntakeInformationTab_ScalingandRootPlaning1Every2years',
+}
+
+
+LossContextTab_ScalingandRootPlaning1Every2years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_ScalingandRootPlaning1Every2years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/12/2018',
+    CDT Code: 'D4341',
+    Charge: '275.00',
+    Surface: 'U,R'
+
+  }
+}
+
+TestData_ScalingandRootPlaning1Every2yearsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_ScalingandRootPlaning1Every2yearsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_ScalingandRootPlaning1Every2yearsDeny',
+}
+
+
+LossContextTab_ScalingandRootPlaning1Every2yearsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_ScalingandRootPlaning1Every2yearsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/1/2019',
+    CDT Code: 'D4341',
+    Charge: '275.00',
+    Surface: 'U,R'
+
+  }
+}
+
+#######################################################################################################
+TestData_TissueConditioningOnceEvery3years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TissueConditioningOnceEvery3years',
+  IntakeInformationTab: '@IntakeInformationTab_TissueConditioningOnceEvery3years',
+}
+
+
+LossContextTab_TissueConditioningOnceEvery3years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TissueConditioningOnceEvery3years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '9/1/2017',
+    CDT Code: 'D5850',
+    Charge: '195.00',
+
+  }
+}
+
+TestData_TissueConditioningOnceEvery3yearsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TissueConditioningOnceEvery3yearsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_TissueConditioningOnceEvery3yearsDeny',
+}
+
+
+LossContextTab_TissueConditioningOnceEvery3yearsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TissueConditioningOnceEvery3yearsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '10/23/2019',
+    CDT Code: 'D5850',
+    Charge: '195.00',
+
+  }
+}
+
+#####################################################################################################################
+TestData_LimitedOcclusalAdjustmentonceevery3yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_LimitedOcclusalAdjustmentonceevery3yrs',
+  IntakeInformationTab: '@IntakeInformationTab_LimitedOcclusalAdjustmentonceevery3yrs',
+}
+
+
+LossContextTab_LimitedOcclusalAdjustmentonceevery3yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_LimitedOcclusalAdjustmentonceevery3yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '4/22/2018',
+    CDT Code: 'D9951',
+    Charge: '65.00',
+
+  }
+}
+
+TestData_LimitedOcclusalAdjustmentonceevery3yrsDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_LimitedOcclusalAdjustmentonceevery3yrsDeny',
+  IntakeInformationTab: '@IntakeInformationTab_LimitedOcclusalAdjustmentonceevery3yrsDeny',
+}
+
+
+LossContextTab_LimitedOcclusalAdjustmentonceevery3yrsDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_LimitedOcclusalAdjustmentonceevery3yrsDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/24/2020',
+    CDT Code: 'D9951',
+    Charge: '65.00',
+
+  }
+}
+##################################################################################################################
+TestData_LimitedOcclusalAdjustmentOnceinlifetime: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_LimitedOcclusalAdjustmentOnceinlifetime',
+  IntakeInformationTab: '@IntakeInformationTab_LimitedOcclusalAdjustmentOnceinlifetime',
+}
+
+
+LossContextTab_LimitedOcclusalAdjustmentOnceinlifetime: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_LimitedOcclusalAdjustmentOnceinlifetime: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '4/22/2018',
+    CDT Code: 'D9951',
+    Charge: '65.00',
+
+  }
+}
+
+TestData_LimitedOcclusalAdjustmentOnceinlifetimeDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_LimitedOcclusalAdjustmentOnceinlifetimeDeny',
+  IntakeInformationTab: '@IntakeInformationTab_LimitedOcclusalAdjustmentOnceinlifetimeDeny',
+}
+
+
+LossContextTab_LimitedOcclusalAdjustmentOnceinlifetimeDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_LimitedOcclusalAdjustmentOnceinlifetimeDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/30/2020',
+    CDT Code: 'D9951',
+    Charge: '65.00',
+
+  }
+}
+
+##################################################################################################
+TestData_TMD300PerLifetime: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TMD300PerLifetime',
+  IntakeInformationTab: '@IntakeInformationTab_TMD300PerLifetime',
+}
+
+
+LossContextTab_TMD300PerLifetime: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TMD300PerLifetime: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '8/9/2016',
+    CDT Code: 'D9130',
+    Charge: '1000.00',
+
+  }
+}
+
+TestData_TMD300PerLifetimeDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TMD300PerLifetimeDeny',
+  IntakeInformationTab: '@IntakeInformationTab_TMD300PerLifetimeDeny',
+}
+
+
+LossContextTab_TMD300PerLifetimeDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TMD300PerLifetimeDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '10/11/2019',
+    CDT Code: 'D9130',
+    Charge: '1000.00',
+
+  }
+}
+##########################################################################################
+TestData_TMDNotCoveredDeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_TMDNotCoveredDeny',
+  IntakeInformationTab: '@IntakeInformationTab_TMDNotCoveredDeny',
+}
+
+
+LossContextTab_TMDNotCoveredDeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_TMDNotCoveredDeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '2/20/2020',
+    CDT Code: 'D9130',
+    Charge: '1000.00',
+
+  }
+}
+
+####################################################################################################
+
+TestData_BridgesOnceEvery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_BridgesOnceEvery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_BridgesOnceEvery5yrs',
+}
+
+
+LossContextTab_BridgesOnceEvery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_BridgesOnceEvery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202712485',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '6/20/2015',
+    CDT Code: 'D6240',
+    Tooth: '2',
+    Charge: '650.00'
+  },
+    {
+      DOS: '6/20/2015',
+      CDT Code: 'D6740',
+      Tooth: '3',
+      Charge: '650.00'
+    },
+    {
+      DOS: '6/20/2015',
+      CDT Code: 'D6740',
+      Tooth: '4',
+      Charge: '650.00'
+    }
+  ]
+}
+TestData_BridgesOnceEvery5yrsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_BridgesOnceEvery5yrsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_BridgesOnceEvery5yrsdeny',
+}
+
+
+LossContextTab_BridgesOnceEvery5yrsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_BridgesOnceEvery5yrsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202712485',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '6/28/2020',
+    CDT Code: 'D6240',
+    Tooth: '2',
+    Charge: '650.00'
+  },
+    {
+      DOS: '9/19/2019',
+      CDT Code: 'D6740',
+      Tooth: '3',
+      Charge: '650.00'
+    },
+    {
+      DOS: '9/19/2019',
+      CDT Code: 'D6740',
+      Tooth: '4',
+      Charge: '650.00'
+    }
+  ]
+}
+
+#########################################################################################################
+TestData_BridgesOnceEvery3yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_BridgesOnceEvery3yrs',
+  IntakeInformationTab: '@IntakeInformationTab_BridgesOnceEvery3yrs',
+}
+
+
+LossContextTab_BridgesOnceEvery3yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_BridgesOnceEvery3yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202712485',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '9/1/2015',
+    CDT Code: 'D6240',
+    Tooth: '2',
+    Charge: '650.00'
+  },
+    {
+      DOS: '9/1/2015',
+      CDT Code: 'D6740',
+      Tooth: '3',
+      Charge: '650.00'
+    },
+    {
+      DOS: '9/1/2015',
+      CDT Code: 'D6740',
+      Tooth: '4',
+      Charge: '650.00'
+    }
+  ]
+}
+TestData_BridgesOnceEvery3yrsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_BridgesOnceEvery3yrsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_BridgesOnceEvery3yrsdeny',
+}
+
+
+LossContextTab_BridgesOnceEvery3yrsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_BridgesOnceEvery3yrsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202712485',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '11/23/2017',
+    CDT Code: 'D6240',
+    Tooth: '2',
+    Charge: '650.00'
+  },
+    {
+      DOS: '11/23/2017',
+      CDT Code: 'D6740',
+      Tooth: '3',
+      Charge: '650.00'
+    },
+    {
+      DOS: '11/23/2017',
+      CDT Code: 'D6740',
+      Tooth: '4',
+      Charge: '650.00'
+    }
+  ]
+}
+####################################################################################################
+TestData_DenturesOnceEvery5yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_DenturesOnceEvery5yrs',
+  IntakeInformationTab: '@IntakeInformationTab_DenturesOnceEvery5yrs',
+}
+
+
+LossContextTab_DenturesOnceEvery5yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_DenturesOnceEvery5yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/5/2015',
+    CDT Code: 'D5110',
+    Charge: '900.00',
+
+  }
+}
+
+TestData_DenturesOnceEvery5yrsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_DenturesOnceEvery5yrsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_DenturesOnceEvery5yrsdeny',
+}
+
+
+LossContextTab_DenturesOnceEvery5yrsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_DenturesOnceEvery5yrsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '1/15/2017',
+    CDT Code: 'D5110',
+    Charge: '900.00',
+
+  }
+}
+
+#############################################################################################################
+TestData_Dentures1Every3years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Dentures1Every3years',
+  IntakeInformationTab: '@IntakeInformationTab_Dentures1Every3years',
+}
+
+
+LossContextTab_Dentures1Every3years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Dentures1Every3years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '8/30/2017',
+    CDT Code: 'D5110',
+    Charge: '850.00',
+
+  }
+}
+
+TestData_Dentures1Every3yearsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_Dentures1Every3yearsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_Dentures1Every3yearsdeny',
+}
+
+
+LossContextTab_Dentures1Every3yearsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_Dentures1Every3yearsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '1/20/2020',
+    CDT Code: 'D5110',
+    Charge: '850.00',
+
+  }
+}
+
+################################################################################################
+TestData_RelinesAndRepairsOnceEvery3yrs: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RelinesAndRepairsOnceEvery3yrs',
+  IntakeInformationTab: '@IntakeInformationTab_RelinesAndRepairsOnceEvery3yrs',
+}
+
+
+LossContextTab_RelinesAndRepairsOnceEvery3yrs: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RelinesAndRepairsOnceEvery3yrs: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '2/20/2018',
+    CDT Code: 'D5750',
+    Charge: '235.00',
+
+  }
+}
+
+TestData_RelinesAndRepairsOnceEvery3yrsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RelinesAndRepairsOnceEvery3yrsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_RelinesAndRepairsOnceEvery3yrsdeny',
+}
+
+
+LossContextTab_RelinesAndRepairsOnceEvery3yrsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RelinesAndRepairsOnceEvery3yrsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/20/2020',
+    CDT Code: 'D5750',
+    Charge: '235.00',
+
+  }
+}
+#######################################################################################################
+TestData_RelinesAndRepairs1Every2years: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RelinesAndRepairs1Every2years',
+  IntakeInformationTab: '@IntakeInformationTab_RelinesAndRepairs1Every2years',
+}
+
+
+LossContextTab_RelinesAndRepairs1Every2years: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RelinesAndRepairs1Every2years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/30/2018',
+    CDT Code: 'D5750',
+    Charge: '235.00',
+
+  }
+}
+
+TestData_RelinesAndRepairs1Every2yearsdeny: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RelinesAndRepairs1Every2yearsdeny',
+  IntakeInformationTab: '@IntakeInformationTab_RelinesAndRepairs1Every2yearsdeny',
+}
+
+
+LossContextTab_RelinesAndRepairs1Every2yearsdeny: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RelinesAndRepairs1Every2yearsdeny: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '12/23/2019',
+    CDT Code: 'D5750',
+    Charge: '235.00',
+
+  }
+}
+
+TestData_ImplantCrownOnceEvery5Years: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplantCrownOnceEvery5Years',
+}
+
+LossContextTab: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabImplantCrownOnceEvery5Years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '03/01/2015',
+    CDT Code: 'D6059',
+    Charge: 750,
+    Tooth: 6,
+  }]
+}
+
+TestData_ImplantCrownOnceEvery5Years_Decline: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplantCrownOnceEvery5Years_Decline',
+}
+
+IntakeInformationTabImplantCrownOnceEvery5Years_Decline: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '03/31/2018',
+    CDT Code: 'D6059',
+    Charge: 750,
+    Tooth: 6,
+  }]
+}
+
+TestData_ImplantCrownOnceEvery5Years_Autopay: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplantCrownOnceEvery5Years_Autopay',
+}
+
+IntakeInformationTabImplantCrownOnceEvery5Years_Autopay: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '06/05/2020',
+    CDT Code: 'D6059',
+    Charge: 750,
+    Tooth: 6,
+  }]
+}
+
+# Last Claim 2
+
+TestData_Implant1Every5Years: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplant1Every5Years',
+}
+
+IntakeInformationTabImplant1Every5Years: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '02/28/2015',
+    CDT Code: 'D6010',
+    Charge: 1000,
+    Tooth: 29,
+  }]
+}
+
+TestData_Implant1Every5Years_Decline: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplant1Every5Years_Decline',
+}
+
+IntakeInformationTabImplant1Every5Years_Decline: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '03/30/2018',
+    CDT Code: 'D6010',
+    Charge: 1000,
+    Tooth: 29,
+  }]
+}
+
+TestData_Implant1Every5Years_Autopay: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplant1Every5Years_Autopay',
+}
+
+IntakeInformationTabImplant1Every5Years_Autopay: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '611345391',
+    'License #': '6308',
+    License NPI: '1558351072',
+    License State/Province: 'KY',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '40069',
+    Address Line 1: '108 Commercial Ave',
+    City: 'Springfield',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '06/01/2020',
+    CDT Code: 'D6010',
+    Charge: 1000,
+    Tooth: 29,
+  }]
+}
+
+# Last Claim 3
+
+TestData_ImplantOnceInLifetime: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplantOnceInLifetime',
+}
+
+IntakeInformationTabImplantOnceInLifetime: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '273197090',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '89117',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '04/28/2018',
+    CDT Code: 'D6010',
+    Charge: 1200,
+    Tooth: 6,
+  }]
+}
+
+TestData_ImplantOnceInLifetime_Decline: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabImplantOnceInLifetime_Decline',
+}
+
+IntakeInformationTabImplantOnceInLifetime_Decline: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '273197090',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '89117',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '09/01/2019',
+    CDT Code: 'D6010',
+    Charge: 1200,
+    Tooth: 6,
+  }]
+}

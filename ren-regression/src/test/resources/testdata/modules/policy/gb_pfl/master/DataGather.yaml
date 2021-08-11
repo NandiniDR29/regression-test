@@ -1,0 +1,38 @@
+TestData_Group9: {
+  InitiniateDialog: '@InitiniateDialog',
+  PolicyInformationTab: '@PolicyInformationTab',
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinitionTab',
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+
+InitiniateDialog: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Paid Family Leave,
+  Delivery Model: Group
+}
+PolicyInformationTab: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: NJ,
+  Internal Team: {
+    Sales Representative: index=1,
+    Underwriter: index=1
+  }
+}
+PlanDefinitionTab: {
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Mandatory,
+  }
+}
+
+ClassificationManagementTab: {
+  Plan: PFL NJ,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Number of Participants: 10,
+  Total Volume: 1000
+}
+

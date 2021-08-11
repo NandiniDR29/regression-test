@@ -1,0 +1,668 @@
+TestData_Claim1: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_1',
+}
+
+LossContextTab_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '07/01/2020',
+    CDT Code: 'D7210',
+    Charge: 400,
+    Tooth: 10
+  },
+  {
+    DOS: '10/07/2020',
+    CDT Code: 'D3332',
+    Charge: 600,
+    Tooth: 10
+  }
+  ]
+}
+TestData_Claim2: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_2',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_2',
+}
+
+LossContextTab_2: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_2: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '261421714',
+    'License #': '14320',
+    License NPI: '1669627881',
+    License State/Province: 'MD',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '21223',
+    Address Line 1: '1253 W Pratt St.',
+    City: 'Baltimore',
+    State/Province: 'MD',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '07/01/2020',
+    CDT Code: 'D7210',
+    Charge: 500,
+    #Tooth: 12
+  },
+  {
+    DOS: '10/07/2020',
+    CDT Code: 'D9222',
+    Charge: 600,
+    Tooth: 15
+  },
+  {
+    DOS: '10/07/2020',
+    CDT Code: 'D9223',
+    Charge: 600,
+    #Tooth: 15
+  }
+  ]
+}
+TestData_Claim3: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_3',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_3',
+}
+
+IntakeInformationTabThreeServices_3: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '260160921',
+    'License #': '7105',
+    License NPI: '1225514367',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '89135',
+    Address Line 1: '10870 W Charleston Blvd. Ste. 170',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '07/20/2020',
+    CDT Code: 'D2332',
+    Charge: 900,
+    Tooth: 12
+  },
+  ]
+}
+LossContextTab_3: {
+  Save Loss As: index=1
+}
+TestData_Claim4: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_4',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_4',
+}
+
+LossContextTab_4: {
+  Save Loss As: index=1
+}
+IntakeInformationTabThreeServices_4: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '540921110',
+    'License #': '401007904',
+    License NPI: '1962414557',
+    License State/Province: 'VA',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '23454',
+    Address Line 1: '1157 First Colonial Rd',
+    City: 'Virginia Beach',
+    State/Province: 'VA',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '01/07/2020',
+    CDT Code: 'D6010',
+    Charge: 1200,
+    Tooth: '6,7'
+  },
+  {
+    DOS: '01/07/2020',
+    CDT Code: 'D5110',
+    Charge: 600,
+    # Tooth: 7
+  }
+  ]
+}
+TestData_Claim5: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_5',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_5',
+}
+
+LossContextTab_5: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_5: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '640746692',
+    'License #': '2263',
+    License NPI: '1295879625',
+    License State/Province: 'MS',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '39218',
+    Address Line 1: '161 Scarbrough St',
+    City: 'Richland',
+    State/Province: 'MS',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '07/01/2020',
+    CDT Code: 'D9110',
+    Charge: 1200,
+    Tooth: 14
+  },
+  {
+    DOS: '07/17/2020',
+    CDT Code: 'D9110',
+    Charge: 600,
+    # Tooth: 7
+  },
+  {
+    DOS: '07/17/2020',
+    CDT Code: 'D9110',
+    Charge: 600,
+  # Tooth: 7
+  }
+  ]
+}
+TestData_Claim6: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_6',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_6',
+}
+LossContextTab_6: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_6: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '05/07/2020',
+    CDT Code: 'D1110',
+    Charge: 400
+    #Tooth: 10
+  }
+  ]
+}
+TestData_Claim7: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_7',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_7',
+}
+LossContextTab_7: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_7: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '10/07/2020',
+    CDT Code: 'D2740',
+    Charge: 400,
+    Tooth: 8
+  },
+  {
+    DOS: '10/07/2020',
+    CDT Code: 'D2740',
+    Charge: 400,
+    Tooth: 9
+  }
+  ]
+}
+TestData_Claim8: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_8',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_8',
+}
+LossContextTab_8: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_8: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '05/07/2020',
+    CDT Code: 'D2955',
+    Charge: 400,
+    Tooth: 14
+   },
+   {
+  DOS: '05/07/2020',
+  CDT Code: 'D3333',
+  Charge: 400,
+  Tooth: 14
+   }
+  ]
+}
+TestData_Claim9: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_9',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_9',
+}
+LossContextTab_9: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_9: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '02/07/2020',
+    CDT Code: 'D3332',
+    Charge: 400,
+    Tooth: 18
+  }
+  ]
+}
+TestData_Claim10: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_10',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_10',
+}
+LossContextTab_10: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_10: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '02/07/2020',
+    CDT Code: 'D8999',
+    Charge: 400,
+     #Tooth: 18
+    }
+  ]
+}
+
+
+
+
+TestData_Claim11: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_11',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_11',
+}
+LossContextTab_11: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_11: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '07/15/2020',
+    CDT Code: 'D9940',
+    Charge: 400
+     #Tooth: 18
+  }
+  ]
+}
+
+TestData_Claim12: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_12',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_12',
+}
+LossContextTab_12: {
+  Save Loss As: index=1
+}
+IntakeInformationTabThreeServices_12: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '01/07/2020',
+    CDT Code: 'D6090',
+    Charge: 400,
+    #Tooth: 14
+  },
+  {
+     DOS: '07/07/2020',
+     CDT Code: 'D6090',
+     Charge: 400,
+     #Tooth: 14
+  }
+  ]
+}
+TestData_Claim13: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_13',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_13',
+}
+LossContextTab_13: {
+  Save Loss As: index=1
+}
+IntakeInformationTabThreeServices_13: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+    DOS: '05/07/2020',
+    CDT Code: 'D6010',
+    Charge: 400,
+    Tooth: 13
+    },
+    {
+    DOS: '05/07/2020',
+    CDT Code: 'D6011',
+    Charge: 400,
+    Tooth: 13
+    }
+  ]
+}
+TestData_Claim14: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_14',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_14',
+}
+LossContextTab_14: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_14: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+   DOS: '12/07/2020',
+   CDT Code: 'D5820',
+   Charge: 400,
+   Tooth: '8,9'
+   }
+  ]
+}
+TestData_Claim15: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_15',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_15',
+}
+LossContextTab_15: {
+  Save Loss As: index=1
+}
+IntakeInformationTabThreeServices_15: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+   DOS: '08/07/2020',
+   CDT Code: 'D4210',
+   Charge: 400,
+   Tooth: 10
+    },
+    {
+    DOS: '08/07/2020',
+    CDT Code: 'D4261',
+    Charge: 400,
+    Tooth: 4
+    }
+  ]
+}
+TestData_Claim16: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab_16',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_16',
+}
+LossContextTab_16: {
+  Save Loss As: index=1
+}
+IntakeInformationTabThreeServices_16: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [{
+   DOS: '01/07/2020',
+   CDT Code: 'D4341',
+   Charge: 400
+    #Tooth: 10
+    },
+   {
+    DOS: '07/15/2020',
+    CDT Code: 'D4342',
+    Charge: 400,
+    Tooth: '2,4'
+    }
+  ]
+}

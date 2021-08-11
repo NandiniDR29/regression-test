@@ -1,0 +1,3 @@
+# Project exclude paths
+/ren-automation-ui/target/
+/ren-regression/target/

@@ -1,0 +1,100 @@
+TestData_Claim1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_1',
+  IntakeInformationTab: '@DisallowedForDuplication',
+}
+
+LossContextTab_1: {
+  Save Loss As: index=1
+}
+
+DisallowedForDuplication: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: $<today-1d>,
+    CDT Code: 'D1351',
+    Tooth: '22',
+    Charge: '100'
+
+  },
+    {
+      DOS: $<today-1d>,
+      CDT Code: 'D1351',
+      Tooth: '14',
+      Charge: '100'
+    }
+  ]
+}
+
+
+TestData_Claim2: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_2',
+  IntakeInformationTab: '@ReplacedwithD0330',
+}
+
+LossContextTab_2: {
+  Save Loss As: index=1
+}
+
+ReplacedwithD0330: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+                          DOS: $<today-1d>,
+                          CDT Code: 'D0150',
+                          Charge: '105'
+
+                        },
+                        {
+                          DOS: $<today-1d>,
+                          CDT Code: 'D0274',
+                          Charge: '81'
+                        },
+                        {
+                          DOS: $<today-1d>,
+                          CDT Code: 'D0330',
+                          Charge: '145'
+                        },
+                        {
+                          DOS: $<today-1d>,
+                          CDT Code: 'D1110',
+                          Charge: '110'
+                        }
+  ]
+}

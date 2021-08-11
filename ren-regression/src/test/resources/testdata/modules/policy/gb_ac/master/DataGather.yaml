@@ -1,0 +1,251 @@
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialogG1',
+  PolicyInformationTab: '@PolicyInformationTabG1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan', '@PlanDefinitionTab_ENHANCED10'],
+  EnhancedBenefitsAtoCTab: ['@EnhancedBenefitsAtoCTab_ENHANCED10'],
+  EnhancedBenefitsDtoFTab: ['@EnhancedBenefitsDtoFTab_ENHANCED10'],
+  EnhancedBenefitsHtoLTab: ['@EnhancedBenefitsHtoLTab_ENHANCED10'],
+  EnhancedBenefitsMtoTTab: ['@EnhancedBenefitsMtoTTab_ENHANCED10'],
+  OptionalBenefitTab: {},
+  ClassificationManagementTab: ['@ClassificationManagementTab_ENHANCED10'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG1: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=AccCaseTest',
+  Product: Group Accident,
+  Delivery Model: Group
+}
+PolicyInformationTabG1: {
+  Situs State: GA,
+  'Allow Independent Commissionable Producers?': No,
+  Agency / Producer: index=1,
+  Agent Sub Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Total Number of Eligible Lives: 150,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlan: {
+  Plan: Enhanced 10 Units
+}
+PlanDefinitionTab_ENHANCED10: {
+  PlanKey: ENHANCED10-Enhanced 10 Units,
+  SIC Description: 'index=1',
+  'Sponsor/Participant Funding Structure': {
+    Taxability: 'index=1',
+    Premium Paid-Post Tax: 'Yes',
+    Contribution Type: 'Non-contributory',
+    Minimum Number of Participants: '12'
+  }
+}
+ClassificationManagementTab_ENHANCED10: {
+  Plan: ENHANCED10-Enhanced 10 Units,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: 'index=1',
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 25
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 25
+    }
+  ],
+  'Use Classification Sub-Groups?': 'No'
+}
+EnhancedBenefitsAtoCTab_ENHANCED10: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsDtoFTab_ENHANCED10: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsHtoLTab_ENHANCED10: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsMtoTTab_ENHANCED10: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialogG2',
+  PolicyInformationTab: '@PolicyInformationTabG2',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanG2', '@PlanDefinitionTab_ENHANCED10G2'],
+  EnhancedBenefitsAtoCTab: ['@EnhancedBenefitsAtoCTab_ENHANCED10G2'],
+  EnhancedBenefitsDtoFTab: ['@EnhancedBenefitsDtoFTab_ENHANCED10G2'],
+  EnhancedBenefitsHtoLTab: ['@EnhancedBenefitsHtoLTab_ENHANCED10G2'],
+  EnhancedBenefitsMtoTTab: ['@EnhancedBenefitsMtoTTab_ENHANCED10G2'],
+  OptionalBenefitTab: {},
+  ClassificationManagementTab: ['@ClassificationManagementTab_ENHANCED10G2'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG2: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=AccCaseTest',
+  Product: Group Accident,
+  Delivery Model: Group
+}
+PolicyInformationTabG2: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: GA,
+  'Allow Independent Commissionable Producers?': No,
+  Agency / Producer: index=1,
+  Agent Sub Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Total Number of Eligible Lives: 750,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlanG2: {
+  Plan: Enhanced 10 Units
+}
+PlanDefinitionTab_ENHANCED10G2: {
+  PlanKey: ENHANCED10-Enhanced 10 Units,
+  SIC Description: 'index=1',
+  'Sponsor/Participant Funding Structure': {
+    Taxability: 'index=1',
+    Premium Paid-Post Tax: 'Yes',
+    Contribution Type: 'Non-contributory',
+    Minimum Number of Participants: '12'
+  }
+}
+EnhancedBenefitsAtoCTab_ENHANCED10G2: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsDtoFTab_ENHANCED10G2: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsHtoLTab_ENHANCED10G2: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsMtoTTab_ENHANCED10G2: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+ClassificationManagementTab_ENHANCED10G2: {
+  Plan: ENHANCED10-Enhanced 10 Units,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: 'index=1',
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 200
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 200
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 200
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 150
+    }
+  ],
+  'Use Classification Sub-Groups?': 'No'
+}
+
+TestData_Group3: {
+  InitiniateDialog: '@InitiniateDialogG3',
+  PolicyInformationTab: '@PolicyInformationTabG3',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanG3', '@PlanDefinitionTab_ENHANCED10G3'],
+  EnhancedBenefitsAtoCTab: ['@EnhancedBenefitsAtoCTab_ENHANCED10G3'],
+  EnhancedBenefitsDtoFTab: ['@EnhancedBenefitsDtoFTab_ENHANCED10G3'],
+  EnhancedBenefitsHtoLTab: ['@EnhancedBenefitsHtoLTab_ENHANCED10G3'],
+  EnhancedBenefitsMtoTTab: ['@EnhancedBenefitsMtoTTab_ENHANCED10G3'],
+  OptionalBenefitTab: {},
+  ClassificationManagementTab: ['@ClassificationManagementTab_ENHANCED10G3'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG3: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=AccCaseTest',
+  Product: Group Accident,
+  Delivery Model: Group
+}
+PolicyInformationTabG3: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: GA,
+  'Allow Independent Commissionable Producers?': No,
+  Agency / Producer: index=1,
+  Agent Sub Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Total Number of Eligible Lives: 49,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlanG3: {
+  Plan: Enhanced 10 Units
+}
+PlanDefinitionTab_ENHANCED10G3: {
+  PlanKey: ENHANCED10-Enhanced 10 Units,
+  SIC Description: 'index=1',
+  'Sponsor/Participant Funding Structure': {
+    Taxability: 'index=1',
+    Premium Paid-Post Tax: 'Yes',
+    Contribution Type: 'Voluntary',
+    Minimum Number of Participants: '12'
+  }
+}
+EnhancedBenefitsAtoCTab_ENHANCED10G3: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsDtoFTab_ENHANCED10G3: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsHtoLTab_ENHANCED10G3: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+EnhancedBenefitsMtoTTab_ENHANCED10G3: {
+  PlanKey: ENHANCED10-Enhanced 10 Units
+}
+ClassificationManagementTab_ENHANCED10G3: {
+  Plan: ENHANCED10-Enhanced 10 Units,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: 'index=1',
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 25
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 25
+    }
+  ],
+  'Use Classification Sub-Groups?': 'No'
+}
+

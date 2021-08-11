@@ -1,0 +1,5 @@
+{
+  "testEnvironmentVariableName": "ENVIRONMENT",
+  "testBranchVariableName": "BRANCH",
+  "appHelper": "com.exigen.ipb.eisa.utils.EISAppHelper"
+}

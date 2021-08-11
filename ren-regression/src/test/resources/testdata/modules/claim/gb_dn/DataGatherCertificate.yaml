@@ -1,0 +1,1190 @@
+TestData_SpecialReviewFlag: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_SpecialReviewFlag',
+  IntakeInformationTab: '@IntakeInformationTab_SpecialReviewFlag',
+}
+
+
+LossContextTab_SpecialReviewFlag: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_SpecialReviewFlag: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '822898134',
+    'License #': '9427',
+    License NPI: '1104100064',
+    License State/Province: 'TN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '305 S Main St',
+    City: 'Rocky Top',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: $<today-1d>,
+    CDT Code: 'D1110',
+    Charge: '75.00'
+  }
+}
+
+
+
+TestData_RecoveryPayment: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_RecoveryPayment',
+  IntakeInformationTab: '@IntakeInformationTab_RecoveryPayment',
+}
+
+
+LossContextTab_RecoveryPayment: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_RecoveryPayment: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '822898134',
+    'License #': '9427',
+    License NPI: '1104100064',
+    License State/Province: 'TN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '305 S Main St',
+    City: 'Rocky Top',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/12/2020',
+    CDT Code: 'D1110',
+    Charge: '1.00'
+  }
+}
+
+
+
+
+
+
+
+TestData_7: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_7',
+  IntakeInformationTab: '@IntakeInformationTab_7',
+}
+
+
+LossContextTab_7: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_7: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '825230240',
+    'License #': '401415927',
+    License NPI: '1003257239',
+    License State/Province: 'VA',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '11050 Lee Hwy',
+    City: 'Indianapolis',
+    State/Province: 'VA',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/15/2020',
+    CDT Code: 'D9120',
+    Charge: '500.00'
+  }
+}
+
+
+
+
+TestData_8: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_8',
+  IntakeInformationTab: '@IntakeInformationTab_8',
+}
+
+
+LossContextTab_8: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_8: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '470848314',
+    'License #': '13117',
+    License NPI: '1962593350',
+    License State/Province: 'TX',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3000 N Macarthur Blvd Ste D',
+    City: 'Irving',
+    State/Province: 'TX',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/10/2020',
+    CDT Code: 'D9930',
+    Charge: '500.00'
+  }
+}
+
+
+
+TestData_9: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_9',
+  IntakeInformationTab: '@IntakeInformationTab_9',
+}
+
+
+LossContextTab_9: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_9: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '582049872',
+    'License #': '11242',
+    License NPI: '1306930607',
+    License State/Province: 'GA',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1200 Bald Ridge Marina Rd',
+    City: 'Cumming',
+    State/Province: 'GA',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/20/2020',
+    CDT Code: 'D1208',
+    Charge: '200.00'
+  }
+}
+
+
+TestData_11: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_11',
+  IntakeInformationTab: '@IntakeInformationTab_11',
+}
+
+
+LossContextTab_11: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_11: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '880479912',
+    'License #': '3503',
+    License NPI: '1821114695',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '4765 S Durango Dr Ste 100',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/26/2020',
+    CDT Code: 'D4341',
+    Tooth: '10',
+    Charge: '300.00'
+  }
+}
+
+TestData_12: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_12',
+  IntakeInformationTab: '@IntakeInformationTab_12',
+}
+
+
+LossContextTab_12: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_12: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '412257773',
+    'License #': '12234',
+    License NPI: '1114031754',
+    License State/Province: 'MN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '7600 Sunwood Dr NW',
+    City: 'Anoka',
+    State/Province: 'MN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/31/2020',
+    CDT Code: 'D4341',
+    #Tooth: '10',
+    Charge: '300.00'
+  }
+}
+
+TestData_13: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_13',
+  IntakeInformationTab: '@IntakeInformationTab_13',
+}
+
+
+LossContextTab_13: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_13: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '20624001',
+    'License #': '10577',
+    License NPI: '1336213339',
+    License State/Province: 'MN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1206 W Front St',
+    City: 'Albert Lea',
+    State/Province: 'MN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '10/22/2019',
+    CDT Code: 'D1110',
+    # Tooth: '10',
+    Charge: '80.00'
+  }
+}
+
+TestData_24: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_24',
+  IntakeInformationTab: '@IntakeInformationTab_24',
+}
+
+
+LossContextTab_24: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_24: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204466549',
+    'License #': '3435',
+    License NPI: '1497976518',
+    License State/Province: 'WV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1299 Blizzard Dr',
+    City: 'Parkersburg',
+    State/Province: 'WV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/26/2020',
+    CDT Code: 'D7292',
+    #Tooth: '10',
+    Charge: '300.00'
+  }
+}
+
+TestData_25: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_25',
+  IntakeInformationTab: '@IntakeInformationTab_25',
+}
+
+
+LossContextTab_25: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_25: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202712485',
+    'License #': '4480',
+    License NPI: '1477564284',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '8961 W Sahara Ave Ste 108',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '6/28/2020',
+    CDT Code: 'D4210',
+    Tooth: '20',
+    Charge: '400.40'
+  },
+    {
+      DOS: '6/28/2020',
+      CDT Code: 'D4260',
+      Tooth: '20',
+      Charge: '400.40'
+    }
+  ]
+}
+
+
+TestData_31: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_31',
+  IntakeInformationTab: '@IntakeInformationTab_31',
+}
+
+
+LossContextTab_31: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_31: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '351517384',
+    'License #': '8724',
+    License NPI: '1063628917',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '4034 E Southport Rd',
+    City: 'Indianapolis',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/04/2020',
+    CDT Code: 'D3330',
+    Tooth: '15',
+    Charge: '400.40'
+  }
+}
+
+
+
+TestData_27: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_27',
+  IntakeInformationTab: '@IntakeInformationTab_27',
+}
+
+
+LossContextTab_27: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_27: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '262938877',
+    'License #': '5390',
+    License NPI: '1619952314',
+    License State/Province: 'TN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '2130 N Charles G Seivers Blvd Ste 1',
+    City: 'Clinton',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: $<today-1d>,
+    CDT Code: 'D6740',
+    Tooth: '13',
+    Charge: '500.00'
+  },
+    {
+      DOS: $<today-1d>,
+      CDT Code: 'D6240',
+      Tooth: '14',
+      Charge: '400.40'
+    }
+  ]
+}
+
+
+TestData_23: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_23',
+  IntakeInformationTab: '@IntakeInformationTab_23',
+}
+
+
+LossContextTab_23: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_23: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453810249',
+    'License #': '10241271',
+    License NPI: '1700266889',
+    License State/Province: 'UT',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '95 S 100 E',
+    City: 'Price',
+    State/Province: 'UT',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '2/1/2020',
+    CDT Code: 'D5110',
+    #Tooth: '15',
+    Charge: '800.00'
+  }
+}
+
+TestData_23_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_23_1',
+  IntakeInformationTab: '@IntakeInformationTab_23_1',
+}
+
+
+LossContextTab_23_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_23_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453810249',
+    'License #': '10241271',
+    License NPI: '1700266889',
+    License State/Province: 'UT',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '95 S 100 E',
+    City: 'Price',
+    State/Province: 'UT',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '4/1/20',
+    CDT Code: 'D6740',
+    Tooth: '2',
+    Charge: '400.40'
+  },
+    {
+      DOS: '4/1/20',
+      CDT Code: 'D6240',
+      Tooth: '3',
+      Charge: '400.40'
+    },
+    {
+      DOS: '4/1/20',
+      CDT Code: 'D6740',
+      Tooth: '4',
+      Charge: '400.40'
+    }
+  ]
+}
+
+
+TestData_22: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_22',
+  IntakeInformationTab: '@IntakeInformationTab_22',
+}
+
+
+LossContextTab_22: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_22: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '351517384',
+    'License #': '8724',
+    License NPI: '1063628917',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '4034 E Southport Rd',
+    City: 'Indianapolis',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '1/1/20',
+    CDT Code: 'D1110',
+    #Tooth: '15',
+    Charge: '400.40'
+  }
+}
+
+TestData_22_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_22_1',
+  IntakeInformationTab: '@IntakeInformationTab_22_1',
+}
+
+
+LossContextTab_22_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_22_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '3/1/2020',
+    CDT Code: 'D4910',
+    #Tooth: '15',
+    Charge: '150.00'
+  }
+}
+
+TestData_22_2: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_22_2',
+  IntakeInformationTab: '@IntakeInformationTab_22_2',
+}
+
+
+LossContextTab_22_2: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_22_2: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '813249327',
+    'License #': '5415',
+    License NPI: '1265558878',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '3431 E Sunset Rd Ste 301',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/1/2020',
+    CDT Code: 'D1110',
+    #Tooth: '15',
+    Charge: '150.00'
+  }
+}
+
+
+
+
+TestData_missingSurface: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTabmissingSurface',
+  IntakeInformationTab: '@IntakeInformationTab_missingSurface',
+}
+LossContextTabmissingSurface: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_missingSurface: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '5/23/2020',
+    CDT Code: 'D2332',
+    Tooth: '8',
+    Charge: '300.00'
+  }
+}
+
+
+TestData_satisfyoverpayment: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTabsatisfyoverpayment',
+  IntakeInformationTab: '@IntakeInformationTabsatisfyoverpayment',
+}
+LossContextTabsatisfyoverpayment: {
+  Save Loss As: index=1
+}
+IntakeInformationTabsatisfyoverpayment: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '631193924',
+    'License #': '6429',
+    License NPI: '1669992459',
+    License State/Province: 'AL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '101 Highway 87 Bldg 200',
+    City: 'Calera',
+    State/Province: 'AL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: $<today-1d>,
+    CDT Code: 'D0120',
+    Charge: 200
+  },
+    {
+      DOS: $<today-1d>,
+      CDT Code: 'D0220',
+      Charge: 400
+    }
+  ]
+}
+
+TestData_OverPayment2000: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTabOverPayment2000',
+  IntakeInformationTab: '@IntakeInformationTabOverPayment2000',
+}
+LossContextTabOverPayment2000: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabOverPayment2000: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Indianapolis',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '5/5/2020',
+    CDT Code: 'D6010',
+    Charge: 1001
+  },
+    {
+      DOS: '5/5/2020',
+      CDT Code: 'D6010',
+      Charge: 1000
+    },
+    {
+      DOS: '5/5/2020',
+      CDT Code: 'D6010',
+      Charge: 1000
+    },
+    {
+      DOS: '5/5/2020',
+      CDT Code: 'D6010',
+      Charge: 1000
+    },
+    {
+      DOS: '5/5/2020',
+      CDT Code: 'D6010',
+      Charge: 1000
+    }
+  ]
+}
+
+
+TestData_dependentnotoncoverage: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_dependentnotoncoverage',
+  IntakeInformationTab: '@IntakeInformationTab_dependentnotoncoverage',
+}
+
+LossContextTab_dependentnotoncoverage: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_dependentnotoncoverage: {
+  Patient: {
+    Name: 'Other Individual',
+    First Name: 'Fummy',
+    Last Name: 'Fummmy1',
+    Relationship to Primary Insured: 'Dependent Child',
+    Date of Birth: '12/01/2016',
+
+  },
+  Patient Address: {
+    Zip / Postal Code: '12345',
+    Address Line 1: 'LG Road',
+    City: 'London',
+    State / Province: 'NY'
+
+  },
+  Search Provider: {
+    TIN: '461519447',
+    'License #': '4634',
+    License NPI: '1437649480',
+    License State/Province: 'ME',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '440 Narragansett Trl',
+    City: 'Buxton',
+    State/Province: 'ME',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/2/2020',
+    CDT Code: 'D0120',
+    Charge: '61.00'
+  }
+}
+
+TestData_MPTermDate: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_MPTermDate',
+  IntakeInformationTab: '@IntakeInformationTab_MPTermDate',
+}
+
+LossContextTab_MPTermDate: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_MPTermDate: {
+  Patient: {
+    Name: contains=Insured
+  },
+
+  Search Provider: {
+    TIN: '731326596',
+    'License #': '4882',
+    License NPI: '1407950744',
+    License State/Province: 'OK',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '6801 NW 39th Expy Ste A',
+    City: 'Bethany',
+    State/Province: 'OK',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/25/2020',
+    CDT Code: 'D0274',
+    Charge: '71.00',
+  }
+}
+
+TestData_FocusedFlag: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_FocusedFlag',
+  IntakeInformationTab: '@IntakeInformationTab_FocusedFlag',
+}
+
+LossContextTab_FocusedFlag: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_FocusedFlag: {
+  Patient: {
+    Name: contains=Insured
+  },
+
+  Search Provider: {
+    TIN: '820995314',
+    'License #': '4317',
+    License NPI: '1518160951',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1621 E Flamingo Rd Ste 17A',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/10/2020',
+    CDT Code: 'D0220',
+    Charge: '39.99',
+  }
+}
+
+
+
+TestData_delinquentGroup: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_delinquentGroup',
+  IntakeInformationTab: '@IntakeInformationTab_delinquentGroup',
+}
+
+LossContextTab_delinquentGroup: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_delinquentGroup: {
+  Patient: {
+    Name: contains=Insured
+  },
+
+  Search Provider: {
+    TIN: '550464173',
+    'License #': '2967',
+    License NPI: '1770694176',
+    License State/Province: 'WV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '1000 Parkway Rd Ste D',
+    City: 'Charleston',
+    State/Province: 'WV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/2/2020',
+    CDT Code: 'D0120',
+    Charge: '40.00',
+  }
+}
+
+
+
+
+
+
+
+
+
+TestData_substitutewithD5110: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_substitutewithD5110',
+  IntakeInformationTab: '@IntakeInformationTab_substitutewithD5110',
+}
+
+LossContextTab_substitutewithD5110: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_substitutewithD5110: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '631193924',
+    'License #': '6429',
+    License NPI: '1669992459',
+    License State/Province: 'AL',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '101 Highway 87 Bldg 200',
+    City: 'Calera',
+    State/Province: 'AL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/12/2020',
+    CDT Code: 'D5863',
+    Charge: '800.00'
+  }
+}
+TestData_substitutewithD2391: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_substitutewithD2391',
+  IntakeInformationTab: '@IntakeInformationTab_substitutewithD2391',
+}
+
+LossContextTab_substitutewithD2391: {
+  Save Loss As: index=1
+}
+IntakeInformationTab_substitutewithD2391: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '830499761',
+    'License #': '17973',
+    License NPI: '1881806230',
+    License State/Province: 'MI',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '2775 E Grand River Ave Ste 1',
+    City: 'Howell',
+    State/Province: 'MI',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '6/15/2020',
+    CDT Code: 'D2510',
+    Surface: 'O',
+    Tooth: '3',
+    Charge: '600.00'
+  }
+}
+
+TestData_CombinetoD0210: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTabCombinetoD0210',
+  IntakeInformationTab: '@IntakeInformationTabCombinetoD0210',
+}
+LossContextTabCombinetoD0210: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabCombinetoD0210: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '271997403',
+    'License #': 'S691',
+    License NPI: '1356545453',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '11700 W Charleston Blvd Ste 180',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '6/22/2020',
+    CDT Code: 'D0220',
+
+    Charge: 200
+  },
+    {
+      DOS: '6/22/2020',
+      CDT Code: 'D0274',
+      Charge: 400
+    },
+    {
+      DOS: '6/22/2020',
+      CDT Code: 'D0330',
+      Charge: 600
+    }
+  ]
+}
+
+TestData_combinetoD2950: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTabcombinetoD2950',
+  IntakeInformationTab: '@IntakeInformationTabcombinetoD2950',
+}
+LossContextTabcombinetoD2950: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabcombinetoD2950: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202268391',
+    'License #': '3203',
+    License NPI: '1447390224',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '46237',
+    Address Line 1: '6525 N Buffalo Dr Ste 180',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: [ {
+    DOS: '6/18/2020',
+    CDT Code: 'D2391',
+    Surface: 'O',
+    Tooth: '12',
+
+    Charge: 200
+  },
+    {
+      DOS: '6/18/2020',
+      CDT Code: 'D2950',
+      Tooth: '12',
+      Charge: 300
+    }
+  ]
+}
+
+TestData_ThreeServices: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices',
+}
+
+TestData_IssuePayment: {
+  IssuePaymentActionTab: {
+    Details: 'Testing Recovery Payment'
+  }
+}

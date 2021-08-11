@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.floragunn:search-guard-ssl:6.4.1-25.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/floragunn/search-guard-ssl/6.4.1-25.5/search-guard-ssl-6.4.1-25.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/floragunn/search-guard-ssl/6.4.1-25.5/search-guard-ssl-6.4.1-25.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/floragunn/search-guard-ssl/6.4.1-25.5/search-guard-ssl-6.4.1-25.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,33 @@
+TestData: {
+  StartEndorsementActionTab: {
+    Endorsement Date: $<today-85d>,
+    Endorsement Reason: Plan Design Change,
+  }
+}
+TestData_Endorsement: {
+  PolicyInformationTab: {},
+  CaseInstallationTab: {},
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinition',
+  ClassificationManagementTab: '@ClassificationManagementTab_COBRA',
+  PremiumSummaryTab: {}
+}
+PlanDefinition: {
+     'Copy Plan': 'CLICK',
+     'Plan To Copy From': index=1,
+     'New Plan Code': COBRA,
+     'New Plan Name': COBRA,
+     'Copy Plan Confirmation': 'CLICK'
+
+}
+ClassificationManagementTab_COBRA: {
+  Plan: 'COBRA-COBRA',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 2
+    }
+  ]
+}

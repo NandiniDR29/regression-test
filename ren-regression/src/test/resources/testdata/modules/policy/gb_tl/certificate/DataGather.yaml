@@ -1,0 +1,149 @@
+TestData1: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab',
+  CoveragesTab: [ '@SelectPlanCertificatePolicy', '@CoveragesTabBasicLife', '@CoveragesTabDependentBasicLifeInsurance' ],
+  PremiumSummaryTab: { }
+}
+
+CertificatePolicyTab: {
+  Effective Date: $<BOM>,
+  Billing Location: index=1,
+  Situs State: NY
+}
+
+SelectPlanCertificatePolicy: {
+  Plan Name: Basic Life
+}
+
+CoveragesTabBasicLife: {
+  Coverage Name: Employee Basic Life Insurance,
+  Enrollment Date: $<today>,
+  Add Participant: CLICK,
+  Participant Selection: index=0,
+  Beneficiaries:['@TestDataBeneficiaryCoverage1','@TestDataBeneficiaryCoverage2']
+}
+
+CoveragesTabDependentBasicLifeInsurance: {
+  Coverage Name: index=1,
+  Enrollment Date: $<today>,
+  Add Participant: CLICK,
+  Participant Selection: index=0,
+  Participant General Info: {
+   State / Province: NY,
+  },
+  Beneficiaries:['@TestDataBeneficiaryCoverage3','@TestDataBeneficiaryCoverage4']
+}
+
+TestDataBeneficiaryCoverage1: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: 'New Person',
+  Role Percent: '100',
+  Beneficiary General Info: {
+    Relationship to Insured: 'Disabled Dependent',
+    First Name: 'John$<rx:\d{8}>',
+    Last Name: 'Smith$<rx:\d{8}>'
+  }
+}
+
+
+TestDataBeneficiaryCoverage2: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: 'New Person',
+  Role Name: 'Secondary Beneficiary',
+  Role Percent: '100',
+  Beneficiary General Info: {
+    Relationship to Insured: 'Disabled Dependent',
+    First Name: 'John$<rx:\d{8}>',
+    Last Name: 'Smith$<rx:\d{8}>'
+  }
+}
+
+
+TestDataBeneficiaryCoverage3: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: index=1,
+  Role Percent: '100'
+}
+
+TestDataBeneficiaryCoverage4: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: 'New Person',
+  Role Name: 'Secondary Beneficiary',
+  Role Percent: '100',
+  Beneficiary General Info: {
+    Relationship to Insured: 'Disabled Dependent',
+    First Name: 'John$<rx:\d{8}>',
+    Last Name: 'Smith$<rx:\d{8}>'
+  }
+}
+
+
+InsuredTab: {
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Date of Birth: $<today-25y>,
+  Gender: Male,
+  Classification Group: index=1,
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Address Type: "Mailing",
+  Country: United States,
+  Zip / Post Code: '10003',
+  City: NewYork,
+  State / Province: NY,
+  Address Line 1: 'Address$<rx:\d{8}>',
+  Original Hire Date: $<BOM>,
+  Employment Type: index=1,
+  Payroll Frequency: index=1,
+  Job Title: 'Banking',
+  Annual Earnings: 5000
+
+}
+
+TestData2: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab',
+  CoveragesTab: [ '@SelectPlanCertificatePolicy', '@CoveragesTabBasicLifeNonNew' ],
+  PremiumSummaryTab: { }
+}
+
+CoveragesTabBasicLifeNonNew: {
+  Coverage Name: Employee Basic Life Insurance,
+  Enrollment Date: $<today>,
+  Add Participant: CLICK,
+  Participant Selection: index=0,
+  Beneficiaries:['@TestDataNonNewBeneficiaryCoverage1','@TestDataNonNewBeneficiaryCoverage2']
+}
+
+TestDataNonNewBeneficiaryCoverage1: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: 'New Non-Person',
+  Role Percent: '100',
+  Beneficiary Address Info Non-Person: {
+    City: Walnut Creek,
+    Address Line 1: 'Address$<rx:\d{8}>',
+    State / Province: CA,
+    Zip / Post Code: 94956
+  },
+  Beneficiary General Info Non-Person: {
+    Name - Legal: 'NameLegal$<rx:\d{8}>',
+    Relationship to Insured: 'Trust/Charity/Other'
+  }
+}
+
+TestDataNonNewBeneficiaryCoverage2: {
+  Add Beneficiary: 'click',
+  Beneficiary Selection: 'New Non-Person',
+  Role Name: 'Secondary Beneficiary',
+  Role Percent: '100',
+  Beneficiary General Info Non-Person: {
+    Name - Legal: 'NameLegal$<rx:\d{8}>',
+    Relationship to Insured: 'Trust/Charity/Other'
+  },
+  Beneficiary Address Info Non-Person:{
+    City: Walnut Creek,
+    Address Line 1: 'Address$<rx:\d{8}>',
+    State / Province: CA,
+    Zip / Post Code: 94956
+  }
+}

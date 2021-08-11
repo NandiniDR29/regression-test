@@ -1,0 +1,251 @@
+TestData: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionIssueActionTab',
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab1',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithDefaultCalendar1'],
+}
+
+TestData_TwoPlans: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: ['@PlanDefinitionTab_BASEPOS',  '@PlanDefinitionTab_COBRA'],
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithDefaultCalendar'],
+}
+
+IssueActionTab: {
+  Send To: Corporate Sponsor,
+  Corporate Sponsor Email: 'email$<rx:\d{8}>@test.com'
+}
+
+BillingAccountTabWithDefaultCalendar: {
+  Billing Group Name Key: BG002,
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Invoicing Calendar: 'contains=Calendar1'}
+}
+BillingAccountTabWithDefaultCalendar1: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Invoicing Calendar: 'contains=Calendar1'}
+}
+BillingGroupsActionTab1: {
+  Allow Manual Setup of Billing Accounts: 'Yes'
+}
+BillingGroupsActionTab: {
+  Add Billing Group: click,
+  Billing Group Name: BG002,
+  Billing Group Type: index=1,
+  Payment Mode: index=1,
+  Payor: 'contains=Sponsor',
+  Coverage: ['Dental - COBRA'],
+
+}
+
+PlanDefinitionTab_BASEPOS: {
+
+  PlanKey: 'BASEPOS-Basic EPOS',
+  Include Retirees: 'No'
+}
+
+PlanDefinitionTab_COBRA: {
+#  Change: true,
+  PlanKey: 'COBRA-COBRA',
+  Include Retirees: 'No'
+}
+
+
+InvoicingCalendarTab: {
+  Add Invoicing Calendar: {
+    Billing Calendar: Billing Calendar1,
+    Calendar Name: 'Calendar$<rx:\d{8}>',
+    Self Administered: true,
+    List Bill: true,
+    Effective Date: $<today-1y>,
+    Invoicing Frequency: Monthly,
+    Invoicing Rule: On Time,
+    Invoice Due Day: 6,
+    Generation Date Rule: 1
+  }
+}
+
+InvoicingCalendarComboBox: {
+  Select Invoicing Calendar: {
+    Invoicing Calendar: 'contains=Calendar'
+  }
+}
+
+PlanDefinitionIssueActionTab: {
+  Include Retirees: 'No'
+}
+
+BillingAccountTabWithCustomAnnuallyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'AnnuallyInvoice$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Non Premium: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Annual,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+      Generation Date Rule: 30,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=AnnuallyInvoice'}
+}
+BillingAccountTabWithCustomAnnuallyCalendarG11: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'AnnuallyInvoice$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Non Premium: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Annual,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+      Generation Date Rule: 30,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=AnnuallyInvoice' }
+}
+BillingAccounBasedonLoc: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'AnnuallyInvoice$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Non Premium: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Annual,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+      Generation Date Rule: 30,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=AnnuallyInvoice' }
+}
+BillingAccountTabWithCustomQuarterlyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: ' QuarterlyInArrears$<rx:\d{8}>',
+      Self Administered: true,
+      Non Premium: true,
+      List Bill: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Quarterly,
+      Invoicing Rule: In Arrears,
+      Invoice Due Day: 1,
+      Billing Period Offset: 3,
+      Generation Date Rule: 16,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains= QuarterlyInArrears'}
+}
+BillingAccountTabWithCustomSemiAnnuallyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'SemiAnnuallyInvoice$<rx:\d{8}>',
+      Self Administered: true,
+      Non Premium: true,
+      List Bill: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency:  Semi-annual,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+#      Billing Period Offset: 3,
+      Generation Date Rule: 16,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=SemiAnnuallyInvoice'}
+}
+BillingAccountTabWithCustomMonthlyCalendarOnTime: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'MonthlyInvoiceOnTime$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Monthly,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+      Generation Date Rule: 16,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=MonthlyInvoiceOnTime'}
+}
+BillingAccountTabWithCustomMonthlyCalendarInArrears: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'MonthlyInvoiceInArrears$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Non Premium: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Monthly,
+      Invoicing Rule: In Arrears,
+      Billing Period Offset: 1,
+      Invoice Due Day: 15,
+      Generation Date Rule: 14,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=MonthlyInvoiceInArrears'}
+}
+
+IssueActionTabMail: {
+  IssueActionTab: {
+    Address Line 1: '$<rx:Address\d{5}>',
+    Zip / Postal Code: '94596',
+    City: Walnut Creek,
+    State / Province: CA
+  }
+}

@@ -1,0 +1,701 @@
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialog1',
+  PolicyInformationTab: '@PolicyInformationTab1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan1', '@PlanDefinitionBasicLifeInsurance1', '@PlanDefinitionBasicAccidentalDeath1', '@PlanDefinitionDependentBasicLife_Remove02'],
+  ClassificationManagementTab: ['@ClassificationMgmtBasicAccidentalDeath1', '@ClassificationMgmtBasicLifeInsraunce1'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialog1: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab1: {
+  County Code: '061 - New York County',
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'Yes',
+  'Small Group?': 'No',
+  'Separate Or Combined Experience Rating?': 'Combined',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: ['@QA_Agency']
+}
+SelectPlan1: {
+  Plan: Basic Life
+}
+PlanDefinitionBasicLifeInsurance1: {
+  CoverageKey: Employee Basic Life Insurance,
+  Total Number of Eligible Lives: '150',
+  Required Participation %: 5%,
+  Census Volume Reduced: No,
+  Age Reduction Schedule: '65%@65 50%@70',
+  Waiver of Premium: Included,
+  SIC Code: 5411,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  },
+  Benefit Schedule: {
+    Flat Benefit Amount: 50000
+  }
+}
+PlanDefinitionDependentBasicLife1: {
+  CoverageKey: Dependent Basic Life Insurance (Spouse & Child),
+  Required Participation %: 5%,
+}
+PlanDefinitionBasicAccidentalDeath1: {
+  CoverageKey: Employee Basic Accidental Death and Dismemberment Insurance,
+  'Enhanced AD&D?': 'Yes',
+  Coverage Type: index=1,
+  Required Participation %: 100%,
+  Age Reduction Schedule: '65%@65 50%@70',
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+ClassificationMgmtBasicAccidentalDeath1: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtBasicLifeInsraunce1: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Life Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtDependentBasicLife1: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Dependent Basic Life Insurance (Spouse & Child),
+  Classification Group Name: index=1,
+}
+
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialog2',
+  PolicyInformationTab: '@PolicyInformationTab2',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan02','@PlanDefinitionBasicLifeInsurance02','@PlanDefinitionBasicAccidentalDeath02','@PlanDefinitionDependentBasicLife_Remove02'],
+  ClassificationManagementTab: ['@ClassificationMgmtBasicLifeInsraunce02','@ClassificationMgmtBasicAccidentalDeath02'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialog2: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab2: {
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'No',
+  Policy Effective Date: $<today-85d>,
+  'Small Group?': 'No',
+  'Use Experience Rating ?': No,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: ['@QA_Agency']
+}
+SelectPlan02: {
+  Plan: Basic Life
+}
+PlanDefinitionBasicLifeInsurance02: {
+  CoverageKey: Employee Basic Life Insurance,
+  Plan Name: 'Plan 4: Flat $100K',
+  Total Number of Eligible Lives: 750,
+  Age Reduction Schedule: '65%@65 50%@70',
+  Waiver of Premium: Included,
+  Contribution Type: Non-contributory,
+  Census Volume Reduced: No,
+  Required Participation %: 75%,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Benefit Schedule: {
+    Flat Benefit Amount: 100000
+  },
+  Guaranteed Issue: {
+    GI Amount: 100000
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+PlanDefinitionBasicAccidentalDeath02: {
+  CoverageKey: Employee Basic Accidental Death and Dismemberment Insurance,
+  Plan Name: 'Plan 4: Flat $100K',
+  'Enhanced AD&D?': 'No',
+  Age Reduction Schedule: '65%@65 50%@70',
+  Contribution Type: Voluntary,
+  Required Participation %: 60%,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Benefit Schedule: {
+    Benefit Type: 'Salary Multiplier - Single Value',
+    Salary Multiple: 1x,
+    Benefit Maximum Amount: '200000',
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+PlanDefinitionVoluntaryAccidentalDeath02: {
+  CoverageKey: Employee Voluntary Accidental Death and Dismemberment Insurance,
+  Plan Name: 'Plan 4: $10K increments to a maximum of $200K AD&D',
+  'Enhanced AD&D?': 'Yes',
+  'Self-administered?': 'No',
+  Required Participation %: 20%,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Benefit Schedule: {
+    Benefit Type: 'Specified Amount - Range Values',
+    Benefit Maximum Amount: '200000'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+PlanDefinitionVoluntaryLifeInsurance02: {
+  CoverageKey: Employee Voluntary Life Insurance,
+  Plan Name: 'Plan 4: $10K increments to a maximum of $200K',
+  Total Number of Eligible Lives: 300,
+  Contribution Type: 'contains=Voluntary',
+  Age Reduction Schedule: '65%@65 50%@70',
+  Required Participation %: 20%,
+  Accelerated Benefit Maximum Percentage: 75%,
+  Accelerated Benefit Minimum Amount: 10000,
+  Accelerated Benefit Minimum Percentage: 25%,
+  Continuation: 'Total Disability',
+  Benefit Schedule: {
+    Benefit Type: 'Specified Amount - Range Values',
+    Benefit Maximum Amount: 200000,
+    Increment: 10000
+  },
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+PlanDefinitionDependentBasicLife_Remove02: {
+  CoverageKeyRemove: Dependent Basic Life Insurance (Spouse & Child)
+}
+PlanDefinitionSpouseVoluntaryLifeInsurance_Remove02: {
+  CoverageKeyRemove: Spouse Voluntary Life Insurance
+}
+PlanDefinitionChildVoluntaryLifeInsurance_Remove02: {
+  CoverageKeyRemove: Child Voluntary Life Insurance
+}
+PlanDefinitionDependentVoluntaryAccidentalDeath_Remove02: {
+  CoverageKeyRemove: Dependent Voluntary Accidental Death and Dismemberment Insurance (Spouse & Child)
+}
+ClassificationMgmtBasicLifeInsraunce02: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Life Insurance,
+  Classification Group Name: index=1,
+  'Use Classification Sub-Groups?': 'No'
+}
+ClassificationMgmtBasicAccidentalDeath02: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtVoluntaryAccidentalDeath02: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Voluntary Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtVoluntaryLife02: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Voluntary Life Insurance,
+  Classification Group Name: index=1
+}
+
+
+TestData_Group3: {
+  InitiniateDialog: '@InitiniateDialog3',
+  PolicyInformationTab: '@PolicyInformationTab3',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlan3', '@PlanDefinitionBasicLifeInsurance3', '@PlanDefinitionBasicAccidentalDeath3', '@PlanDefinitionDependentBasicLife_Remove' ],
+  ClassificationManagementTab: [ '@ClassificationMgmtBasicAccidentalDeath3', '@ClassificationMgmtBasicLifeInsraunce3' ],
+  PremiumSummaryTab: {}
+}
+InitiniateDialog3: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab3: {
+  #County Code: '001 - Albany County',
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'Yes',
+  'Small Group?': 'No',
+  'Use Experience Rating ?': 'No',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: [ '@QA_Agency' ]
+}
+SelectPlan3: {
+  Plan: Basic Life
+}
+PlanDefinitionBasicLifeInsurance3: {
+  CoverageKey: Employee Basic Life Insurance,
+  Census Type: Enrolled,
+  Total Number of Eligible Lives: 49,
+  Contribution Type: Non-contributory,
+  Required Participation %: 75%,
+  Census Volume : No,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  },
+  Benefit Schedule: {
+    Benefit Type: Salary Multiplier - Single Value,
+    Salary Multiple: 2x,
+    Benefit Maximum Amount: 150000
+  },
+  Guaranteed Issue: {
+    GI Amount: 100000
+  }
+}
+PlanDefinitionBasicAccidentalDeath3: {
+  CoverageKey: Employee Basic Accidental Death and Dismemberment Insurance,
+  'Enhanced AD&D?': 'Yes',
+  Assumed Participation %: 75%,
+  Coverage Type: index=0,
+  Contribution Type: Non-contributory,
+  Required Participation %: 70%,
+  Census Volume Reduced: No,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Contributory,
+    Participant Contribution %: 50,
+    Required Participation %: 75%,
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  },
+  Benefit Schedule: {
+    Benefit Type: Salary Multiplier - Single Value,
+    Salary Multiple: 2x,
+    Benefit Maximum Amount: 150000
+  },
+}
+ClassificationMgmtBasicAccidentalDeath3: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtBasicLifeInsraunce3: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Life Insurance,
+  Classification Group Name: index=1
+}
+
+TestData_Group4: {
+  InitiniateDialog: '@InitiniateDialog4',
+  PolicyInformationTab: '@PolicyInformationTab4',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan4', '@PlanDefinitionVolLifeInsurance4', '@PlanDefinitionVlAccidentalDeath4', '@SpouseVoluntaryLifeInsurance','@ChildVoluntaryLifeInsurance','@PlanDefinitionDependentVL4'],
+  ClassificationManagementTab: [ '@ClassificationMgmtVolLifeInsurance4', '@ClassificationMgmtVlAccidentalDeath4', '@ClassificationMgmtSpouseVoluntaryLifeInsurance','@ClassificationMgmtChildVoluntaryLifeInsurance','@ClassificationMgmtDependentVL4'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialog4: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab4: {
+  Policy Effective Date: $<today-85d>,
+  Rate Guarantee (Months): 24,
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'Yes',
+  'Small Group?': 'No',
+  'Use Experience Rating ?': 'No',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: ['@QA_Agency']
+}
+SelectPlan4: {
+  Plan: Voluntary Life
+}
+PlanDefinitionVolLifeInsurance4: {
+  CoverageKey: Employee Voluntary Life Insurance,
+  Plan Name: 'Plan 3: $500K max in $5K increments',
+  Required Participation %: '20%',
+  Contribution Type: Voluntary,
+  Total Number of Eligible Lives: '250',
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'Yes',
+    'Minimum Hourly Requirement (hours per week)': 30,
+    Eligibility Waiting Period Definition: 'Amount and mode only',
+    Waiting Period Amount: 90,
+    Waiting Period Mode: Days,
+    'Waiting Period Waived For Current Employees?': 'No',
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12,
+  },
+  Benefit Schedule: {
+    Benefit Type: 'Specified Amount - Range Values',
+    Benefit Maximum Amount: 500000,
+    Increment: '10000',
+  },
+  Guaranteed Issue: {
+    GI Amount: 100000
+  }
+}
+PlanDefinitionVlAccidentalDeath4: {
+  CoverageKey: Employee Voluntary Accidental Death and Dismemberment Insurance,
+  Plan Name: 'Plan 3: $500K max in $5K increments AD&D',
+  'Enhanced AD&D?': 'No',
+  Required Participation %: '20%',
+  Contribution Type: Voluntary,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'Yes',
+    'Minimum Hourly Requirement (hours per week)': 30,
+    Eligibility Waiting Period Definition: 'contains=Amount',
+    Waiting Period Amount: 90,
+    Waiting Period Mode: Days,
+   'Waiting Period Waived For Current Employees?': 'No',
+  },
+  Benefit Schedule: {
+    Benefit Type: 'Specified Amount - Range Values',
+    Benefit Maximum Amount: 500000,
+    Increment: '5000',
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+SpouseVoluntaryLifeInsurance: {
+  CoverageKey: Spouse Voluntary Life Insurance,
+  Plan Name: 'Sp Vol Life 50%',
+  Required Participation %: '20%',
+  Contribution Type: Voluntary,
+  Eligibility: {
+  'Include domestic partner?': Yes,
+#    'Does Minimum Hourly Requirement Apply?': 'No',
+#    Eligibility Waiting Period Definition: 'None',
+#    'Waiting Period Waived For Current Employees?': 'No',
+  },
+#  Schedule of Continuation Provision: {
+#    'Sabbatical (months)': 12,
+#  },
+  'Benefit Schedule - Spouse': {
+    Benefit Type: 'Specified Amount - Range Values',
+    Benefit Maximum Amount: '25000',
+    Increment: '5000',
+    Coverage up to Max of Employee Coverage: '50%',
+  },
+  Guaranteed Issue: {
+    GI Amount: 25000
+  }
+}
+ChildVoluntaryLifeInsurance: {
+  CoverageKey: 	Child Voluntary Life Insurance,
+  Plan Name: 'Flat 5k child',
+  Required Participation %: '20%',
+  Contribution Type: Voluntary,
+  Eligibility: {
+    'Child/Student Termination Age': 26,
+  },
+  'Benefit Schedule - Child': {
+    Benefit Type: 'Specified Amount - Single Value',
+    6 months to max age: '5000',
+    Coverage up to Max of Employee Coverage: '50%'
+  }
+}
+PlanDefinitionDependentVL4: {
+  CoverageKey: Dependent Voluntary Accidental Death and Dismemberment Insurance (Spouse & Child),
+  Plan Name: 'Vol Dep AD&D',
+  'Enhanced AD&D?': No,
+  'Required Participation %': '20%',
+  Contribution Type: Voluntary,
+  Rating: {
+    Rate Basis: 'Per $1,000',
+  },
+  'Benefit Schedule - Spouse': {
+    Benefit Type: 'Specified Amount - Range Values',
+    Maximum Benefit Amount: 25000,
+    Coverage up to Max of Employee Coverage: '50%',
+  },
+  'Benefit Schedule - Child': {
+    Maximum Benefit Amount: 5000,
+    Coverage up to Max of Employee Coverage: 50%
+  }
+}
+ClassificationMgmtVolLifeInsurance4: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Voluntary Life Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtVlAccidentalDeath4: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Coverage Name: Employee Voluntary Accidental Death and Dismemberment Insurance
+
+}
+ClassificationMgmtSpouseVoluntaryLifeInsurance: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Spouse Voluntary Life Insurance,
+  Classification Group Name: index=1,
+}
+ClassificationMgmtChildVoluntaryLifeInsurance: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Child Voluntary Life Insurance,
+  Classification Group Name: index=1,
+}
+ClassificationMgmtDependentVL4: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Dependent Voluntary Accidental Death and Dismemberment Insurance (Spouse & Child),
+  Classification Group Name: index=1,
+}
+
+TestData_Group5: {
+  InitiniateDialog: '@InitiniateDialog5',
+  PolicyInformationTab: '@PolicyInformationTab5',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlan5', '@PlanDefinitionBasicLifeInsurance5', '@PlanDefinitionBasicAccidentalDeath5', '@PlanDefinitionDependentBasicLife5' ],
+  ClassificationManagementTab: [ '@ClassificationMgmtBasicAccidentalDeath5', '@ClassificationMgmtBasicLifeInsraunce5', '@ClassificationMgmtDependentBasicLife5'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialog5: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab5: {
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'Yes',
+  'Small Group?': 'No',
+  'Situs State': 'DE',
+  'Use Experience Rating ?': 'No',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: [ '@QA_Agency5' ]
+}
+QA_Agency5: {
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  #Agent Sub Producer: 'index=1'
+}
+SelectPlan5: {
+  Plan: Basic Life
+}
+PlanDefinitionBasicLifeInsurance5: {
+  CoverageKey: Employee Basic Life Insurance,
+  Census Type: Enrolled,
+  Contribution Type: Contributory,
+  Total Number of Eligible Lives: 75,
+  Participant Contribution %: 50,
+  Required Participation %: 75%,
+  Waiver of Premium: index=0,
+  #  SIC Code: 5411,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  },
+  Benefit Schedule: {
+    Flat Benefit Amount: 200000
+  },
+  Guaranteed Issue: {
+    GI Amount: 100000
+  }
+}
+PlanDefinitionBasicAccidentalDeath5: {
+  CoverageKey: Employee Basic Accidental Death and Dismemberment Insurance,
+  Census Type: index=0,
+  'Enhanced AD&D?': 'Yes',
+  #  Coverage Type: index=1,
+  Contribution Type: Contributory,
+  Participant Contribution %: 50,
+  Required Participation %: 75%,
+  #  Age Reduction Schedule: index=0,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  },
+  Benefit Schedule: {
+    Flat Benefit Amount: 200000
+  },
+}
+PlanDefinitionDependentBasicLife5: {
+  CoverageKey: Dependent Basic Life Insurance (Spouse & Child),
+  Contribution Type: Contributory,
+  Participant Contribution %: 50,
+  Required Participation %: 75%,
+  Benefit Schedule - Spouse: {
+    Flat Benefit Amount: 20000
+  },
+  Benefit Schedule - Child: {
+    6 months to max age: 5000
+  }
+}
+ClassificationMgmtBasicAccidentalDeath5: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtBasicLifeInsraunce5: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Life Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtDependentBasicLife5: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Dependent Basic Life Insurance (Spouse & Child),
+  Classification Group Name: index=1,
+}
+
+TestData_Group6: {
+  InitiniateDialog: '@InitiniateDialogG6',
+  PolicyInformationTab: '@PolicyInformationTab6',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan6', '@PlanDefinitionBasicLifeInsurance6','@PlanDefinitionBasicAccidentalDeath6','@PlanDefinitionDependentBasicLife_Remove'],
+  ClassificationManagementTab: ['@ClassificationMgmtBasicLifeInsraunce6','@ClassificationMgmtBasicAccidentalDeath6'],
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG6: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Term Life Insurance,
+  Delivery Model: Group
+}
+PolicyInformationTab6: {
+  Policy Effective Date: $<today-85d>,
+  'Prior Life Coverage': 'No',
+  'Has Continuity of Coverage?': 'Yes',
+  'Small Group?': 'Yes',
+  'Use Experience Rating ?': 'No',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Assigned Agencies: ['@QA_Agency']
+}
+SelectPlan6: {
+  Plan: Basic Life
+}
+PlanDefinitionBasicLifeInsurance6: {
+  CoverageKey: Employee Basic Life Insurance,
+  Required Participation %: 100%,
+  Enrollment Underwriting Offer: Changing with EOI Only,
+  Contribution Type: Non-contributory,
+  Total Number of Eligible Lives: 9,
+  Census Volume Reduced: No,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No'
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12,
+  },
+  Benefit Schedule: {
+    Flat Benefit Amount: 50000,
+  },
+  Guaranteed Issue: {
+    GI Amount: 50000
+  }
+}
+PlanDefinitionBasicAccidentalDeath6: {
+  CoverageKey: Employee Basic Accidental Death and Dismemberment Insurance,
+  'Enhanced AD&D?': 'Yes',
+  Contribution Type: Non-contributory,
+  Required Participation %: 100%,
+  Census Volume Reduced: No,
+  Eligibility: {
+    'Does Minimum Hourly Requirement Apply?': 'No',
+    Eligibility Waiting Period Definition: 'None',
+    'Waiting Period Waived For Current Employees?': 'No',
+  },
+  Schedule of Continuation Provision: {
+    'Sabbatical (months)': 12
+  }
+}
+PlanDefinitionDependentBasicLife_Remove: {
+  CoverageKeyRemove: Dependent Basic Life Insurance (Spouse & Child)
+}
+ClassificationMgmtBasicLifeInsraunce6: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Life Insurance,
+  Classification Group Name: index=1
+}
+ClassificationMgmtBasicAccidentalDeath6: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Coverage Name: Employee Basic Accidental Death and Dismemberment Insurance,
+  Classification Group Name: index=1
+}
+
+QA_Agency: {
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+}
+PlanDefinitionSpouseVoluntaryLifeInsurance_Remove: {
+  CoverageKeyRemove: Spouse Voluntary Life Insurance
+}
+PlanDefinitionChildVoluntary_Remove: {
+  CoverageKeyRemove: Child Voluntary Life Insurance
+}
+PlanDefinitionDependentVoluntaryAccidentalDeath_Remove: {
+  CoverageKeyRemove: Dependent Voluntary Accidental Death and Dismemberment Insurance (Spouse & Child)
+}
+PlanDefinitionBasicAccidentalDeath_Remove: {
+  CoverageKeyRemove: Employee Basic Accidental Death and Dismemberment Insurance
+}
+

@@ -1,0 +1,32 @@
+TestData: {
+  PolicyInformationParticipantParticipantInformationTab: '@PolicyInformationParticipantParticipantInformationTab',
+  BenefitsLTDInjuryPartyInformationTab: '@BenefitsLTDInjuryPartyInformationTab',
+}
+
+PolicyInformationParticipantParticipantInformationTab: {
+  Party Name: index=1,
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Date of Birth: $<today-25y>,
+  Contact Preference: Mail,
+  Zip / Postal Code: '94596',
+  Address Line 1: Address Line 1,
+  Preferred Payment method: EFT,
+  Bank Name: index=1,
+  Bank Account Number: '$<rx:\d{8}>',
+  Bank Transit / Routing Number: '$<rx:\d{9}>',
+  Bank Account Type: index=1,
+  Subject to International ACH Formatting: Yes,
+  Covered Earnings: 1000
+}
+
+BenefitsLTDInjuryPartyInformationTab: {
+  Associate Policy Party: index=1,
+  Preferred Payment method: EFT,
+  Bank Name: index=1,
+  Bank Account Number: '$<rx:\d{8}>',
+  Bank Transit / Routing Number: '$<rx:\d{9}>',
+  Bank Account Type: index=1,
+  Subject to International ACH Formatting: Yes,
+  Contact Preference: Mail
+}

@@ -1,0 +1,324 @@
+# Test data for 1st customer
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialogFirstCustomer',
+  PolicyInformationTab: '@PolicyInformationTabFirstCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan', '@PlanDefinitionTabFirstCustomer_NC'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 1st customer
+InitiniateDialogFirstCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 1st customer
+PolicyInformationTabFirstCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: NY,
+  County Code: 061 - New York County,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition Tab for 1st customer
+PlanDefinitionTabFirstCustomer_NC: {
+  PlanKey: NC-NC,
+  Required Participation %: 100%,
+  Total Number of Eligible Lives: 150,
+  STAT Offset Amount: 0,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 15.00,
+    Eligibility Waiting Period Definition: First of the month following (amount and mode),
+    Waiting Period: 30,
+    Waiting Period Mode: Days
+  },
+  Options: {},
+  Sponsor/Participant Funding Structure: {},
+  Benefit Schedule: {
+    Benefit Percentage: 60%,
+    Maximum Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): index=0,
+    Elimination Period - Sickness (Calendar Days): index=1,
+    Maximum Payment Duration: 13
+  }
+}
+
+# Test data for 2nd customer
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialogSecondCustomer',
+  PolicyInformationTab: '@PolicyInformationTabSecondCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan', '@PlanDefinitionTabSecondCustomer_NC'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 2nd customer
+InitiniateDialogSecondCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 2nd customer
+PolicyInformationTabSecondCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: TX,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition Tab for 2nd customer
+PlanDefinitionTabSecondCustomer_NC: {
+  PlanKey: NC-NC,
+  Required Participation %: 100%,
+  Sponsor Payment Mode: 12,
+  Total Number of Eligible Lives: 750,
+  STAT Offset Amount: 00,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 15.00,
+    Eligibility Waiting Period Definition: First of the month following (amount and mode),
+    Waiting Period: 30,
+    Waiting Period Mode: Days
+  },
+  Options: {},
+  Sponsor/Participant Funding Structure: {},
+  Benefit Schedule: {
+    Benefit Percentage: 60%,
+    Maximum Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): index=3,
+    Elimination Period - Sickness (Calendar Days): index=2,
+    Maximum Payment Duration: 13
+  }
+}
+
+# Test data for 3rd customer
+TestData_Group3: {
+  InitiniateDialog: '@InitiniateDialogThirdCustomer',
+  PolicyInformationTab: '@PolicyInformationTabThirdCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan_CON', '@PlanDefinitionTabThirdCustomer_CON'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 3rd customer
+InitiniateDialogThirdCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 3rd customer
+PolicyInformationTabThirdCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: GA,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition Tab for 3rd customer
+PlanDefinitionTabThirdCustomer_CON: {
+  PlanKey: CON-CON,
+  Participant Contribution %: 50,
+  Total Number of Eligible Lives: 49,
+  STAT Offset Amount: 0,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    Eligibility Waiting Period Definition: 'contains=Amount',
+    Waiting Period: 90,
+    Waiting Period Mode: Days
+  },
+  Benefit Schedule: {
+    Benefit Percentage: 60%,
+    Maximum Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): index=0,
+    Elimination Period - Sickness (Calendar Days): index=1,
+    Maximum Payment Duration: 13
+  },
+  Options: {}
+}
+
+# Test data for 4th customer
+TestData_Group4: {
+  InitiniateDialog: '@InitiniateDialogFourthCustomer',
+  PolicyInformationTab: '@PolicyInformationTabFourthCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan', '@PlanDefinitionTabFourthCustomerG4'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 4th customer
+InitiniateDialogFourthCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=STDCase',
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 4th customer
+PolicyInformationTabFourthCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: NV,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition Tab for 4th customer
+PlanDefinitionTabFourthCustomerG4: {
+  PlanKey: NC-NC,
+  Required Participation %: 100%,
+  Assumed Participation %: 100%,
+  Contribution Type: Non-contributory,
+  Total Number of Eligible Lives: 250,
+  STAT Offset Amount: 0,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    Eligibility Waiting Period Definition: 'contains=Amount',
+    Waiting Period: 90,
+    Waiting Period Mode: Days
+  },
+  Benefit Schedule: {
+    Benefit Type: 'contains=Specified',
+    Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): 14,
+    Elimination Period - Sickness (Calendar Days): 14,
+    Maximum Payment Duration: 13
+  },
+  Options: {}
+}
+# Test data for 5th customer
+TestData_Group5: {
+  InitiniateDialog: '@InitiniateDialogFifthCustomer',
+  PolicyInformationTab: '@PolicyInformationTabFifthCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan_VOL', '@PlanDefinitionTabFifthCustomer_VOL'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 5th customer
+InitiniateDialogFifthCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 5th customer
+PolicyInformationTabFifthCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: DE,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition tb 5th customer
+PlanDefinitionTabFifthCustomer_VOL: {
+  PlanKey: VOL-VOL,
+  Total Number of Eligible Lives: 75,
+  STAT Offset Amount: 0,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 15.00,
+    Eligibility Waiting Period Definition: First of the month following (amount and mode),
+    Waiting Period: 30,
+    Waiting Period Mode: Days
+  },
+  Benefit Schedule: {
+    Benefit Percentage: 60%,
+    Maximum Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): index=0,
+    Elimination Period - Sickness (Calendar Days): index=1,
+    Maximum Payment Duration: 13
+  }
+}
+
+# Test data for 6th customer
+TestData_Group6: {
+  InitiniateDialog: '@InitiniateDialogSixthCustomer',
+  PolicyInformationTab: '@PolicyInformationTabSixthCustomer',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan_VOL', '@PlanDefinitionTabSixthCustomer_VOL'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog for 6th customer
+InitiniateDialogSixthCustomer: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Short Term Disability,
+  Delivery Model: Group
+}
+# Policy Information tab for 6th customer
+PolicyInformationTabSixthCustomer: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: FL,
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+# Plan Definition tb 6th customer
+PlanDefinitionTabSixthCustomer_VOL: {
+  PlanKey: VOL-VOL,
+  Total Number of Eligible Lives: 9,
+  STAT Offset Amount: 0,
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 15.00,
+    Eligibility Waiting Period Definition: First of the month following (amount and mode),
+    Waiting Period: 30,
+    Waiting Period Mode: Days
+  },
+  Benefit Schedule: {
+    Benefit Percentage: 60%,
+    Maximum Weekly Benefit Amount: 500,
+    Elimination Period - Injury (Calendar Days): index=3,
+    Elimination Period - Sickness (Calendar Days): index=2,
+    Maximum Payment Duration: 13
+  }
+}
+
+SelectPlan: {
+  Plan: NC
+}
+
+SelectPlan_CON: {
+  Plan: CON
+}
+
+SelectPlan_VOL: {
+  Plan: VOL
+}
+
+ClassificationManagementTab: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  'Use Classification Sub-Groups?': No
+}
+
+

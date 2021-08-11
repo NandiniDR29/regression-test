@@ -1,0 +1,13 @@
+TestData_Upd_BenefitCoverageEvaluation: {
+  BenefitStatutorySTDInjuryPartyInformationTab: {},
+  BenefitStatutorySTDIncidentTab: {},
+  BenefitCoverageEvaluationTab: '@BenefitCoverageEvaluationTab'
+}
+
+BenefitCoverageEvaluationTab: {
+  Eligibility Verified: 'Yes',
+  Date of Verification: $<today>,
+  Supporting Documentation Received: $<today>,
+  Insured Person Coverage Effective Date: $<today>,
+  Approved Through Date: $<today+1y>
+}

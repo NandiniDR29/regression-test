@@ -1,0 +1,69 @@
+TestDataLife: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab1',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataDental: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab2',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataSTD: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab3',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataLTD: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab4',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataAccident: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab5',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataSTAT: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab6',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+GBCommissionStrategyTab1: {
+  Product Code-Name: 'GB_TL - Term Life Insurance',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab2: {
+  Product Code-Name: 'GB_DN - Group Dental',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab3: {
+  Product Code-Name: 'GB_DI_STD - Short Term Disability',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab4: {
+  Product Code-Name: 'GB_DI_LTD - Long Term Disability',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab5: {
+  Product Code-Name: 'GB_AC - Group pName',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab6: {
+  Product Code-Name: 'GB_ST - Statutory Disability Insurance',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+
+Tiered_CommissionRule: {
+  Commission Type: 'Cumulative Tiered',
+  AddCommissionRule: {
+    Sales Channel: 'Commission Group Channel',
+    Select Sales Channel: {
+
+      Commission Channel Group Name: ''
+    },
+    Geography Selection: 'Defined for All locations',
+    Coverages: [ALL],
+    Tier 1: [0.00, '15000.00', 15.00],
+    Compensation Types : 'Commission'
+  }
+}

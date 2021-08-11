@@ -1,0 +1,76 @@
+TestData_Claim: {
+  PolicyInformationParticipantParticipantInformationTab: '@PolicyInformationParticipantParticipantInformationTab',
+  PolicyInformationParticipantParticipantCoverageTab: '@PolicyInformationParticipantParticipantCoverageTab',
+  BenefitsStatutorySTDInjuryPartyInformationTab: '@BenefitsSTInjuryPartyInformationTab',
+  BenefitsStatutorySTDIncidentTab: '@BenefitsSTIncidentTab',
+}
+
+PolicyInformationParticipantParticipantInformationTab: {
+  Party Name: index=1,
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Date of Birth: $<today-25y>,
+  Contact Preference: Mail,
+  Zip / Postal Code: '94596',
+  Address Line 1: Address Line 1,
+  Preferred Payment method: Check,
+  Covered Earnings: 1000,
+  Work State: NY,
+  State / Province: NY,
+  Participant Prior Earnings: {
+    'Week no.': 1,
+    Number of days worked: 5,
+    Gross amount paid: 1000
+  }
+}
+
+PolicyInformationParticipantParticipantCoverageTab: {
+  Plan: index=1,
+  Coverage Name: index=1,
+  Percentage of Taxable: 100
+}
+
+BenefitsSTInjuryPartyInformationTab: {
+  Associate Policy Party: index=1,
+  Preferred Payment method: Check,
+  State / Province: NY,
+  YTD Taxable Wage: {
+    YTD Taxable Wage: 2000,
+    Year: 2020,
+  }
+}
+
+BenefitsSTIncidentTab: {
+  'Accident?': 'No',
+  Hospital: 'No',
+  Surgery: 'No',
+  Date of Hire: $<today-1d>,
+  Disability Date: {
+    Type: Date Last Worked,
+    Date: $<today-7M>,
+  }
+}
+
+TestData_CalculateASingleBenefitAmount: {
+  CoveragesActionTab: {
+    Associated Insurable Risk: index=1,
+    Coverage: index=2
+  },
+  OtherIncomeBenefitActionTab: {},
+  DeductionsActionTab: {},
+  TaxActionTab: [
+    {
+      Tax Type: Federal Tax,
+      Beginning Date: $<today-1M>,
+      Through Date: $<today+1y>,
+      Tax Amount: 100,
+    },{
+      Tax Type: State Tax,
+      Beginning Date: $<today-1M>,
+      Through Date: $<today+1y>,
+      Marital Status: Married,
+      Exemptions: 123,
+      Personal Exemptions: 123,
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+TestDataSTAT: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+GBCommissionStrategyTab: {
+  Product Code-Name: 'GB_ST - Statutory Disability Insurance',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+Tiered_CommissionRule: {
+  Commission Type: 'Cumulative Tiered',
+  AddCommissionRule: {
+    Sales Channel: 'Commission Group Channel',
+    Select Sales Channel: {
+
+      Commission Channel Group Name: ''
+    },
+    Geography Selection: 'Defined for All locations',
+    Coverages: [ALL],
+    Tier 1: [0.00, '15000.00', 15.00],
+    Compensation Types : 'Commission'
+  }
+}

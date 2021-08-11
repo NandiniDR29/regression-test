@@ -1,0 +1,58 @@
+TestData: {
+  AgencyInfoTab: '@AgencyInfoTab',
+  ContactInfoTab: '@ContactInfoTab',
+  BankingDetailsTab: '@BankingDetailsTab',
+}
+
+AgencyInfoTab: {
+  Channel: Agency,
+  Agency Type: index=1,
+  Agency Code: 'RegAgCode$<rx:\d{8}>',
+  Agency Name: 'RegAgency$<rx:\d{8}>',
+  'Agency Name - Alternate': AlternateName,
+  Country: United States,
+  Agency Effective Date: $<today-1d>,
+  Agency Expiration Date: $<today+5y>,
+  Tax ID: '11-$<rx:\d{7}>',
+  External Reference ID: '$<rx:\d{5}>',
+  Primary Agency: 'Yes',
+  Region: {
+    Name: Albany,
+  },
+  'Applicable for commissions Extract?': 'Yes',
+  Commission Payment Sent To: Agency (Office),
+#  Commission Groups: 'Producers - Standard Broker Schedule',
+  'Eligible for Agency Billing?': 'Yes',
+  Agency Bill Due Day: 5,
+  Retain Commission From Pay: 'Yes',
+  Exclude commissions from billing: 'No'
+}
+  
+ContactInfoTab: {
+  Zip / Postal Code: 10001,
+  Address Line 1: 47 W 13th St New York NY 10011 USA,
+  City: New York,
+  State / Province: NY,
+  'Is Mailing Address the same as Physical Address?': 'Yes',
+  'Copy insured correspondence required?': 'No',
+  'Phone #': '1234567890',
+  'Fax #': '1234567890',
+  'Extension #': '123',
+  Add Contact: {
+    First Name: 'FName_$<rx:\d{8}>',
+    Last Name: 'LName_$<rx:\d{8}>'
+  }
+}
+  
+BankingDetailsTab: {
+  Settlement Method: Check
+}
+
+TestData_Search: {
+  AgencyVendorSearchTab: {
+    Agency Name: ''
+  }
+}
+AgencyCommissionInfoUpdate: {
+  Commission Groups: 'Producers - Standard Broker Schedule'
+}

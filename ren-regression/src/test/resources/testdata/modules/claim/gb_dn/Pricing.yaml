@@ -1,0 +1,324 @@
+TestData_PricingClaim1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim1',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim1',
+}
+
+
+LossContextTab_PricingClaim1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '464544769',
+    'License #': '20693',
+    License NPI: '1528328507',
+    License State/Province: 'MI',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '495033525',
+    Address Line 1: '901 Michigan St NE',
+    City: 'Grand Rapids',
+    State/Province: 'MI',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '09/04/2019',
+    CDT Code: 'D2393',
+    Charge: '281.00',
+    Tooth: 14,
+    Surface: 'B,O,L'
+
+  }
+}
+
+
+
+TestData_PricingClaim2: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim2',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim2',
+}
+
+
+LossContextTab_PricingClaim2: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim2: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '204567542',
+    'License #': '4601',
+    License NPI: '1154352904',
+    License State/Province: 'TN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '372073214',
+    Address Line 1: '3067 Brick Church Pike',
+    City: 'Nashville',
+    State/Province: 'TN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '09/23/2019',
+    CDT Code: 'D0120',
+    Charge: '69.00',
+  }
+}
+
+
+TestData_PricingClaim3: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim3',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim3',
+}
+
+
+LossContextTab_PricingClaim3: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim3: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '208015739',
+    'License #': '15058',
+    License NPI: '1922127307',
+    License State/Province: 'TX',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '762483703',
+    Address Line 1: '1675 Keller Pkwy',
+    City: 'Keller',
+    State/Province: 'TX',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/13/2019',
+    CDT Code: 'D4910',
+    Charge: '151.00',
+  }
+}
+
+
+
+TestData_PricingClaim4: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim4',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim4',
+}
+
+
+LossContextTab_PricingClaim4: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim4: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '651053975',
+    'License #': '17069',
+    License NPI: '1962604835',
+    License State/Province: 'FL',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '330103527',
+    Address Line 1: '1491 E 4th Ave',
+    City: 'Hialeah',
+    State/Province: 'FL',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '11/22/2019',
+    CDT Code: 'D7210',
+    Charge: '550.00',
+    Tooth: 5,
+  }
+}
+
+
+
+TestData_PricingClaim5: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim5',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim5',
+}
+
+
+LossContextTab_PricingClaim5: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim5: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '453667181',
+    'License #': 'S6152',
+    License NPI: '1942693403',
+    License State/Province: 'NV',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '891440520',
+    Address Line 1: '653 N Town Center Dr Ste 606',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '01/08/2020',
+    CDT Code: 'D2999',
+    Charge: '100.00',
+    Tooth: 3,
+  }
+}
+
+
+
+TestData_PricingClaim6: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim6',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim6',
+}
+
+
+LossContextTab_PricingClaim6: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim6: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '412257773',
+    'License #': '12234',
+    License NPI: '1114031754',
+    License State/Province: 'MN',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '553035293',
+    Address Line 1: '7600 Sunwood Dr NW',
+    City: 'Anoka',
+    State/Province: 'MN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '12/30/2019',
+    CDT Code: 'D0120',
+    Charge: '66.00',
+  }
+}
+
+
+
+
+TestData_PricingClaim7: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim7',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim7',
+}
+
+
+LossContextTab_PricingClaim7: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim7: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '550464173',
+    'License #': '2967',
+    License NPI: '1770694176',
+    License State/Province: 'WV',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '253099466',
+    Address Line 1: '1000 Parkway Rd Ste D',
+    City: 'Anoka',
+    State/Province: 'WV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '01/02/2020',
+    CDT Code: 'D0120',
+    Charge: '40.00',
+  }
+}
+
+
+
+
+
+TestData_PricingClaim8: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_PricingClaim8',
+  IntakeInformationTab: '@IntakeInformationTab_PricingClaim8',
+}
+
+
+LossContextTab_PricingClaim8: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTab_PricingClaim8: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '202268391',
+    'License #': '3203',
+    License NPI: '1447390224',
+    License State/Province: 'NV',
+    Specialty: General Practitioner,
+    Zip/Postal Code: '891314078',
+    Address Line 1: '6525 N Buffalo Dr Ste 180',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Submitted Services: {
+    DOS: '01/02/2020',
+    CDT Code: 'D0140',
+    Charge: '102.00',
+  }
+}

@@ -1,0 +1,484 @@
+TestData_Group4: {
+  InitiniateDialog: '@InitiniateDialogG4',
+  PolicyInformationTab: '@PolicyInformationTab4',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan4', '@PlanDefinitionTab_PlanB4'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanB4',
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG4: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTab4: {
+  Policy Effective Date: $<today-85d>,
+  Rate Guarantee (Months): 24,
+  'Prior Carrier Name': index=1,
+  Total Number of Eligible Lives: '250',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+    Internal Team: {
+      Sales Representative: index=1,
+      Sales Support Associate: index=1,
+    }
+  #Agent Sub Producer: 'QA QA user'
+}
+SelectPlan4: {
+  Plan: 10/25 Plan B 130
+}
+PlanDefinitionTab_PlanB4: {
+  PlanKey: PlanB-10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+  },
+  Eligibility: {
+    'Minimum Hourly Requirement (hours per week)': 30,
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: 'contains=Amount',
+    Waiting Period Amount: 90,
+    Waiting Period Mode: Days,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=6
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanB4: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 100
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 50
+    }
+  ]
+}
+
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialogG2',
+  PolicyInformationTab: '@PolicyInformationTab2',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan2', '@PlanDefinitionTab_PlanB2'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanB2',
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG2: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTab2: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Prior Carrier Name: index=3,
+  Situs State: TX,
+  Total Number of Eligible Lives: '750',
+  'Group is an Association?': 'No',
+  'Primary Agency?': 'Yes',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+  # Agent Sub Producer: ''
+}
+SelectPlan2: {
+  Plan: 10/25 Plan B 130
+}
+PlanDefinitionTab_PlanB2: {
+  PlanKey: PlanB-10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+  },
+  Eligibility: {
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: None,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=15
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanB2: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 300
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 200
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 100
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 150
+    }
+  ]
+}
+
+TestData_Group6: {
+  InitiniateDialog: '@InitiniateDialogG6',
+  PolicyInformationTab: '@PolicyInformationTabG6',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanG6', '@PlanDefinitionTab_PlanBG6'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanBG6',
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG6: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTabG6: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+#  Situs State: FL,
+  Prior Carrier Name: 'EyeMed',
+  Total Number of Eligible Lives: '9',
+  'Primary Agency?': 'Yes',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+  # Agent Sub Producer: ''
+}
+SelectPlanG6: {
+  Plan: 10/25 Plan B 130
+}
+PlanDefinitionTab_PlanBG6: {
+  PlanKey: PlanB-10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+  },
+  Eligibility: {
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: None,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=6
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanBG6: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 1
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 2
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 1
+    }
+  ]
+}
+TestData_Group10: {
+  InitiniateDialog: '@InitiniateDialog10',
+  PolicyInformationTab: '@PolicyInformationTabG10',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanG6', '@PlanDefinitionTab_PlanBG10'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanBG10',
+  PremiumSummaryTab: {}
+}
+InitiniateDialog10: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTabG10: {
+  Policy Effective Date: $<today-85d>,
+  ASO Plan: No,
+  Prior Carrier Name: index=2,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Total Number of Eligible Lives: '25',
+  'Group is an Association?': 'Yes',
+  'Primary Agency?': 'Yes',
+  # Agent Sub Producer: ''
+}
+PlanDefinitionTab_PlanBG10: {
+  PlanKey: 10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+  },
+  Eligibility: {
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: None,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=6
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanBG10: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 5
+    }
+  ]
+}
+
+TestData_Group11: {
+  InitiniateDialog: '@InitiniateDialog11',
+  PolicyInformationTab: '@PolicyInformationTab11',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan11', '@PlanDefinitionTab_PlanB11'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanB11',
+  PremiumSummaryTab: {}
+}
+InitiniateDialog11: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTab11: {
+  Policy Effective Date: $<today-85d>,
+  ASO Plan: No,
+  Prior Carrier Name: 'EyeMed',
+  Situs State: MN,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Total Number of Eligible Lives: '30',
+  'Group is an Association?': 'No',
+  Agency / Producer: 'index=1',
+  'Primary Agency?': 'Yes',
+  # Agent Sub Producer: ''
+}
+SelectPlan11: {
+  Plan: 10/25 Plan B 130
+}
+PlanDefinitionTab_PlanB11: {
+  PlanKey: PlanB-10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+    Member Payment Mode: '12',
+  },
+  Eligibility: {
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: None,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=15
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanB11: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 10
+    }
+  ]
+}
+
+TestData_Group12: {
+  InitiniateDialog: '@InitiniateDialogG12',
+  PolicyInformationTab: '@PolicyInformationTab12',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan2', '@PlanDefinitionTab_PlanB12'],
+  ClassificationManagementTab: '@ClassificationManagementTab_PlanB12',
+  PremiumSummaryTab: {}
+}
+InitiniateDialogG12: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Vision,
+  Delivery Model: Group
+}
+PolicyInformationTab12: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Prior Carrier Name: index=3,
+  Situs State: IN,
+  Total Number of Eligible Lives: '50',
+  'Group is an Association?': 'No',
+  'Primary Agency?': 'Yes',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+  # Agent Sub Producer: ''
+}
+PlanDefinitionTab_PlanB12: {
+  PlanKey: PlanB-10/25 Plan B 130,
+  VSP Division: '10',
+  Sponsor/Participant Funding Structure: {
+    Contribution Type: Voluntary,
+    Assumed Participation %: 10,
+  },
+  Eligibility: {
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: None,
+    Dependent Maximum Age: 18,
+    Include Disabled Dependents: 'No',
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: Last day of the month when employment is terminated
+  },
+  Frequency: {
+    Exam/Lenses/Frame: Plan B (12/12/24)
+  },
+  Copay: {
+    Exam/Materials: index=15
+  },
+  Plan Benefits: {
+    Frames - Allowance up to: index=4
+  }
+}
+ClassificationManagementTab_PlanB12: {
+  Plan: PlanB-10/25 Plan B 130,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 15
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 15
+    },
+    {
+      Coverage Tier Key: Employee + Children,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 10
+    }
+  ]
+}
+
+
+
+

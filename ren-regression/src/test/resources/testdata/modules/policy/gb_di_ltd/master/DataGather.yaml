@@ -1,0 +1,166 @@
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialogG1',
+  PolicyInformationTab: '@PolicyInformationTabG1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan', '@PlanDefinitionTab_NCG1'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab:{}
+}
+#First Customer%%%%%%%%%%%%
+InitiniateDialogG1: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Long Term Disability,
+  Delivery Model: Group
+}
+#First Customer%%%%%%%%%%%%
+PolicyInformationTabG1: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: NY,
+  County Code: 'contains=061',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlan: {
+  Plan: NC
+}
+#First Customer%%%%%%%%%%%%
+PlanDefinitionTab_NCG1: {
+  PlanKey: NC-NC,
+  Total Number of Eligible Lives: 150,
+  Required Participation %: 100%,
+  Sponsor/Participant Funding Structure: {
+    Sponsor Payment Mode: 12
+  },
+
+  Offsets: {
+    Include PERS and STRS: Yes
+  },
+  Benefit Schedule: {
+    Elimination Period (days): 90,
+    Number of Months: '24 months',
+    Benefit Percentage: 60%,
+    Maximum Monthly Benefit Amount: 10000.00,
+    Temporary Recovery Period During EP (days): 90
+
+  },
+  Options: {
+  },
+  Benefit Termination Option: {},
+  Employer Benefits: {}
+}
+
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialogG2',
+  PolicyInformationTab: '@PolicyInformationTabG2',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan_CON', '@PlanDefinitionTab_CONG2'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+#Second Customer%%%%%%%%%%%%
+InitiniateDialogG2: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Long Term Disability,
+  Delivery Model: Group
+}
+#Second Customer%%%%%%%%%%%%
+PolicyInformationTabG2: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: TX,
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlan_CON: {
+  Plan: CON
+}
+#Second Customer%%%%%%%%%%%%
+PlanDefinitionTab_CONG2: {
+  PlanKey: CON-CON,
+  Total Number of Eligible Lives: 750,
+  Required Participation %: 100%,
+  Sponsor/Participant Funding Structure: {
+    Participant Contribution %: 50,
+  },
+  Benefit Schedule: {
+    Maximum Monthly Benefit Amount: 10000.00,
+    Benefit Percentage: 66.67%,
+    Elimination Period (days): 90,
+    Number of Months: '36 months',
+    Temporary Recovery Period During EP (days): 90,
+  },
+  Options: {
+  },
+  Employer Benefits: {
+    Workplace Modification Benefit: 'Included',
+  }
+}
+
+TestData_Group3: {
+  InitiniateDialog: '@InitiniateDialogG3',
+  PolicyInformationTab: '@PolicyInformationTabG3',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlan_VOL', '@PlanDefinitionTab_VOLG3'],
+  ClassificationManagementTab: '@ClassificationManagementTab',
+  PremiumSummaryTab: {}
+}
+#Third Customer%%%%%%%%%%%%
+InitiniateDialogG3: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Long Term Disability,
+  Delivery Model: Group
+}
+#Third Customer%%%%%%%%%%%%
+PolicyInformationTabG3: {
+  Policy Effective Date: $<today-85d>,
+  Situs State: GA,
+  #County Code: '001 - Albany County',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  }
+}
+SelectPlan_VOL: {
+  Plan: VOL
+}
+#Third Customer%%%%%%%%%%%%
+PlanDefinitionTab_VOLG3: {
+  PlanKey: VOL-VOL,
+  Total Number of Eligible Lives: 49,
+  Required Participation %: 100%,
+  Sponsor/Participant Funding Structure: {
+    Member Payment Mode: 12,
+  },
+  Offsets: {
+    Include PERS and STRS: Yes
+  },
+  Benefit Schedule: {
+    Elimination Period (days): 180,
+    Maximum Monthly Benefit Amount: 10000.00,
+    Temporary Recovery Period During EP (days): 180,
+    Benefit Percentage: 66.67%,
+    Number of Months: '24 months'
+  }
+}
+ClassificationManagementTab: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  'Use Classification Sub-Groups?': No,
+}
+

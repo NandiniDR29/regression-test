@@ -1,0 +1,18 @@
+TestData: {
+  BillingAccountGeneralOptions: {
+    'Phone #': '$<static:correctPhoneNumber:[rx:\d{10}]>',
+    Email: 'email$<rx:\d{8}>@test.com',
+    AddPaymentMethod: '@AddPaymentMethodTab'
+  }
+}
+AddPaymentMethodTab: {
+    Payment Method: EFT,
+    'Routing#/Transit #': 121122676,
+    'Account #': '$<rx:\d{5}>',
+    Bank Name: '$<rx:BankName\d{5}>',
+    Bank Account Type: index=1,
+    Name Type: Individual,
+    First Name: '$<rx:FirstNameLegal\d{5}>',
+    Last Name: '$<rx:LastNameLegal\d{5}>',
+    Add/Update: 'click'
+  }

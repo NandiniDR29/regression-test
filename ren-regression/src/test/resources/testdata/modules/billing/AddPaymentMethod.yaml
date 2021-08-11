@@ -1,0 +1,45 @@
+AcceptPaymentActionTabCreditCard: {
+  AddPaymentMethodTab:{
+    Payment Method: Credit Card,
+    Card Billing Address: {
+      Country: United States,
+      'Zip / Postal Code': 12345,
+      'Address Line 1': 345345345,
+      City: '$<rx:\d{5}>',
+      'State / Province': CA
+    },
+    General: {
+      Type: Visa,
+      Number: 4916985100150223,
+      Card Holder Name: 'HolderName$<rx:\d{8}>',
+      Card Expiration Month: 8,
+      Card Expiration Year: 2025
+    },
+    Add/Update: 'click'
+  }
+}
+
+AcceptPaymentActionTabEFT: {
+  AddPaymentMethodTab:{
+    Payment Method: EFT,
+    'Routing#/Transit #': 121122676,
+    'Account #': '$<rx:\d{5}>',
+    Bank Name: '$<rx:BankName\d{5}>',
+    Bank Account Type: index=1,
+    Name Type: Individual,
+    First Name: '$<rx:FirstNameLegal\d{5}>',
+    Last Name: '$<rx:LastNameLegal\d{5}>',
+    Add/Update: 'click'
+  }
+}
+
+AcceptPaymentActionTabACH: {
+  AddPaymentMethodTab:{
+    Payment Method: ACH,
+    'Routing#/Transit #': 121122676,
+    'Account #': '$<rx:\d{5}>',
+    Bank Name: '$<rx:BankName\d{5}>',
+    Bank Account Type: Other,
+    Add/Update: 'click'
+  }
+}

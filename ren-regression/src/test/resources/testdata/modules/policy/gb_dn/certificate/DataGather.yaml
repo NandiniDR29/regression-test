@@ -1,0 +1,519 @@
+TestData_Group12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+TestData_Group13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+TestData_Group14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+TestData_Group15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G15',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+TestData_Group16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+TestData_Group17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab',
+  PremiumSummaryTab: {}
+}
+CertificatePolicyTab: {
+  Billing Location: index=1
+}
+
+InsuredTab_G12: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '10003',
+  City: NewYork,
+  State / Province: NY,
+  Address Line 1: '2855 South PB',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: $<today-35y>,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_G13: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '30184',
+  City: Nevada,
+  State / Province: NV,
+  Address Line 1: '1340,DelRosa,WaySparks',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: $<today-35y>,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_G14: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '55416',
+  City: Minneapolis,
+  State / Province: MN,
+  Address Line 1: '3040 Excelsior Blvd',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: $<today-35y>,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_G15: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '46227',
+  City: Indianapolis,
+  State / Province: IN,
+  Address Line 1: '7853 South US 31',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: 03/13/1987,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_ch_G15: {
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '46227',
+  City: Indianapolis,
+  State / Province: IN,
+  Address Line 1: '7853 South US 31',
+  Original Hire Date: $<today-5y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: 06/30/1978,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_F_G15: {
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '46227',
+  City: Indianapolis,
+  State / Province: IN,
+  Address Line 1: '7853 South US 31',
+  Original Hire Date: $<today-20y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: 04/19/1939,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_Child_G15: {
+  First Name: 'John$<rx:\d{8}>',
+  Last Name: 'Smith$<rx:\d{8}>',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '46227',
+  City: Indianapolis,
+  State / Province: IN,
+  Address Line 1: '7853 South US 31',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: 06/07/1982,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_G16: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '25401',
+  City: 'Martinsburg',
+  State / Province: WV,
+  Address Line 1: '101 West King Street,Public Square',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: $<today-35y>,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+InsuredTab_G17: {
+  e-Mail: 'testrenregression@gmail.com',
+  Tobacco: 'Yes',
+  Tax Identification: '$<rx:\d{9}>',
+  Zip / Post Code: '19901',
+  City: Dover,
+  State / Province: DE,
+  Address Line 1: '1037,NorthDuPontHighway',
+  Original Hire Date: $<today-2y>,
+  Classification Group: index=1,
+  General Information: {
+    Date of Birth: $<today-35y>,
+    Gender: Male
+  },
+  Address Information: {
+    Country: United States
+  },
+  Relationship Information: {
+    Job Title: just a job,
+    Employment Type: index=1,
+    Salary Amount: 3000,
+    Payroll Frequency: Monthly
+
+  }
+}
+
+PlansTab: {
+  Plan Name: index=1,
+  Coverage Tier: Employee Only,
+  Enrollment Date: $<today>,
+  Participants: {
+    Participant Selection: index=0
+  }
+}
+TestData_Employee_OneChild_G12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneChild_G13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneChild_G14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneChild_G15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_Child_G15',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneChild_G16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneChild_G17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab_Employee_oneChild',
+  PremiumSummaryTab: {}
+}
+PlansTab_Employee_oneChild: {
+  Plan Name: index=1,
+  Coverage Tier: Employee + 1,
+  Enrollment Date: $<today>,
+  Participants: ['@TestData_Participant', '@TestData_Child_Participant']
+}
+TestData_Employee_Child_G12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Child_G13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Child_G14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Child_G15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_ch_G15',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Child_G16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Child_G17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab_Employee_Child',
+  PremiumSummaryTab: {}
+}
+
+PlansTab_Employee_Child: {
+  Plan Name: index=1,
+  Coverage Tier: Employee + Child(ren),
+  Enrollment Date: $<today>,
+  Participants: ['@TestData_Participant', '@TestData_Child_Participant']
+}
+
+TestData_Employee_Family_G12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Family_G13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Family_G14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Family_G15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_F_G15',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Family_G16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Family_G17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab_Employee_Family',
+  PremiumSummaryTab: {}
+}
+PlansTab_Employee_Family: {
+  Plan Name: index=1,
+  Coverage Tier: Employee + Family,
+  Enrollment Date: $<today>,
+  Participants: ['@TestData_Participant', '@TestData_Child_Participant','@TestData_Spouse_Participant']
+}
+
+TestData_Employee_Spouse_G12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Spouse_G13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Spouse_G14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Spouse_G15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G15',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Spouse_G16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_Spouse_G17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab_Employee_Spouse',
+  PremiumSummaryTab: {}
+}
+
+PlansTab_Employee_Spouse: {
+  Plan Name: index=1,
+  Coverage Tier: Employee + Spouse,
+  Enrollment Date: $<today>,
+  Participants: ['@TestData_Participant','@TestData_Spouse_Participant']
+}
+TestData_Employee_OneSpouse_G12: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G12',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneSpouse_G13: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G13',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneSpouse_G14: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G14',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneSpouse_G15: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G15',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneSpouse_G16: {
+  CertificatePolicyTab: '@CertificatePolicyTab',
+  InsuredTab: '@InsuredTab_G16',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+TestData_Employee_OneSpouse_G17: {
+  CertificatePolicyTab: {},
+  InsuredTab: '@InsuredTab_G17',
+  PlansTab: '@PlansTab_Employee_OneSpouse',
+  PremiumSummaryTab: {}
+}
+PlansTab_Employee_OneSpouse: {
+  Plan Name: index=1,
+  Coverage Tier: Employee + 1,
+  Enrollment Date: $<today>,
+  Participants: ['@TestData_Participant','@TestData_Spouse_Participant']
+}
+
+TestData_Child_Participant: {
+  Participant Selection: New Person,
+  Role Information: {
+    Role Name: Child Participant
+  },
+  General Information: {
+    First Name: 'Mary$<rx:\d{8}>',
+    Last Name: 'Hill$<rx:\d{8}>',
+    Date of Birth: 01/24/2007,
+  }
+}
+
+TestData_Spouse_Participant: {
+  Participant Selection: New Person,
+  Role Information:{
+    Role Name: Spouse Participant
+  },
+  General Information: {
+    First Name: 'Susan$<rx:\d{8}>',
+    Last Name: 'Kim$<rx:\d{8}>',
+    Date of Birth: $<today-24y>,
+  }
+}
+
+TestData_Participant: {
+  Participant Selection: index=0
+}

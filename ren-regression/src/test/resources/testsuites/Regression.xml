@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" verbose="1" parallel="tests" thread-count="1024">
+    <listeners>
+        <listener class-name="com.exigen.ipb.eisa.utils.listener.ISBAListener"/>
+    </listeners>
+    <parameter name="timeshift-scenario-mode" value="test"/>
+
+    <test name="CUSTOMER Non-Individual">
+        <classes>
+            <class name="com.exigen.ren.modules.cem.customer.nonindividual.TestCustomerCreation"/>
+        </classes>
+    </test>
+    <test name="Case_Creation">
+        <classes>
+            <class name="com.exigen.ren.modules.caseprofile.TestCaseCreation"/>
+        </classes>
+    </test>
+
+
+
+</suite>

@@ -1,0 +1,878 @@
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialogG1',
+  PolicyInformationTab: '@PolicyInformationTabG1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG1'],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG1',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG1: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG1: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+  County Code: 061 - New York County,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '150',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_BASEPOSG1: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+    #    'Required Participation %': 35,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 2nd Year,
+    '2nd Year Cap %': 7,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 80%,
+    'Basic - Out of Network': 80%,
+    'Prosthodontics - In Network': 50%,
+    'Prosthodontics - Out of Network': 50%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Child Only
+#    Yearly Deductible - In Network: $0,
+#    Yearly Deductible - Out of Network: $0
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab'
+  }
+}
+ClassificationManagementTab_BASEPOSG1: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 25
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 25
+    }
+  ]
+}
+
+TestData_Group2: {
+  InitiniateDialog: '@InitiniateDialogG2',
+  PolicyInformationTab: '@PolicyInformationTabG2',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG2' ],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG2',
+  PremiumSummaryTab: { }
+}
+# Initiniate Dialog group 2
+InitiniateDialogG2: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Group Dental,
+  Delivery Model: Group
+}
+PolicyInformationTabG2: {
+  ASO Plan: No,
+  'Rate Guarantee (Months)': 20,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '750',
+  'Group is an Association?': 'No',
+  Internal Team: {
+    Sales Representative: index=4,
+    Sales Support Associate: index=3
+  },
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+}
+PlanDefinitionTab_BASEPOSG2: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+    #    'Required Participation %': 35,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 'None',
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': PPO Schedule,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 100%,
+    'Basic - Out of Network': 100%,
+    'Major - In Network':90%,
+    'Major - Out of Network': 90%,
+    'Prosthodontics - In Network': 60%,
+    'Prosthodontics - Out of Network': 60%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Adult and Child
+#    Yearly Deductible - In Network: $0,
+#    Yearly Deductible - Out of Network: $0
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab'
+  }
+}
+ClassificationManagementTab_BASEPOSG2: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 300
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 450
+    }
+  ]
+}
+
+TestData_Group2_TX: {
+  InitiniateDialog: '@InitiniateDialogG2',
+  PolicyInformationTab: '@PolicyInformationTabG2',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG2_TX' ],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG2',
+  PremiumSummaryTab: { }
+}
+PlanDefinitionTab_BASEPOSG2_TX: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 'None',
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': PPO Schedule,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 100%,
+    'Basic - Out of Network': 100%,
+    'Major - In Network':90%,
+    'Major - Out of Network': 80%,
+    'Prosthodontics - In Network': 60%,
+    'Prosthodontics - Out of Network': 50%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Adult and Child
+#    Yearly Deductible - In Network: $0,
+#    Yearly Deductible - Out of Network: $0
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab'
+  }
+}
+
+TestData_Group4: {
+  InitiniateDialog: '@InitiniateDialogG4',
+  PolicyInformationTab: '@PolicyInformationTabTripleAdvantage',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlanTripleAdvantage', '@PlanDefinitionTabTripleAdvantage' ],
+  ClassificationManagementTab: '@ClassificationManagementTabTripleAdvantage',
+  PremiumSummaryTab: { }
+}
+# Initiniate Dialog group 4
+InitiniateDialogG4: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental,
+  Delivery Model: Group
+}
+PolicyInformationTabTripleAdvantage: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Situs State: 'NV',
+  Zip Code: '89102',
+  'Rate Guarantee (Months)': 24,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  'Allow Independent Commissionable Producers?': 'Yes',
+  'Prior Carrier Name': 'Aetna',
+  Prior Dental Coverage: 'Yes',
+  Total Number of Eligible Lives: '250',
+  'Group is an Association?': 'No',
+  'Primary Agency?': 'Yes',
+  Agency / Producer: index=1,
+  Split Percentage: '100',
+}
+PlanDefinitionTabTripleAdvantage: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: 'Sponsor/Participant Split',
+    'Participant Contribution % Employee Coverage': '50',
+    'Participant Contribution % Dependent Coverage': '50',
+    'Assumed Participation %': 60,
+    'Required Participation %': 30,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: index=1,
+  },
+  Benefit Waiting Periods: {
+    Preventive Waiting Period: 'None',
+    Radiographs Waiting Period: 'None',
+    Basic Waiting Period: 'None',
+    Major Waiting Period: 'None',
+    Prosthodontics Waiting Period: 'None',
+    EPCOS Waiting Period: 'None',
+    'Documentation of Waiting Period received?': 'No',
+  },
+  Co-Insurance: {
+    'U&C Percentile Level': PPO Schedule,
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: {
+      'Fluoride Treatment': '2 Per Year',
+      'Fluoride Treatment Age Limit': '19',
+    }
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: 'contains=Amount',
+    Waiting Period Amount: 90,
+    Waiting Period Mode: 'Days',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  }
+}
+ClassificationManagementTabTripleAdvantage: {
+  Plan: 'TRIPADV-Triple Advantage',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 100
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 50
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 50
+    }
+  ]
+}
+
+TestData_Group5: {
+  InitiniateDialog: '@InitiniateDialogG1',
+  PolicyInformationTab: '@PolicyInformationTabASO',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectTwoPlans', '@PlanDefinitionTab_ASO','@PlanDefinitionTabASO_ALACARTE' ],
+  ClassificationManagementTab: ['@ClassificationManagementTab_ASO', '@ClassificationManagementTabASO_ALACARTE' ],
+  PremiumSummaryTab: { }
+}
+PolicyInformationTabASO: {
+  ASO Plan: Yes,
+  Policy Effective Date: $<today-85d>,
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1
+  },
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '75',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1 ,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100',
+  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_ASO: {
+
+  Plan Name: HIGH,
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Voluntary,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=0',
+    Rate Cap: None,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500'
+  },
+  Co-Insurance: {
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 80%,
+    'Basic - Out of Network': 80%,
+    'Prosthodontics - In Network': 50%,
+    'Prosthodontics - Out of Network': 50%
+  },
+  Orthodontia: {
+    Ortho Coverage: 'No'
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab',
+  },
+  Exclusions: {
+    Missing Tooth: true
+  }
+}
+PlanDefinitionTabASO_ALACARTE: {
+  Change: true,
+  Plan Name: LOW,
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Voluntary,
+    'Assumed Participation %': 20,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=0',
+    Rate Cap: None,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance: {
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': PPO Schedule,
+    'Preventive - Out of Network': 100%,
+    'Basic - Out of Network': 80%,
+    'Major - Out of Network': 60%,
+    'Prosthodontics - Out of Network': 40%,
+    'Radiographs - Out of Network':100%,
+  },
+  Dental Deductible: {
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia: {
+    Ortho Coverage: 'No',
+  },
+  Limitation/Frequency: {
+    Basic: '@BasicTab_ALACATE',
+    Major: '@MajorTab_ALACATE',
+    Prosthodontics: '@Prosthodontics',
+
+  }
+}
+ClassificationManagementTab_ASO: {
+  Plan: ASO-HIGH,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 5
+    }
+  ]
+}
+ClassificationManagementTabASO_ALACARTE: {
+  Plan: ASOALC-LOW,
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 10
+    }
+  ]
+}
+
+TestData_Group10: {
+  InitiniateDialog: '@InitiniateDialogG10',
+  PolicyInformationTab: '@PolicyInformationTabG10',
+  EnrollmentTab: { },
+  PlanDefinitionTab: [ '@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG1' ],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG10',
+  PremiumSummaryTab: { }
+}
+InitiniateDialogG10: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=Case',
+  Product: Group Dental,
+  Delivery Model: Group
+}
+PolicyInformationTabG10: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '25',
+  'Group is an Association?': 'No',
+  Internal Team: {
+    Sales Representative: index=4,
+    Sales Support Associate: index=3
+  },
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+}
+ClassificationManagementTab_BASEPOSG10: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 5
+    }
+  ]
+}
+
+TestData_Group11: {
+  InitiniateDialog: '@InitiniateDialogG11',
+  PolicyInformationTab: '@PolicyInformationTabG11',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG11'],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG11',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 11
+InitiniateDialogG11: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+#Policy Information 11
+PolicyInformationTabG11: {
+  ASO Plan: No,
+  Policy Effective Date: $<today-85d>,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '30',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_BASEPOSG11: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 2nd Year,
+    '2nd Year Cap %': 7,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 80%,
+    'Basic - Out of Network': 80%,
+    'Prosthodontics - In Network': 50%,
+    'Prosthodontics - Out of Network': 50%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Child Only
+#    Yearly Deductible - In Network: $0,
+#    Yearly Deductible - Out of Network: $0
+
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab'
+  }
+}
+ClassificationManagementTab_BASEPOSG11: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 5
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 5
+    }
+  ]
+}
+
+TestData_Group12: {
+  InitiniateDialog: '@InitiniateDialogG12',
+  PolicyInformationTab: '@PolicyInformationTabG12',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanBASEPOS', '@PlanDefinitionTab_BASEPOSG12'],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG12',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG12: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG12: {
+  ASO Plan: No,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '50',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_BASEPOSG12: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+    'Assumed Participation %': 100,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 2nd Year,
+    '2nd Year Cap %': 7,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 25.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'None',
+    Dependent Maximum Age: 25,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'Yes',
+    Benefits End On: 'Last date of employment'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'Yes'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 80%,
+    'Basic - Out of Network': 80%,
+    'Prosthodontics - In Network': 50%,
+    'Prosthodontics - Out of Network': 50%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 3X,
+    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Child Only
+#    Yearly Deductible - In Network: $0,
+#    Yearly Deductible - Out of Network: $0
+
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTab',
+    Basic: '@BasicTab',
+    Major: '@MajorTab'
+  }
+}
+ClassificationManagementTab_BASEPOSG12: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 15
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 15
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 10
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 10
+    }
+  ]
+}
+
+SelectPlanBASEPOS: {
+  Plan: Basic EPOS
+}
+SelectTwoPlans: {
+  Plan: [ASO A La Carte, ASO]
+}
+SelectPlanTripleAdvantage: {
+  Plan: Triple Advantage
+}
+
+BasicTab_ALACATE: {
+  Posterior Composites: Not Covered
+}
+MajorTab_ALACATE:
+  {
+    TMD: Covered (Surgical)
+  }
+Prosthodontics:
+  {
+    Bridgework: Once Every 10 Years,
+    Dentures: Once Every 10 Years,
+    Relines: Once Every 3 Years,
+    Implants: Not Covered
+  }
+
+
+PreventativeAndDiagnosticTab: {
+  Fluoride Treatment: 'Not Covered'
+}
+BasicTab: {
+}
+MajorTab: {
+}

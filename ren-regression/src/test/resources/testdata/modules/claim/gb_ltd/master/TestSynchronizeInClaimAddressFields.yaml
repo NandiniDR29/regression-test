@@ -1,0 +1,27 @@
+TestData_Address3: {
+  GeneralTab: {
+    Address Details: {
+      Actions: Change,
+      Country: 'United Kingdom',
+      Zip/Post Code: '10001',
+      City: New York,
+      Address Line 1: 'Address Line test 1',
+      Address Line 2: 'Address Line test 2',
+      Address Line 3: 'Address Line test 3'
+    }
+  }
+}
+
+TestData_Address1: {
+  GeneralTab: {
+    Address Details: {
+      Actions: Change,
+      Country: 'United States',
+      Zip/Post Code: '90001',
+      City: Los Angeles,
+      Address Line 1: 'Address Line 1',
+      Address Line 2: 'Address Line 2',
+      Address Line 3: 'Address Line 3'
+    }
+  }
+}

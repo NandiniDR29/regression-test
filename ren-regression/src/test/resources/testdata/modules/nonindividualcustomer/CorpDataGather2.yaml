@@ -1,0 +1,321 @@
+TestData_TX: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_TX',
+  DivisionsTab: { },
+  RelationshipTab: {}
+}
+TestData_IN: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_IN',
+  DivisionsTab: { },
+  RelationshipTab: {}
+}
+TestData_GA: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_GA',
+  DivisionsTab: { },
+  RelationshipTab:{}
+}
+TestData_NY: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_NY',
+  DivisionsTab: { },
+  RelationshipTab:{}
+}
+TestData_DE: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_DE',
+  DivisionsTab: { },
+  RelationshipTab: { }
+}
+TestData_FL: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_FL',
+  DivisionsTab: { },
+  RelationshipTab:{}
+}
+TestData_NJ: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_NJ',
+  DivisionsTab:  {},
+  RelationshipTab: {}
+}
+CustomerType: {
+  Customer Type: Non-Individual
+}
+
+GeneralTab_GA: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-1y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=2,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '30184',
+    City: Georgia,
+    State/Province: GA,
+    Address Line 1: '$<static:Address:[rx:26 Oriole Dr White\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgencyFFive'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+GeneralTab_NJ: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-1y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=3,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '07066',
+    City: Clark,
+    State/Province: NJ,
+    Address Line 1: '$<static:Address:[rx:1255RaritanRoad,Unit F4B\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgencyFFive'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+GeneralTab_DE: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-1y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=1,
+  Industry: index=1,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+      Zip/Post Code: '19901',
+      City: Dover,
+    State/Province: DE,
+    Address Line 1: '1037,NorthDuPontHighway$<rx:\d{8}>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency_FTen'],
+  Sales Rep Work Queue: {
+    Search For: Work Queue,
+    Work Queue: General
+  }
+}
+GeneralTab_NY: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-1y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=1,
+  Industry: index=1,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '10003',
+    City: NewYork,
+    State/Province: NY,
+    Address Line 1: '2855 South PB$<rx:\d{8}>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency'],
+  Sales Rep Work Queue: {
+    Search For: Work Queue,
+    Work Queue: General
+  }
+}
+GeneralTab_TX: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-4y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=2,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '30184',
+    City: Texas,
+    State/Province: TX,
+    Address Line 1: '$<static:Address:[rx:26 Oriole Dr White\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency_FTen'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+GeneralTab_IN: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomerG10$<today>$<rx:\d{3}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-11\d{5}>',
+  Date business started: 10/01/2020,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=5,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '46227',
+    City: Indianapolis,
+    State/Province: IN,
+    Address Line 1: '$<static:Address:[rx:7853 South US 31\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+GeneralTab_FL: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-3y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=1,
+  Industry: index=1,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '32806',
+    City: Orlando,
+    State/Province: FL,
+    Address Line 1: '2855 South Orange Ave$<rx:\d{8}>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency_FTen'],
+  Sales Rep Work Queue: {
+    Search For: Work Queue,
+    Work Queue: General
+  }
+}
+
+AddAgencyFFive: {
+  Agency/Producer: {
+    Agency Code: QAG
+  }}
+AddAgency_FTen: {
+  Agency/Producer: {
+    Agency Code: QAG
+  }}
+AddAgency: {
+    Agency/Producer: {
+      Agency Code: QAG
+    } }
+TestData_MN: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_MN',
+  DivisionsTab: { },
+  RelationshipTab: {}
+}
+GeneralTab_MN: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<today>$<rx:\d{3}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Date business started: 10/01/2020,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=5,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '55416',
+    City: Minneapolis,
+    State/Province: MN,
+    Address Line 1: '$<static:Address:[rx:3040 Excelsior Blvd\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}

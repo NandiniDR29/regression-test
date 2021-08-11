@@ -1,0 +1,62 @@
+TestData_Case_Profile: {
+  LocationManagementTab: ['@Billing_Location_LOC1'],
+}
+
+Billing_Location_LOC1: {
+  Add Billing Location:{
+    Location Name: 'Billing Location 1',
+    Location Number: '1',
+    Tax Identification: '12-3456789'
+  }
+}
+
+TestData_Claim: {
+  BenefitsLTDInjuryPartyInformationTab: '@BenefitsLTDInjuryPartyInformationTab',
+  BenefitsLTDIncidentTab: '@BenefitsLTDIncidentTab',
+}
+
+BenefitsLTDInjuryPartyInformationTab: {
+  Associate Policy Party: index=1,
+  Preferred Payment method: Check,
+  Covered Earnings: 10000,
+  YTD Taxable Wage: {
+    YTD Taxable Wage: 2000,
+    Year: 2020,
+  }
+}
+
+BenefitsLTDIncidentTab: {
+  'Accident?': 'No',
+  Hospital: 'No',
+  Surgery: 'No',
+  Date of Hire: $<today-1d>,
+  Disability Date: {
+    Type: Date Last Worked,
+    Date: $<today-7M>,
+  }
+}
+
+
+TestData_CalculateASingleBenefitAmount: {
+  CoveragesActionTab: {
+    Associated Insurable Risk: index=1,
+    Coverage: index=2
+  },
+  OtherIncomeBenefitActionTab: {},
+  DeductionsActionTab: {},
+  TaxActionTab: [
+    {
+      Tax Type: Federal Tax,
+      Beginning Date: $<today-1M>,
+      Through Date: $<today+1y>,
+      Tax Amount: 100,
+    },{
+      Tax Type: State Tax,
+      Beginning Date: $<today-1M>,
+      Through Date: $<today+1y>,
+      Marital Status: Married,
+      Exemptions: 123,
+      Personal Exemptions: 123,
+    }
+  ]
+}

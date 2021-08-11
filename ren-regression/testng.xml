@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ren Automation">
+
+
+
+
+<!--    <test name="Group5">-->
+<!--        <parameter name="Group" value="Group5"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.TestAgentCreationGroup5"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationDE"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.TestDentalTwoPlanQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG5QuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG5"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestPartialPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestD5863codeshouldsubstitutewithD5110_Testcases_18"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestMultipleclaimCase23"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestMultipleclaimCase22"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestFullMouthDebridementOnceEvery5yrs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestFullMouthDebridementinlifetime"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestBridgesOnceEvery5yrs"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.enrollments.changefile.TestChangeFileExcelDE"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group6">-->
+<!--        <parameter name="Group" value="Group6"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.TestAgentCreationGroup6"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationFL"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_vs.TestVisionPlanBFLQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG6QuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG6"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestTransferPaymentOneGroupToAnotherGroup"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestConfigureRecurringPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.enrollments.fullfile.TestFullFileExcelFL"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCOBRACaseProfileCreation"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalCOBRAPlanQuoteCreation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Group1">-->
+<!--        <parameter name="Group" value="Group1"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.TestAgentCreationGroup1"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationNY"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalOnePlanQuoteCreation"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_ac.TestAccidentQuoteGenerationForG1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_ltd.TestLongTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG1QuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestGenerateDraftBill"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.selfAdmin.TestAdjustPremium"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestConfigureRecurringPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.changefile.TestChangeFileExcelNY"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.changefile.TestChangeFileExcelReinStatementNY"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.certificate.TestBeneficiaryNewNonPerson"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.certificate.TestBeneficiaryNewPerson"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_st.TestSTClaimCreationG1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimCreationIntake2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimCreationIntake3"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimIssuePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimAdjudication1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimAdjudication2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_std.certificate.TestSTDClaimPending"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ltd.TestLTDClaimCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ltd.TestClaimLTDIssuePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim3"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim4"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim5"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim6"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim7"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim8"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim9"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim10"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim11"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim12"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim13"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim14"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim15"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.CDT.Test_CDT_Claim16"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestRootCanalOnceEvery5yrs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestRootCanalOnceEvery2yrs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestScalingandRootPlaningOnceEvery3yrs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestScalingandRootPlaning1Every2years"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestTMDNotCovered"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.Agent_Change"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.TestCommissionSplit"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIssuePaymentG1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ac.certificate.TestClaimACIssuePaymentG1"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Group3">-->
+<!--        <parameter name="Group" value="Group3"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.commission.TestAgentCreationGroup3"/>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationGA"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_ac.TestAccidentQuoteGenerationForG3"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_di_ltd.TestLongTermDisablityQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG3QuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG3"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestGenerateDraftBill"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestTransferPaymentOneGroupToAnotherGroup"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.enrollments.fullfile.TestFullFileExcelGA"/>-->
+<!--            <class name="com.exigen.modules.enrollments.changefile.TestFullFileExcelReinStatementGA"/>-->
+<!--            <class name="com.exigen.modules.enrollments.initial.TestWaitingPeriodExcelG3"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Group9">-->
+<!--        <parameter name="Group" value="Group9"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationNJ"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithTwoSubGroup"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_pfl.TestPFLQuoteGenerationForG9"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.selfAdmin.TestAdjustPremium"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_pfl.TestPFLClaimCreation"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_st.TestSTClaimCreationG9"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_st.TestSTClaimIssuePayment"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Group10">-->
+<!--        <parameter name="Group" value="Group10"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationIN"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalOnePlanQuoteCreationG10"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_vs.TestVisionPlanBFLQuoteCreationG10"/>-->
+<!--            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG10"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestTransferPaymentOneGroupToAnotherGroup"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_st.TestSTClaimCreationG10"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim3"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim5"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestDOSafterMPtermdateD0274__Testcases_15"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.anesthesia.Test_Anesthesia_Claim1"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.anesthesia.Test_Anesthesia_Claim2"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.anesthesia.Test_Anesthesia_Claim3"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.anesthesia.Test_Anesthesia_Claim4"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.anesthesia.Test_Anesthesia_Claim5"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Group11">-->
+<!--        <parameter name="Group" value="Group11"/>-->
+<!--        <classes>-->
+
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationMN"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.TestDentalOnePlanQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_vs.TestVisionPlanBMNQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.selfAdmin.TestCreateDifferentLocationDifferentBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG11"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.Testfocusedreviewflag_Testcases_17"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestSpecialReviewFlag_Testcases_26"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestclaimwithD674013andD624014_Testcases_27"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestManuallyIssuePaymentReverseclaim_Testcases_28"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestSatisfyOverpaymentonClaim_Testcases_29"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestD2510codeshouldsubstitutewithD2391_Testcases_30"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestclaimwithD333015_Testcases_31"/>-->
+
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group2">-->
+<!--        <parameter name="Group" value="Group2"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.commission.TestAgentCreationGroup2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationTX"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.TestDentalOnePlanQuoteCreationForStateValidation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_vs.TestVisionPlanBTXQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_ac.TestAccidentQuoteGenerationForG2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_ltd.TestLongTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG2QuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.enrollments.changefile.TestChangeFileExcelTX"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ac.certificate.TestClaimCreationACIntake1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ac.certificate.TestClaimCreationACIntake2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_ac.certificate.TestClaimACAdjudication1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestD0220D0274andD0330codesshouldcombinetoD0210_Testcases_21"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestD2510codeshouldsubstitutewithD2391_Testcases_19"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestD239112OandD295012codesshouldcombinetoD2950__Testcases_20"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestdelinquentGroup_Testcases_16"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimAdjudicationG2"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_1_Convertinlaytoresinfilling"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_2_Converttoamalgam5surface"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_3_Downgradeonlay"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_4_CombinetoD0210"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_5_CombinetoD0210_Spouse"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_6_ConverttoD0274"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.fillings.Test_7_Downgradeporcelaincrowntometal"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestInlayOnceEvery3yrs"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestInlayOnceEvery5years"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestVeneersOnceEvery5years"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestVeneersnotcovered"/>&ndash;&gt;-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group7">-->
+<!--        <parameter name="Group" value="Group7"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationNY"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithTwoSubGroup"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.selfAdmin.TestAdjustPremium"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Group8">-->
+<!--        <parameter name="Group" value="Group8"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCorpCustomerCreationNY"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithTwoSubGroup"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.selfAdmin.TestAdjustPremium"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Group13">-->
+<!--        <parameter name="Group" value="Group13"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestPaymentOver2000D6010_Testcases_6"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestLimitedOcclusalAdjustmentonceevery3yrs"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestLimitedOcclusalAdjustmentOnceinlifetime"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestBridgesOnceEvery3yrs"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestDentures1Every3years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestDenturesOnceEvery5yrs"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestRelinesAndRepairs1Every2years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestImplant1Every5Years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestImplantCrownOnceEvery5Years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.interest.TestInterestClaim1"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.interest.TestInterestClaim2"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group14">-->
+<!--        <parameter name="Group" value="Group14"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestProfessionalReviewworkqueueD9120_Testcases_7"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestclaimshouldautodenyD7292_Testcases_24"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestClaimwithD4210quad20andD4260quad20sameDOS_Testcases_25"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.interest.TestInterestClaim3"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.interest.TestInterestClaim4"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group15">-->
+<!--        <parameter name="Group" value="Group15"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestBasicreviewworkqueueD9930_Testcases_8"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group16">-->
+<!--        <parameter name="Group" value="Group16"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim7"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim8"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.certificate.TestDisallowwithInvalidRemarkCodeD1208_Testcases_9"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestImplantOnceInLifetime"/>&ndash;&gt;-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.newstickets.TestCombinedD0274andD0330andReplacedwithD0330RN63268"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Group17">-->
+<!--        <parameter name="Group" value="Group17"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestMissingSurfaceD2332_Testcases_10"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.Testquad10withnoremarksD4341_Testcases_11"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.certificate.TestwithremarksbutnoquadD4341_Testcases_12"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestPeriodontalSurgery2timesevery5yrs"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestPeriodontalSurgery1in3years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestTissueConditioningOnceEvery2yrs"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestTissueConditioningOnceEvery3years"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.newstickets.TestClmDisallowedForDfrntTothD1351RN64118"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Group12">-->
+<!--        <parameter name="Group" value="Group12"/>-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.modules.cem.customer.nonindividual.TestCustomerCreationForDentalClaim"/>-->
+<!--            <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithoutCensus"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.TestDentalPlanForClaim"/>-->
+<!--            <class name="com.exigen.modules.policy.gb_dn.CertificatePolicy.TestAddCertificatePolicy"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclinePayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestDeclineRefundPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestConfigureRecurringPayment"/>-->
+<!--            <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim1_D2393"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim2_D0120"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim3_D4910"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim4_D7210"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim5_D2999"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim6_D0120"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim7_D0120"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.pricing.Test_Pricing_Claim8_D0140"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim11"/>-->
+<!--            <class name="com.exigen.modules.claim.gb_dn.scenarios.accumulators.Test_Accumlator_Claim12"/>-->
+
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--        <test name="Group4">-->
+<!--            <parameter name="Group" value="Group4"/>-->
+<!--            <classes>-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.commission.TestAgentCreationGroup4"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.cem.customer.nonindividual.TestPEOCustomerCreationNV"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.caseprofile.TestCaseProfileCreationWithCensus"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.policy.gb_dn.TestDentalOnePlanQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.policy.gb_vs.TestVisionPlanBNVQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.policy.gb_di_std.TestShortTermDisablityQuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.policy.gb_tl.TestTermLifePlanG4QuoteCreation"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.enrollments.initial.TestInitialEnrollmentExcelG4"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.billing.listBill.TestReviewBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.billing.listBill.TestFutureStatement"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.billing.listBill.TestOneTimePayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.enrollments.fullfile.TestFullFileExcelNV"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.billing.listBill.TestTransferPayment"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.billing.listBill.TestUpdateBillingAccount"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_dn.scenarios.imp_ven.TestTMD300PerLifetime"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIntake1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIntake2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIntake3"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimAdjudication2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimAdjudication3"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimAdjudication4"/>&ndash;&gt;-->
+<!--                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIssuePayment1"/>-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.claim.gb_tl.certificate.TestTLClaimCreationIssuePayment2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <class name="com.exigen.modules.enrollments.initial.TestWaitingPeriodExcelG4"/>&ndash;&gt;-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+        <test name="dxpEmployer">
+        <parameter name="Portal" value="Employer" />
+        <classes>
+            <class name="com.exigen.dxp.employer.login.TestEmployerRegistration" />
+<!--            <class name="com.exigen.dxp.employer.login.TestLogin" />-->
+<!--            <class name="com.exigen.dxp.employer.printidcards.PrintIDCardTest"/>-->
+<!--            <class name="com.exigen.dxp.employer.resources.TestResources"/>-->
+<!--            <class name="com.exigen.dxp.employer.billingTab.TestBillingTab"/>-->
+<!--            <class name="com.exigen.dxp.employer.group.TestVerifyGroup" />-->
+<!--            <class name="com.exigen.dxp.employer.group.TestGroupDetails" />-->
+<!--            <class name="com.exigen.dxp.employer.group.TestViewMasterPolicies" />-->
+<!--            <class name="com.exigen.dxp.employer.group.enrollees.TestViewEnrolleesList" />-->
+<!--            <class name="com.exigen.dxp.employer.group.enrollees.TestViewEnrolleeDetails" />-->
+<!--            <class name="com.exigen.dxp.employer.group.enrollees.TestImpersonation" />-->
+<!--            <class name="com.exigen.dxp.employer.group.enrollees.TestViewProducts" />-->
+<!--            <class name="com.exigen.dxp.employer.group.TestSearchMemberClaimInformation" />-->
+<!--            <class name="com.exigen.dxp.employer.billingTab.TestViewListOfFinalBill" />-->
+<!--            <class name="com.exigen.dxp.employer.group.beneficiaries.TestViewBeneficiaries"/>-->
+<!--            <class name="com.exigen.dxp.employer.group.beneficiaries.TestUpdateBeneficiaries"/>-->
+<!--            <class name="com.exigen.dxp.employer.myProfile.TestEmployerBranding"/>-->
+<!--            <class name="com.exigen.dxp.employer.billingTab.TestPostPayment"/>-->
+<!--            <class name="com.exigen.dxp.employer.myProfile.ViewProfileTest"/>-->
+<!--            <class name="com.exigen.dxp.employer.myProfile.Testbottomlinks"/>-->
+<!--            <class name="com.exigen.dxp.employer.myProfile.TestHelpMenu"/>-->
+<!--            <class name="com.exigen.dxp.employer.formTab.TestDownloadForm"/>-->
+<!--            <class name="com.exigen.dxp.employer.formTab.TestUploadForm"/>-->
+<!--            <class name="com.exigen.dxp.employer.Enrollees.TestAddEnrollee"/>-->
+<!--            <class name="com.exigen.dxp.employer.Enrollees.ViewPreferenceTest"/>-->
+<!--            <class name="com.exigen.dxp.employer.Enrollees.UpdatePreferenceTest"/>-->
+<!--            <class name="com.exigen.dxp.employer.Enrollees.TestEditEnrolleeDetails"/>-->
+<!--            <class name="com.exigen.dxp.employer.Enrollees.TestEditEnrolleeCoverage"/>-->
+<!--            <class name="com.exigen.dxp.employer.formTab.TestBulkEnrollment"/>-->
+<!--            <class name="com.exigen.dxp.employer.formTab.TestUploadDocumentsEOIfile"/>-->
+<!--            <class name="com.exigen.dxp.employer.formTab.TestUploadDocumentsCensus"/>-->
+<!--            <class name="com.exigen.dxp.employer.viewlistgroups.ViewListGroupsTest"/>-->
+<!--            <class name="com.exigen.dxp.employer.claims.ViewClaimTest"/>-->
+
+        </classes>
+    </test>
+
+
+<!--    <test name="Member">-->
+<!--        <parameter name="Portal" value="Member" />-->
+<!--        <classes>-->
+<!--            <class name="com.exigen.dxp.employee.login.TestMemberRegistration"/>-->
+
+<!--            <class name="com.exigen.dxp.employee.login.TestLogin"/>-->
+<!--            <class name="com.exigen.dxp.employee.resource.TestResource"/>-->
+<!--            <class name="com.exigen.dxp.employee.formtab.TestFormTab"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.TestViewClaimForLTD"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.TestViewClaimForSTD"/>-->
+<!--            <class name="com.exigen.dxp.employee.policy.TestLTDCoverageDetails"/>-->
+<!--            <class name="com.exigen.dxp.employee.policy.TestSTDCoverageDetails"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.TestViewChecksForLTD"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.TestViewChecksForSTD"/>-->
+<!--            <class name="com.exigen.dxp.employee.policy.TestLTDPlanDetails"/>-->
+<!--            <class name="com.exigen.dxp.employee.policy.TestSTDPlanDetails"/>-->
+<!--            <class name="com.exigen.dxp.employee.providertab.TestFindProvider"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.dental.DentalViewClaimTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.dental.DentalcoverageTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.dental.DentalViewChecksDetailsTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.dental.DentalviewplandetailTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.accident.AccidentViewClaimTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.accident.AccidentcoverageTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.accident.AccidentViewChecksDetailsTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.accident.AccidentviewplandetailTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.myprofile.ViewPreferenceTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.myprofile.UpdatePreferenceTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.termlife.TermlifeViewClaimTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.termlife.TermlifeViewCoverageTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.termlife.TermlifeViewChecksDetailsTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.claimtab.termlife.TermlifeViewPlanTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.group.TestViewBeneficiaries"/>-->
+<!--            <class name="com.exigen.dxp.employee.viewprofilepage.ViewProfileTest"/>-->
+<!--            <class name="com.exigen.dxp.employee.viewprofilepage.ProfileResourcesTest1"/>-->
+<!--            <class name="com.exigen.dxp.employee.formtab.TestUploadForm"/>-->
+<!--            <class name="com.exigen.dxp.employee.formtab.TestUploadFormClaim"/>-->
+<!--            <class name="com.exigen.dxp.employee.login.TestForgotUserName"/>-->
+<!--            <class name="com.exigen.dxp.employee.login.TestForgotPassWord"/>-->
+<!--            <class name="com.exigen.dxp.employee.login.TestLoginNegativeScenario"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

@@ -1,0 +1,164 @@
+TestData_Group17: {
+  InitiniateDialog: '@InitiniateDialogG17',
+  PolicyInformationTab: '@PolicyInformationTabG17',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanGraduated', '@PlanDefinitionTab_GRADG17'],
+  ClassificationManagementTab: '@ClassificationManagementTab_GRADG17',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG17: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<BOM-1>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG17: {
+  ASO Plan: No,
+  Rate Guarantee (Months): 12,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+#  County Code: 061 - New York County,
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '20',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  'Commission Split?': No
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_GRADG17: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+   'Required Participation %': 10,
+    'Assumed Participation %': 50,
+#    Minimum Number of Participants: 10,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: None
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'Yes',
+    Eligibility Waiting Period Definition: 'First of the month following date of hire',
+    Dependent Maximum Age: 26,
+    Include Disabled Dependents: No,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: 'Last day of the month when employment is terminated'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    Major Waiting Period: 12 months,
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    EPCOS Waiting Period: 12 months,
+    'Documentation of Waiting Period received?': 'No'
+  },
+  Dental Maximum: {
+#    'Plan Maximum - In Network': '$1,500',
+#    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+     Number of Graded Years: 4,
+    'Preventive First Year - In Network': 70%,
+    'Preventive First Year - Out of Network': 70%,
+    'Preventive Second Year - In Network': 80%,
+    'Preventive Second Year - Out of Network': 80%,
+    'Preventive Third Year - In Network': 90%,
+    'Preventive Third Year - Out of Network': 90%,
+    'Preventive Fourth Year - In Network': 100%,
+    'Preventive Fourth Year - Out of Network': 100%,
+    'Basic First Year - In Network': 50%,
+    'Basic First Year - Out of Network': 50%,
+    'Basic Second Year - In Network': 60%,
+    'Basic Second Year - Out of Network': 60%,
+    'Basic Third Year - In Network': 70%,
+    'Basic Third Year - Out of Network': 70%,
+    'Basic Fourth Year - In Network': 80%,
+    'Basic Fourth Year - Out of Network': 80%,
+    'Major First Year - In Network': 0%,
+    'Major First Year - Out of Network': 0%,
+    'Major Second Year - In Network': 30%,
+    'Major Second Year - Out of Network': 30%,
+    'Major Third Year - In Network': 40%,
+    'Major Third Year - Out of Network': 40%,
+    'Major Fourth Year - In Network': 50%,
+    'Major Fourth Year - Out of Network': 50%,
+    'Prosthodontics First Year - In Network': 0%,
+   'Prosthodontics First Year - Out of Network': 0%,
+   'Prosthodontics Second Year - In Network': 30%,
+   'Prosthodontics Second Year - Out of Network': 30%,
+   'Prosthodontics Third Year - In Network': 40%,
+   'Prosthodontics Third Year - Out of Network': 40%,
+   'Prosthodontics Fourth Year - In Network': 50%,
+   'Prosthodontics Fourth Year - Out of Network': 50%,
+   'Radiographs First Year - In Network': 70%,
+   'Radiographs First Year - Out of Network': 70%,
+   'Radiographs Second Year - In Network': 80%,
+   'Radiographs Second Year - Out of Network': 80%,
+   'Radiographs Third Year - In Network': 90%,
+   'Radiographs Third Year - Out of Network': 90%,
+   'Radiographs Fourth Year - In Network': 100%,
+   'Radiographs Fourth Year - Out of Network': 100%
+  },
+  Dental Deductible:{
+#    'Deductible - In Network': $50,
+#    'Deductible - Out Of Network': $50,
+#    'Family Deductible - In Network': 3X,
+#    'Family Deductible - Out Of Network': 3X,
+  },
+  Orthodontia:{
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTabG17',
+    Basic: '@BasicTab',
+    Major: '@MajorTab',
+    Prosthodontics: '@ProsthodonticsG17',
+  }
+#  Coverage Tiers: ['Employee + Family', 'Employee + 1', 'Employee Only' ],
+#  Coverage Tiers Change Confirmation: click
+}
+ClassificationManagementTab_GRADG17: {
+  Plan: 'GRAD-Graduated',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 8
+    },
+    {
+      Coverage Tier Key: Employee + 1,
+      Number of Participants: 8
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 4
+    }
+  ]
+}
+
+SelectPlanGraduated: {
+  Plan: Graduated
+}
+
+ProsthodonticsG17:
+  {
+  }
+
+
+PreventativeAndDiagnosticTabG14: {
+
+}
+BasicTab: {
+}
+MajorTab: {
+}

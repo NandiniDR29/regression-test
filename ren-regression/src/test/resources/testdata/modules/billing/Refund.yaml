@@ -1,0 +1,96 @@
+TestData: {
+  RefundActionTab: {
+    Payment Method: 'Cash',
+    Reason for Refund: 'Misapplied'
+  }
+}
+
+TestData_Refund_Misapplied: {
+  RefundActionTab: {
+    Amount: 120,
+    Reason for Refund: Other
+  }
+}
+
+TestData_Cash: {
+  RefundActionTab: {
+    Payment Method: 'Cash',
+    Amount: 100
+  }
+}
+
+TestData_Check: {
+  RefundActionTab: {
+    Payment Method: 'Check',
+    Amount: 100,
+    Reason for Refund: Other,
+    Additional Information: '$<rx:Description\d{5}>'
+  }
+}
+
+TestData_EFT: {
+  RefundActionTab: {
+    Manage Payment Methods: {
+      Add Payment Method: 'click',
+      Payment Method: EFT,
+      'Routing#/Transit #': 121122676,
+      'Account #': '$<rx:\d{5}>',
+      Bank Name: '$<rx:BankName\d{5}>',
+      Bank Account Type: index=1,
+      Name Type: Non-Individual,
+      Name: '$<rx:RestNameLegal\d{5}>',
+      Add/Update: 'click',
+      Back: 'click'
+    },
+    Payment Method: 'contains=EFT',
+    Amount: '',
+    Reason for Refund: Other,
+    Additional Information: '$<rx:Description\d{5}>'
+  }
+}
+
+TestData_CreditCard: {
+  RefundActionTab: {
+    Manage Payment Methods: {
+      Add Payment Method: 'click',
+      Payment Method: Credit Card,
+      Country: United States,
+      Address Line 1: '$<rx:Address\d{5}>',
+      Zip / Postal Code: '94596',
+      City: Walnut Creek,
+      State / Province: CA,
+      Type: American Express,
+      Number: 371429490219799,
+      Card Holder Name: '$<rx:Holder\d{5}>',
+      Card Expiration Month: 8,
+      Card Expiration Year: 2025,
+      Add/Update: 'click',
+      Back: 'click'
+    },
+    Payment Method: 'contains=American Express',
+    Amount: '',
+    Reason for Refund: Other,
+    Additional Information: '$<rx:Description\d{5}>'
+  }
+}
+
+TestData_Reason: {
+  RefundActionTab: {
+    Payment Method: 'Check',
+    Reason for Refund: 'Misapplied'
+  }
+}
+
+TestData_RestRefundPayment: {
+  amount: {
+    value: 5050,
+    currency: "USD"
+  },
+  refundReasonCd: 'Misapplied',
+  paymentDetails: {
+    type: "savedPaymentMethod",
+    savedPaymentMethod: {
+      id: "toAdjust"
+    }
+  }
+}

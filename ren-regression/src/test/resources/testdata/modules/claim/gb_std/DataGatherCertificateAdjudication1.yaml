@@ -1,0 +1,75 @@
+TestData: {
+  LossEventTab: {},
+  LossContextTab: '@LossContextTab',
+  ReportingPartyAndClaimContactTab: '@ReportingPartyAndClaimContactTab',
+  EventInformationLossEventTab: '@EventInformationLossEventTab',
+  EventInformationAuthorityReportTab: {},
+  BenefitsBenefitSummaryTab: ['@BenefitsBenefitSummaryTabSTD'],
+  BenefitsSTDInjuryPartyInformationTab: '@BenefitsSTDInjuryPartyInformationTab',
+  BenefitsSTDIncidentTab: '@BenefitsSTDIncidentTab',
+  BenefitCoverageDeterminationTab: {},
+  AdditionalPartiesWitnessTab: {},
+  AdditionalPartiesAdditionalPartyTab: {},
+  ClaimCoordinationAdditionalInsuranceTab: {},
+  EAPServicesServiceRequestTab: {},
+  ClaimHandlingClaimFileOwnerTab: {},
+  ClaimHandlingSpecialHandlingTab: {},
+  CompleteNotificationTab: {},
+}
+
+LossContextTab: {
+  Save Loss As: index=1
+}
+
+ReportingPartyAndClaimContactTab: {
+  Party Name: 'contains=Participant',
+  Contact Preference: Mail
+}
+
+EventInformationLossEventTab: {
+  Description of Loss: 'testing disability claim - EE salary over max benefit',
+  Disability Reason: index=1,
+  'Is it Primary ICD Code?': 'Yes',
+  ICD Code: '733.81'
+}
+
+EventInformationAuthorityReportTab: {
+  #Type of Authority: index=1,
+  Party Name: 'contains=Participant'
+}
+
+BenefitsBenefitSummaryTabSTD: {
+  Damage: Short Term Disability
+}
+
+BenefitsSTDInjuryPartyInformationTab: {
+  Associate Policy Party: index=1,
+  Contact Preference: Mail,
+  Preferred Payment method: Check
+}
+
+BenefitsSTDIncidentTab: {
+  'Accident?': 'No',
+  Hospital: 'No',
+  Surgery: 'No',
+  Date of Hire: $<today-1d>
+}
+
+AdditionalPartiesWitnessTab: {
+  Party Name: index=1,
+  'Relationship To Decedent/Injury Party': index=1
+}
+
+AdditionalPartiesAdditionalPartyTab: {
+  Party Name: index=1
+}
+
+ClaimCoordinationAdditionalInsuranceTab: {
+  Party Name: 'contains=Participant'
+}
+
+EAPServicesServiceRequestTab: {
+  Benefit: index=1,
+  Service Type: index=1,
+  Add: 'click'
+}

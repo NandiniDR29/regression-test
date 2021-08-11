@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ren Automation RETRY">
+  <test name="Group1">
+    <parameter name="Group" value="Group1"/>
+    <classes>
+      <class name="com.exigen.modules.policy.gb_st.TestStatutoryDisabilityInsuranceQuoteCreation">
+        <methods>
+          <include name="StatutoryDisabilityInsuranceQuoteCreation">
+            <parameter name="Group" value="Group1"/>
+          </include> <!-- StatutoryDisabilityInsuranceQuoteCreation -->
+        </methods>
+      </class> <!-- com.exigen.modules.policyb_st.TestStatutoryDisabilityInsuranceQuoteCreation -->
+    </classes>
+  </test> <!-- Group1 -->
+</suite> <!-- Ren Automation RETRY -->

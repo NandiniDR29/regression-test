@@ -1,0 +1,35 @@
+TestData: {
+  CommissionGroupTab: {
+    Group Name: 'GroupName$<rx:\d{8}>',
+    Group Type: 'Channel',
+    Agencies: {
+      Channel: Agency,
+      Agency Name: ''
+    },
+    Effective Date: $<today>,
+    Expiration Date: $<today+5y>
+  }
+}
+
+TestData_ChannelDynamic: {
+  CommissionGroupTab: {
+    Group Name: 'GroupName$<rx:\d{8}>',
+    Group Type: 'Channel',
+    Agencies: {
+      Channel: Agency,
+      Agency Name: ''
+    },
+    Effective Date: $<today-1>
+  }
+}
+
+TestData_Individual: {
+  CommissionGroupTab: {
+    Group Name: 'GroupName$<rx:\d{8}>',
+    Group Type: 'Individual',
+    Effective Date: $<today-1>,
+    Direct: {
+      Last Name: ''
+    }
+  }
+}

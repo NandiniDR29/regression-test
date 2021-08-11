@@ -1,0 +1,32 @@
+TestDataDental: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab1',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+TestDataVision: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab2',
+  GBCommissionRuleTab: ['@Tiered_CommissionRule']
+}
+GBCommissionStrategyTab1: {
+  Product Code-Name: 'GB_DN - Group Dental',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab2: {
+  Product Code-Name: 'GB_VS - Group Vision',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+Tiered_CommissionRule: {
+  Commission Type: 'Cumulative Tiered',
+  AddCommissionRule: {
+    Sales Channel: 'Commission Group Channel',
+    Select Sales Channel: {
+
+      Commission Channel Group Name: ''
+    },
+    Geography Selection: 'Defined for All locations',
+    Coverages: [ALL],
+    Tier 1: [0.00, '15000.00', 15.00],
+    Compensation Types : 'Commission'
+  }
+}

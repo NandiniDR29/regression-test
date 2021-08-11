@@ -1,0 +1,128 @@
+TestData_NV: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_NV',
+  DivisionsTab: { },
+  RelationshipTab:{}
+}
+TestData_IN: {
+  CustomerType: '@CustomerType',
+  GeneralTab: '@GeneralTab_IN',
+  DivisionsTab: { },
+  RelationshipTab: {}
+}
+CustomerType: {
+  Customer Type: Non-Individual
+}
+GeneralTab_NV: {
+  Non-Individual Type: PEO,
+  Name - Legal: 'PreviseCustomerG15$<today>$<rx:\d{3}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Number of Employees: '',
+  Date business started: $<today-3y>,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=3,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '89034',
+    City: 'Nevada',
+    State/Province: NV,
+    Address Line 1: '$<static:Address:[rx:1340,DelRosa,WaySparks\d{4}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency_NV'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+AddAgency_NV: {
+  Agency/Producer: {
+    Agency Code: QAG
+  }}
+Adjustment_Relationship: {
+  RelationshipTab: {
+    Type: Non-Individual,
+    Name - Legal: 'RName$<rx:\d{8}>',
+    Relationship to Customer: Agent,
+    Date business started: 10/10/1999
+  }
+}
+GeneralTab_IN: {
+  Non-Individual Type: PEO,
+  Name - Legal: 'PreviseCustomerG10$<today>$<rx:\d{3}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-11\d{5}>',
+  Date business started: 10/01/2020,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=4,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '46227',
+    City: Indianapolis,
+    State/Province: IN,
+    Address Line 1: '$<static:Address:[rx:7853 South US 31\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+GeneralTab_MN: {
+  Non-Individual Type: Corporation,
+  Name - Legal: 'PreviseCustomer$<rx:\d{8}>',
+  Associate Divisions: false,
+  EIN: '$<rx:55-10\d{5}>',
+  Date business started: 10/01/2020,
+  Mail Cards To: Group,
+  Mail W-2 To: Group,
+  Electronic SSA Filing: Yes,
+  Division: index=5,
+  Industry: index=2,
+  SIC Description: index=1,
+  Address Details: {
+    Country: United States,
+    Zip/Post Code: '55416',
+    City: Minneapolis,
+    State/Province: MN,
+    Address Line 1: '$<static:Address:[rx:3040 Excelsior Blvd\d{8}]>'
+  },
+  Phone Details: {
+    Phone Type: Mobile,
+    Phone Number: '$<static:correctPhoneNumber:[rx:\d{10}]>'
+  },
+  Group Sponsor: 'true',
+  Agency Assignment:['@AddAgency'],
+
+  Sales Rep Internal: {
+
+    Category: Front Office,
+    Channel: Corporate
+  }
+}
+AddAgency: {
+  Agency/Producer: {
+    Agency Code: QAG
+  } }

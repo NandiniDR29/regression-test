@@ -1,0 +1,149 @@
+TestData_Group15: {
+  InitiniateDialog: '@InitiniateDialogG15',
+  PolicyInformationTab: '@PolicyInformationTabG15',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@SelectPlanBASEPOSG15', '@PlanDefinitionTab_BASEPOSG15'],
+  ClassificationManagementTab: '@ClassificationManagementTab_BASEPOSG15',
+  PremiumSummaryTab: {}
+}
+# Initiniate Dialog group 1& 5
+InitiniateDialogG15: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: 11/01/2018,
+  Case Profile: 'contains=CaseProfile',
+  Product: Group Dental ,
+  Delivery Model: Group
+}
+PolicyInformationTabG15: {
+  ASO Plan: No,
+  Policy Effective Date: 11/01/2018,
+  Next Policy Year Start Date: $<BOM+1M>,
+  Rate Guarantee (Months): 36,
+  Internal Team: {
+    Sales Representative: index=3,
+    Sales Support Associate: index=2
+  },
+  Prior Dental Coverage: 'No',
+  Total Number of Eligible Lives: '20',
+  'Group is an Association?': 'No',
+  Agency / Producer: index=1,
+  'Primary Agency?': 'Yes',
+  'Commission Split?': No
+  #  Agent Sub Producer: 'index=1'
+}
+PlanDefinitionTab_BASEPOSG15: {
+  'Sponsor/Participant Funding Structure': {
+    Contribution Type: Non-contributory,
+   'Required Participation %': 100,
+    'Assumed Participation %': 45,
+#    Minimum Number of Participants: 10,
+  },
+  Rating: {
+    Use Brochure Rates: 'No',
+    SIC Description: 'index=1',
+    Rate Cap: 2nd Year,
+    '2nd Year Cap %': 7,
+  },
+  Eligibility: {
+    Minimum Hourly Requirement (hours per week): 30.00,
+    'Eligibility Waiting Period Waived For Current Employees?': 'No',
+    Eligibility Waiting Period Definition: 'First of the month following date of hire',
+    Dependent Maximum Age: 26,
+    Include Disabled Dependents: No,
+    'Allow Member and Spouse (Who are part of Group) on Separate Certificate?': 'No',
+    Benefits End On: 'Last day of the month when employment is terminated'
+  },
+  Benefit Waiting Periods: {
+    Prosthodontics Waiting Period: 'None',
+    'Benefits Waiting Period is waived for current enrollees?': 'Yes',
+    'Documentation of Waiting Period received?': 'No'
+  },
+  Dental Maximum: {
+    'Plan Maximum - In Network': '$1,500',
+    'Plan Maximum - Out of Network': '$1,500',
+  },
+  Co-Insurance:{
+    #    Network Arrangement: index=1
+    'U&C Percentile Level': REN 90th,
+    'Preventive - In Network': 100%,
+    'Preventive - Out of Network': 100%,
+    'Basic - In Network': 80%,
+    'Basic - Out of Network': 80%,
+    'Major - In Network': 50%,
+    'Major - Out of Network': 50%,
+    'Prosthodontics - In Network': 50%,
+    'Prosthodontics - Out of Network': 50%,
+  },
+  Dental Deductible:{
+    'Deductible - In Network': $50,
+    'Deductible - Out Of Network': $50,
+    'Family Deductible - In Network': 1X,
+    'Family Deductible - Out Of Network': 1X,
+  },
+  Orthodontia:{
+    Ortho Coverage: 'Yes',
+    Ortho Availability: Child Only
+  },
+  Service Categories: {
+  },
+  Limitation/Frequency: {
+    Preventative and Diagnostic: '@PreventativeAndDiagnosticTabG15',
+    Basic: '@BasicTab',
+    Major: '@MajorTab',
+    Prosthodontics: '@ProsthodonticsG15'
+  }
+}
+ClassificationManagementTab_BASEPOSG15: {
+  Plan: 'BASEPOS-Basic EPOS',
+  Add Classification Group Relationship: CLICK,
+  Classification Group Name: index=1,
+  Plan Tier And Rating Info: [
+    {
+      Coverage Tier Key: Employee Only,
+      Number of Participants: 8
+    },
+    {
+      Coverage Tier Key: Employee + Spouse,
+      Number of Participants: 4
+    },
+    {
+      Coverage Tier Key: Employee + Child(ren),
+      Number of Participants: 4
+    },
+    {
+      Coverage Tier Key: Employee + Family,
+      Number of Participants: 4
+    }
+  ]
+}
+
+SelectPlanBASEPOSG15: {
+  Plan: Basic EPOS
+}
+
+ProsthodonticsG15:
+  {
+    Bridgework: Once Every 5 Years,
+    Dentures: Once Every 5 Years,
+    Relines: Once Every 3 Years,
+    Implants: Once in a Lifetime
+  }
+
+
+PreventativeAndDiagnosticTabG15: {
+  Oral Examination: Once Every 6 Months,
+  Prophylaxes: Once Every 6 Months,
+  Fluoride Treatment: '1 Per Year',
+  Fluoride Treatment Age Limit: 14,
+  Space Maintainers: Once Every 3 Years,
+  Space Maintainers Age Limit: 16,
+  Brush Biopsy: Not Covered,
+  Sealants: Once in a Lifetime,
+  Sealants Age Limit: 14,
+
+
+}
+BasicTab: {
+}
+MajorTab: {
+}

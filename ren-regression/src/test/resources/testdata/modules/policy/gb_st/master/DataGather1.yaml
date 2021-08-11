@@ -1,0 +1,440 @@
+# 1st Customer Test data
+TestData_Group1: {
+  InitiniateDialog: '@InitiniateDialogG1',
+  PolicyInformationTab: '@PolicyInformationTab_NY_G1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@PlanDefinitionTab_NY_G1', '@PlanDefinitionTab_CoveragePFLNY_G1'],
+  ClassificationManagementTab: ['@ClassificationManagementTab_Stat_NY_G1', '@ClassificationManagementTab_Pfl_NY_G1'],
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+
+# 7th customer Test data
+TestData_Group7: {
+  InitiniateDialog: '@InitiniateDialogG7',
+  PolicyInformationTab: '@PolicyInformationTab_NY_G7',
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinitionTab_NY_G7',
+  ClassificationManagementTab: '@ClassificationManagementTab_Enhanced_NY_G7',
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+
+# 8th customer Test data
+TestData_Group8: {
+  InitiniateDialog: '@InitiniateDialogG8',
+  PolicyInformationTab: '@PolicyInformationTab_NY_G8',
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinitionTab_NY_G8',
+  ClassificationManagementTab: '@ClassificationManagementTab_Enhanced_NY_G8',
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+
+# 9th customer Test data
+TestData_Group9: {
+  InitiniateDialog: '@InitiniateDialogG9',
+  PolicyInformationTab: '@PolicyInformationTab_NJ_G9',
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinitionTab_NJ_G9',
+  ClassificationManagementTab: '@ClassificationManagementTab_NJ_G9',
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+TestData_Group10: {
+  InitiniateDialog: '@InitiniateDialogG10',
+  PolicyInformationTab: '@PolicyInformationTab_NY_G1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@PlanDefinitionTab_NY_G10', '@PlanDefinitionTab_CoveragePFLNY_G10'],
+  ClassificationManagementTab: ['@ClassificationManagementTab_Stat', '@ClassificationManagementTab_Pfl'],
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+# 12st Customer Test dat
+TestData: {
+  InitiniateDialog: '@InitiniateDialogG10',
+  PolicyInformationTab: '@PolicyInformationTab_NY_G1',
+  EnrollmentTab: {},
+  PlanDefinitionTab: ['@PlanDefinitionTab_NY_G10', '@PlanDefinitionTab_CoveragePFLNY_G10'],
+  ClassificationManagementTab: ['@ClassificationManagementTab_Stat_NY_G10', '@ClassificationManagementTab_Pfl_NY_G10'],
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+
+TestData_NJ: {
+  InitiniateDialog: '@InitiniateDialog',
+  PolicyInformationTab: '@PolicyInformationTab_NJ',
+  EnrollmentTab: {},
+  PlanDefinitionTab: '@PlanDefinitionTab_NJ',
+  ClassificationManagementTab: '@ClassificationManagementTab_NJ',
+  PremiumSummaryTab: '@PremiumSummaryTab'
+}
+
+# Initiniate Dialog group 1
+InitiniateDialogG1: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: 'contains=CaseProfile',
+  Product: Statutory Disability Insurance,
+  Delivery Model: Group
+}
+
+# Initiniate Dialog group 7
+InitiniateDialogG7: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Statutory Disability Insurance,
+  Delivery Model: Group
+}
+
+# Initiniate Dialog group 8
+InitiniateDialogG8: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<BOM-1>,
+  Case Profile: index=1,
+  Product: Statutory Disability Insurance,
+  Delivery Model: Group
+}
+
+# Initiniate Dialog group 9
+InitiniateDialogG9: {
+  Broad Line of Business: Group Insurance,
+  Coverage Effective Date: $<today-85d>,
+  Case Profile: index=1,
+  Product: Statutory Disability Insurance,
+  Delivery Model: Group
+}
+# Initiniate Dialog group 10
+InitiniateDialogG10: {
+  Coverage Effective Date: $<BOM-2M>,
+  Case Profile: 'contains=CaseProfile_Stat',
+  Product: Statutory Disability Insurance,
+  Delivery Model: Group
+}
+
+
+# Policy Information Tab Group 9
+PolicyInformationTab_NJ_G9: {
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1,
+    Underwriter: index=1
+  },
+  Situs State: NJ,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+}
+
+# Policy Information Tab Group 1
+PolicyInformationTab_NY_G1: {
+  County Code: '001 - Albany County',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1,
+    Underwriter: index=1
+  },
+  Situs State: NY,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+
+}
+
+# Policy Information Tab Group 7
+PolicyInformationTab_NY_G7: {
+  Policy Effective Date: $<today-85d>,
+  County Code: '005 - Bronx County',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1,
+    Underwriter: index=1
+  },
+  Situs State: NY,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+}
+
+# Policy Information Tab Group 8
+PolicyInformationTab_NY_G8: {
+  Policy Effective Date: $<today-85d>,
+  County Code: '001 - Albany County',
+  Internal Team: {
+    Sales Representative: index=1,
+    Sales Support Associate: index=1,
+    Underwriter: index=1
+  },
+  Situs State: NY,
+  'Primary Agency?': 'Yes',
+  Split Percentage: '100'
+}
+
+# Plan Definition Tab Group 9
+PlanDefinitionTab_NJ_G9: {
+  Plan: NJ Stat,
+  Total Number of Eligible Lives: 100,
+  Member Payment Mode: 12,
+  Contribution Type: 'Mandatory',
+  Rating: {
+    Rate Basis: Per Employee Per Month,
+    'Number of Lives - Male': 50,
+    'Number of Lives - Female': 50,
+    'Inforce Rate - Male': 5,
+    'Inforce Rate - Female': 5
+  },
+  Premium and Rate History: {
+    Period: 1,
+    Period Begin Date: '01/01/2019',
+    Period End Date: '12/31/2019',
+    Premium: 50000,
+    Experience Period Adjustment: 1,
+  },
+  Rate History - Male: {
+    Rate 1: 5,
+    Number of Months Rate 1: 12
+  },
+  Rate History - Female: {
+    Rate 1: 5,
+    Number of Months Rate 1: 12
+  },
+  Historical Claim: {
+    Claims: 30000,
+    Claim Reserves: 0,
+    Underwriter Adjustment: 1
+  }
+}
+
+# Plan Definition Tab Group 1 STAT
+PlanDefinitionTab_NY_G1: {
+  Plan: NY Stat,
+  Total Number of Eligible Lives: 150,
+  Contribution Type: 'Mandatory',
+  Rating: {
+    'Number of Lives - Male': 100,
+    'Number of Lives - Female': 50,
+    'Inforce Rate - Male': 5,
+    'Inforce Rate - Female': 5
+  },
+  Premium and Rate History: {
+    Period: 1,
+    Period Begin Date: '01/01/2019',
+    Period End Date: '12/31/2019',
+    Premium: 50000,
+    Experience Period Adjustment: 1,
+  },
+  Rate History - Male: {
+    Rate 1: 5,
+    Number of Months Rate 1: 12
+  },
+  Rate History - Female: {
+    Rate 1: 5,
+    Number of Months Rate 1: 12,
+  },
+  Historical Claim: {
+    Claims: 30000,
+    Claim Reserves: 0,
+    Underwriter Adjustment: 1
+  },
+  Options: {}
+}
+
+# Plan Definition Tab Group 1 PFL
+PlanDefinitionTab_CoveragePFLNY_G1: {
+  Add Coverage: click,
+  Coverage Name: PFL NY,
+  Total Number of Eligible Lives: 150,
+}
+
+# Plan Definition Tab Group 7
+PlanDefinitionTab_NY_G7: {
+  Plan: NY Stat,
+  Total Number of Eligible Lives: 50,
+  Coverage Name: 'Enhanced NY',
+  Contribution Type: 'Non-contributory',
+  Rating: {
+    Rate Basis: Per Employee Per Month,
+    'Use Experience Rating?': No
+  },
+  Benefit Schedule: {
+    Benefit Percentage: '60%',
+    Maximum Weekly Benefit Amount: 500
+  },
+  Options: {}
+}
+
+# Plan Definition Tab Group 8
+PlanDefinitionTab_NY_G8: {
+  Plan: NY Stat,
+  Total Number of Eligible Lives: 60,
+  Coverage Name: 'Enhanced NY',
+  Contribution Type: 'Mandatory',
+  Rating: {
+    'Use Experience Rating?': No
+  },
+  Benefit Schedule: {
+    Benefit Percentage: '50%',
+    Maximum Weekly Benefit Amount: 170
+  },
+  Options: {}
+}
+
+# Classification management tab Group 9
+ClassificationManagementTab_NJ_G9: {
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  'Use Classification Sub-Groups?': Yes,
+  #  Uni-Tobacco: Yes,
+  #  Unisex: Yes,
+  Number of Participants: 100
+  ,
+  Total Volume: 250,
+}
+PlanDefinitionTab_NY_G10: {
+  Plan: NY Stat,
+  Total Number of Eligible Lives: 1500,
+  Coverage Name: Enhanced NY,
+  Contribution Type: 'Mandatory',
+  Rating: {
+    'Use Experience Rating?': No
+  },
+
+  Options: {
+    FICA Match: Reimbursement
+  }
+}
+PlanDefinitionTab_CoveragePFLNY_G10: {
+  Add Coverage: click,
+  Coverage Name: PFL NY,
+  Total Number of Eligible Lives: 1500,
+}
+
+# Classfication management tab Group 1
+ClassificationManagementTab_Stat_NY_G1: {
+  CoverageKey: 'Stat NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [
+    {
+      Classification SubGroup Name: Male,
+      Number of Participants: 100,
+      Total Volume: 250
+    }, {
+      Classification SubGroup Name: Female,
+      Number of Participants: 50,
+      Total Volume: 300
+    }, {
+      Classification SubGroup Name: Proprietor,
+      Number of Participants: 0,
+      Total Volume: 0
+    }]
+}
+
+ClassificationManagementTab_Enhanced_NY: {
+  CoverageKey: 'Enhanced NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: 1,
+  Classification Sub-Groups And Rating Info: [                           {
+    Classification SubGroup Name: Male,
+    Number of Participants: 100,
+    Total Volume: 250
+  }, {
+    Classification SubGroup Name: Female,
+    Number of Participants: 50,
+    Total Volume: 300
+  }, {
+    Classification SubGroup Name: Proprietor,
+    Number of Participants: 0,
+    Total Volume: 0
+  }]
+}
+
+# Classfication management tab Group 7
+ClassificationManagementTab_Enhanced_NY_G7: {
+  CoverageKey: 'Enhanced NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [                           {
+    Classification SubGroup Name: Male,
+    Number of Participants: 25,
+    Total Volume: 250
+  }, {
+    Classification SubGroup Name: Female,
+    Number of Participants: 25,
+    Total Volume: 300
+  }, {
+    Classification SubGroup Name: Proprietor,
+    Number of Participants: 0,
+    Total Volume: 0
+  }]
+}
+
+# Classfication management tab Group 8
+ClassificationManagementTab_Enhanced_NY_G8: {
+  CoverageKey: 'Enhanced NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [                           {
+    Classification SubGroup Name: Male,
+    Number of Participants: 30,
+    Total Volume: 250
+  }, {
+    Classification SubGroup Name: Female,
+    Number of Participants: 30,
+    Total Volume: 300
+  }]
+}
+
+ClassificationManagementTab_Pfl_NY_G1: {
+  CoverageKey: 'PFL NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [                        {
+    Classification SubGroup Name: Male,
+    Number of Participants: 100,
+    Total Volume: 250
+  }, {
+    Classification SubGroup Name: Female,
+    Number of Participants: 50,
+    Total Volume: 300
+  }, {
+    Classification SubGroup Name: Other/Not Specified,
+    Number of Participants: 0,
+    Total Volume: 0
+  }]
+}
+ClassificationManagementTab_Stat: {
+  CoverageKey: 'Enhanced NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [
+    {
+      Classification SubGroup Name: Male,
+      Number of Participants: 221,
+      Total Volume: 00
+    }, {
+      Classification SubGroup Name: Female,
+      Number of Participants: 457,
+      Total Volume: 00
+    }, {
+      Classification SubGroup Name: Proprietor,
+      Number of Participants: 0,
+      Total Volume: 0
+    }]
+}
+ClassificationManagementTab_Pfl: {
+  CoverageKey: 'PFL NY',
+  Add Classification Group Coverage Relationship: CLICK,
+  Classification Group Name: index=1,
+  Classification Sub-Groups And Rating Info: [                        {
+    Classification SubGroup Name: Male,
+    Number of Participants: 500,
+    Total Volume: '14668141.59'
+  }, {
+    Classification SubGroup Name: Female,
+    Number of Participants: 1000,
+    Total Volume: '30331858.41'
+  }, {
+    Classification SubGroup Name: Other/Not Specified,
+    Number of Participants: 0,
+    Total Volume: 0
+  }]
+}
+
+PremiumSummaryTab: {
+  Credibility Factor: 0.5,
+  Select Rating Census: 'index=1',
+  Apply: 'click'
+}

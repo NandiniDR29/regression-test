@@ -1,0 +1,562 @@
+TestData_Claim1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_1',
+}
+
+LossContextTab_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '06/15/2020',
+    CDT Code: 'D2510',
+    Charge: 300,
+    Tooth: 22,
+  },
+  ]
+}
+
+TestData_Claim1_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_1_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_1_1',
+}
+
+LossContextTab_1_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_1_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '364498896',
+    'License #': '10844',
+    License NPI: '1265510457',
+    License State/Province: 'IN',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '47303',
+    Address Line 1: '202 N Reserve St.',
+    City: 'Muncie',
+    State/Province: 'IN',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '06/15/2020',
+    CDT Code: 'D2330',
+    Charge: 300,
+    Tooth: 22,
+  },
+  ]
+}
+
+TestData_Claim2: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_2',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_2',
+}
+
+LossContextTab_2: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_2: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '261421714',
+    'License #': '14320',
+    License NPI: '1669627881',
+    License State/Province: 'MD',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '21223',
+    Address Line 1: '1253 W Pratt St.',
+    City: 'Baltimore',
+    State/Province: 'MD',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '06/15/2020',
+    CDT Code: 'D2390',
+    Charge: 500,
+    Tooth: 2,
+  },
+  ]
+}
+
+TestData_Claim2_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_2_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_2_1',
+}
+
+LossContextTab_2_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_2_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '261421714',
+    'License #': '14320',
+    License NPI: '1669627881',
+    License State/Province: 'MD',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '21223',
+    Address Line 1: '1253 W Pratt St.',
+    City: 'Baltimore',
+    State/Province: 'MD',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '06/15/2020',
+    CDT Code: 'D2161',
+    Charge: 500,
+    Tooth: 2,
+  },
+  ]
+}
+
+TestData_Claim3: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_3',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_3',
+}
+
+LossContextTab_3: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_3: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '260160921',
+    'License #': '7105',
+    License NPI: '1225514367',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '89135',
+    Address Line 1: '10870 W Charleston Blvd. Ste. 170',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '6/1/2020',
+    CDT Code: 'D2643',
+    Charge: 1000,
+    Tooth: 30,
+  },
+  ]
+}
+
+TestData_Claim3_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_3_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_3_1',
+}
+
+LossContextTab_3_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_3_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '260160921',
+    'License #': '7105',
+    License NPI: '1225514367',
+    License State/Province: 'NV',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '89135',
+    Address Line 1: '10870 W Charleston Blvd. Ste. 170',
+    City: 'Las Vegas',
+    State/Province: 'NV',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '6/1/2020',
+    CDT Code: 'D2510',
+    Charge: 1000,
+    Tooth: 30,
+  },
+  ]
+}
+
+TestData_Claim4: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_4',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_4',
+}
+
+LossContextTab_4: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_4: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '540921110',
+    'License #': '401007904',
+    License NPI: '1962414557',
+    License State/Province: 'VA',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '23454',
+    Address Line 1: '1157 First Colonial Rd',
+    City: 'Virginia Beach',
+    State/Province: 'VA',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/1/2020',
+    CDT Code: 'D0220',
+    Charge: 30,
+
+  },
+  ]
+}
+
+TestData_Claim4_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_4_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_4_1',
+}
+
+LossContextTab_4_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_4_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '540921110',
+    'License #': '401007904',
+    License NPI: '1962414557',
+    License State/Province: 'VA',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '23454',
+    Address Line 1: '1157 First Colonial Rd',
+    City: 'Virginia Beach',
+    State/Province: 'VA',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/1/2020',
+    CDT Code: 'D0210',
+    Charge: 30,
+
+  },
+  ]
+}
+
+TestData_Claim5: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_5',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_5',
+}
+
+LossContextTab_5: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_5: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '640746692',
+    'License #': '2263',
+    License NPI: '1295879625',
+    License State/Province: 'MS',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '39218',
+    Address Line 1: '161 Scarbrough St',
+    City: 'Richland',
+    State/Province: 'MS',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/15/2020',
+    CDT Code: 'D0330',
+    Charge: 500,
+
+  },
+  ]
+}
+
+TestData_Claim5_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_5_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_5_1',
+}
+
+LossContextTab_5_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_5_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '640746692',
+    'License #': '2263',
+    License NPI: '1295879625',
+    License State/Province: 'MS',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '39218',
+    Address Line 1: '161 Scarbrough St',
+    City: 'Richland',
+    State/Province: 'MS',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/15/2020',
+    CDT Code: 'D0210',
+    Charge: 500,
+
+  },
+  ]
+}
+
+TestData_Claim6: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_6',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_6',
+}
+
+LossContextTab_6: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_6: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '743098884',
+    'License #': '8488',
+    License NPI: '1811199755',
+    License State/Province: 'KY',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '40160',
+    Address Line 1: '169 E Lincoln Trail Blvd',
+    City: 'Radcliff',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/20/2020',
+    CDT Code: 'D0272',
+    Charge: 200,
+
+  },
+  ]
+}
+
+TestData_Claim6_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_6_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_6_1',
+}
+
+LossContextTab_6_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_6_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '743098884',
+    'License #': '8488',
+    License NPI: '1811199755',
+    License State/Province: 'KY',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '40160',
+    Address Line 1: '169 E Lincoln Trail Blvd',
+    City: 'Radcliff',
+    State/Province: 'KY',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '7/20/2020',
+    CDT Code: 'D0274',
+    Charge: 200,
+
+  },
+  ]
+}
+
+TestData_Claim7: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_7',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_7',
+}
+
+LossContextTab_7: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_7: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '200690674',
+    'License #': '4313',
+    License NPI: '1083783765',
+    License State/Province: 'AZ',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '85226',
+    Address Line 1: '50 S Kyrene Rd. Ste. 5',
+    City: 'Chandler',
+    State/Province: 'AZ',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '07/12/2020',
+    CDT Code: 'D2740',
+    Charge: 1000,
+    Tooth: 3,
+  },
+  ]
+}
+
+TestData_Claim7_1: {
+  LossEventTab: { },
+  LossContextTab: '@LossContextTab_7_1',
+  IntakeInformationTab: '@IntakeInformationTabThreeServices_7_1',
+}
+
+LossContextTab_7_1: {
+  Save Loss As: index=1
+}
+
+IntakeInformationTabThreeServices_7_1: {
+  Patient: {
+    Name: contains=Insured
+  },
+  Search Provider: {
+    TIN: '200690674',
+    'License #': '4313',
+    License NPI: '1083783765',
+    License State/Province: 'AZ',
+    Specialty: Orthodontist,
+    Zip/Postal Code: '85226',
+    Address Line 1: '50 S Kyrene Rd. Ste. 5',
+    City: 'Chandler',
+    State/Province: 'AZ',
+    Search Vendor: 'click',
+    Add Vendor: 'click'
+  },
+  Type of Transaction: 'Actual Services',
+  Source: index=1,
+  Payee Type: index=1,
+  Ortho Months: 12,
+  Submitted Services: [ {
+    DOS: '07/12/2020',
+    CDT Code: 'D2750',
+    Charge: 1000,
+    Tooth: 3,
+  },
+  ]
+}
+
+
+

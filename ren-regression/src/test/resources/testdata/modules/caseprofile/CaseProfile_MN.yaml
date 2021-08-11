@@ -1,0 +1,108 @@
+TestData_WithCensus: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: [ '@LocationManagementTab' ],
+  FileIntakeManagementTab: [ '@FileIntakeManagementTab' ]
+}
+TestData_WithOutCensus: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: [ '@LocationManagementTab' ],
+  FileIntakeManagementTab: []
+}
+TestData_WithCensus_TwoLocation: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: ['@Billing_Location_LOC1', '@Billing_Location_LOC2'],
+  FileIntakeManagementTab: [ '@FileIntakeManagementTab' ]
+}
+TestData_Group11: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: [ '@ClassificationManagementTab_1_WithAutoGroups' ],
+  LocationManagementTab: [ '@LocationManagementTab' ],
+  FileIntakeManagementTab: []
+}
+
+ProductAndPlanManagementTabGBGB: {
+  Product: Group Benefits
+}
+
+CaseProfileDetailsTab: {
+  Case Profile Name: 'CaseProfile$<rx:\d{5}>',
+  Effective Date: $<today-85d>,
+  Group Domicile State: MN,
+  'Intake Profile Required?': 'true'
+}
+ClassificationManagementTab_1_WithAutoGroups: {
+  Classification Group: {
+    Class Name: All Active Employee,
+    Class Number: 1,
+    Relationship Type: Employment
+  },
+  Group Details: {
+    Job Code: [ALL],
+    Employment Status: [ALL],
+    Employment Type: [ALL],
+    Pay Type: Hourly,
+    Union Member: 'Yes',
+    'Create Sub-Groups?': 'Yes',
+    'Create Sub-Groups Automatically?': 'Yes'
+  }
+}
+
+LocationManagementTab: {
+  Add Billing Location: {
+    Location Name: 'LOC1',
+    Location Number: '1',
+    Tax Identification: '11-6543251',
+    Address Line 1: 'Address Line 1',
+    Address Line 2: 'Address Line 2',
+    Address Line 3: 'Address Line 3',
+    City: 'Coon Rapids',
+    'State/Province': MN,
+    'ZIP / Post Code': '55448'
+  }
+}
+TestData_ForProductUpdate: {
+  CaseProfileDetailsTab: {},
+  ProductAndPlanManagementTab: [ '@ProductVS'],
+  ClassificationManagementTab: {},
+  LocationManagementTab: {},
+  FileIntakeManagementTab: []
+}
+
+ProductVS: {
+  Product: Group Vision
+}
+Billing_Location_LOC1: {
+  Add Billing Location:{
+    Location Name: 'LOC1',
+    Location Number: '1',
+    Primary Location: 'Yes',
+    Tax Identification: '11-6543201',
+    Address Line 1: 'Address Line 1',
+    Address Line 2: 'Address Line 2',
+    Address Line 3: 'Address Line 3',
+    City: 'Coon Rapids',
+    'State/Province': MN,
+    'ZIP / Post Code': '55448'
+  }
+}
+
+Billing_Location_LOC2: {
+  Add Billing Location:{
+    Location Name: 'LOC2',
+    Location Number: '2',
+    Tax Identification: '22-6543201',
+    Address Line 1: 'Address Line 1',
+    Address Line 2: 'Address Line 2',
+    Address Line 3: 'Address Line 3',
+    City: 'New York',
+    'State/Province': NY,
+    'ZIP / Post Code': '10001'
+  }
+}

@@ -1,0 +1,13 @@
+TestData: {
+  QuotesSelectionActionTab: '@QuotesSelectionActionTab',
+  ProposalActionTab: '@ProposalActionTab'
+}
+
+QuotesSelectionActionTab: {
+  Select Quote by row number: [1],
+  Proposal Name: 'ProposalName$<rx:\d{5}>'
+}
+ProposalActionTab: {
+  Override Rules List: ["Proposal requires Underwriter approval because Required Participation is less...",
+                        "Proposal requires Underwriter approval because Rate Guarantee (Months) is gre..."]
+}

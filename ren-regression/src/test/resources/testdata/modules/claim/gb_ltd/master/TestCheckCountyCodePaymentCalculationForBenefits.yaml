@@ -1,0 +1,264 @@
+TestData_IndemnityPaymentWithAdditionParty1: {
+  PaymentPaymentPaymentDetailsTab: '@PaymentPaymentPaymentDetailsTabIndemnityPayment',
+  PaymentPaymentPaymentAllocationTab: '@PaymentPaymentPaymentAllocationTabIndemnityPayment',
+  PaymentPaymentAdditionalPayeeTab: {},
+  PaymentInvoiceInvoicedFromTab: {},
+  PaymentInvoiceInvoiceDetailsTab: {},
+  PaymentCalculatorTab: '@PaymentCalculatorTab1'
+}
+
+TestData_IndemnityPaymentWithAdditionParty2: {
+  PaymentPaymentPaymentDetailsTab: '@PaymentPaymentPaymentDetailsTabIndemnityPayment',
+  PaymentPaymentPaymentAllocationTab: '@PaymentPaymentPaymentAllocationTabIndemnityPayment',
+  PaymentPaymentAdditionalPayeeTab: {},
+  PaymentInvoiceInvoicedFromTab: {},
+  PaymentInvoiceInvoiceDetailsTab: {},
+  PaymentCalculatorTab: '@PaymentCalculatorTab2'
+}
+
+TestData_IndemnityPaymentWithAdditionParty3: {
+  PaymentPaymentPaymentDetailsTab: '@PaymentPaymentPaymentDetailsTabIndemnityPayment',
+  PaymentPaymentPaymentAllocationTab: '@PaymentPaymentPaymentAllocationTabIndemnityPayment',
+  PaymentPaymentAdditionalPayeeTab: {},
+  PaymentInvoiceInvoicedFromTab: {},
+  PaymentInvoiceInvoiceDetailsTab: {},
+  PaymentCalculatorTab: '@PaymentCalculatorTab3'
+}
+
+TestData_IndemnityPaymentWithAdditionParty4: {
+  PaymentPaymentPaymentDetailsTab: '@PaymentPaymentPaymentDetailsTabIndemnityPayment',
+  PaymentPaymentPaymentAllocationTab: '@PaymentPaymentPaymentAllocationTabIndemnityPayment',
+  PaymentPaymentAdditionalPayeeTab: {},
+  PaymentInvoiceInvoicedFromTab: {},
+  PaymentInvoiceInvoiceDetailsTab: {},
+  PaymentCalculatorTab: '@PaymentCalculatorTab4'
+}
+
+TestData_IndemnityPaymentWithAdditionParty5: {
+  PaymentPaymentPaymentDetailsTab: '@PaymentPaymentPaymentDetailsTabIndemnityPayment',
+  PaymentPaymentPaymentAllocationTab: '@PaymentPaymentPaymentAllocationTabIndemnityPayment',
+  PaymentPaymentAdditionalPayeeTab: {},
+  PaymentInvoiceInvoicedFromTab: {},
+  PaymentInvoiceInvoiceDetailsTab: {},
+  PaymentCalculatorTab: '@PaymentCalculatorTab5'
+}
+
+TestData_CreatePaymentSeries: {
+  PaymentSeriesPaymentDetailsActionTab: '@PaymentSeriesPaymentDetailsActionTab',
+  PaymentSeriesPaymentAllocationActionTab: {},
+  PaymentSeriesAdditionalPayeeTab: {},
+  PaymentSeriesPaymentSeriesProfileActionTab: '@PaymentSeriesPaymentSeriesProfileActionTab',
+  PaymentSeriesCalculatorActionTab: '@PaymentSeriesCalculatorActionTab'
+}
+
+PaymentSeriesPaymentDetailsActionTab: {
+  Payee: index=1,
+  Non Provider Payment Type: index=1
+}
+
+PaymentSeriesPaymentSeriesProfileActionTab: {
+  Effective Date: $<today>,
+  Expiration Date: $<today+1M>
+}
+
+PaymentPaymentPaymentDetailsTabIndemnityPayment: {
+  Payment To: index=1,
+  Non Provider Payment Type: index=1
+}
+
+PaymentPaymentPaymentAllocationTabIndemnityPayment: {
+  Reserve Type: Indemnity,
+  Final Payment: 'No',
+  Payment From Date: $<today+180d>,
+  Payment Through Date: $<today+1y+180d>,
+  Adjust reserve: 'Yes'
+}
+
+PaymentCalculatorTab1: {
+  Payment Addition: [
+  {
+    Addition Type: '401K Contribution During Disability Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly 401K Contribution Amount: '50'
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '3'
+  },
+  {
+    Addition Type: 'COBRA Premium Reimbursement Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly COBRA Premium Amount: '500'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '400'
+  },
+  ]
+}
+
+PaymentCalculatorTab2: {
+  Payment Addition: [
+  {
+    Addition Type: 'Child Education Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Children: '3'
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '3'
+  },
+  {
+    Addition Type: 'COBRA Premium Reimbursement Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly COBRA Premium Amount: '500'
+  },
+  {
+    Addition Type: '401K Contribution During Disability Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly 401K Contribution Amount: '50'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '300'
+  },
+  ]
+}
+
+PaymentCalculatorTab3: {
+  Payment Addition: [
+  {
+    Addition Type: 'Child Education Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Children: '3'
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '7'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '350'
+  },
+  {
+    Addition Type: 'Rehabilitation Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+  }
+  ]
+}
+
+PaymentCalculatorTab4: {
+  Payment Addition: [
+  {
+    Addition Type: 'Child Education Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Children: '3'
+  },
+  {
+    Addition Type: 'Rehabilitation Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '3'
+  },
+  {
+    Addition Type: 'COBRA Premium Reimbursement Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly COBRA Premium Amount: '500'
+  },
+  {
+    Addition Type: '401K Contribution During Disability Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly 401K Contribution Amount: '50'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '550'
+  },
+  {
+    Addition Type: 'Catastrophic Disability Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+  },
+  ]
+}
+
+PaymentCalculatorTab5: {
+  Payment Addition: [
+  {
+    Addition Type: 'Child Education Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Children: '3'
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '4'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '300'
+  },
+  ]
+}
+
+PaymentSeriesCalculatorActionTab: {
+  Payment Addition: [
+  {
+    Addition Type: 'Child Education Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Children: '3'
+  },
+  {
+    Addition Type: 'Family Care Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Number of Family Members: '6'
+  },
+  {
+    Addition Type: 'Student Loan Repayment Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+    Required Monthly Student Loan Amount: '350'
+  },
+  {
+    Addition Type: 'Rehabilitation Benefit',
+    Beginning Date: $<today>,
+    Through Date: $<today>,
+  }
+  ]
+}
+

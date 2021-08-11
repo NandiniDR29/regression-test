@@ -1,0 +1,118 @@
+TestData_Group2: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionTab_PlanB2',
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomAnnuallyCalendar' ],
+}
+TestData_Group6: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionTab_PlanB2',
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomAnnuallyCalendar' ],
+}
+TestData_Group4: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionTab_PlanB2',
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomAnnuallyExistingCalendar' ],
+}
+TestData_Group10: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomAnnuallyExistingCalendar' ],
+}
+TestData_Group11: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionTab_PlanB2',
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomAnnuallyExistingCalendar' ],
+}
+TestData_Group12: {
+  PolicyInformationIssueActionTab: {},
+  CaseInstallationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: '@PlanDefinitionTab_PlanB2',
+  PremiumSummaryIssueActionTab: { },
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: [ '@BillingAccountTabWithCustomMonthlyExistingCalendarOnTime' ],
+}
+PlanDefinitionTab_PlanB2:
+  {
+    PlanKey: PlanB-10/25 Plan B 130,
+    Minimum Hourly Requirement (hours per week): 40,
+    Include Retirees: 'No'
+
+  }
+
+IssueActionTab: {
+  Send To: Corporate Sponsor,
+  Corporate Sponsor Email: 'email$<rx:\d{8}>@test.com'
+}
+
+BillingGroupsActionTab: {
+  Allow Manual Setup of Billing Accounts: 'Yes'
+}
+
+BillingAccountTabWithCustomAnnuallyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Add Invoicing Calendar: {
+      Manage Invoicing Calendars: click,
+      Add Invoicing Calendar Button: click,
+      Billing Calendar: Billing Calendar1,
+      Calendar Name: 'AnnuallyInvoice$<rx:\d{8}>',
+      Self Administered: true,
+      List Bill: true,
+      Non Premium: true,
+      Effective Date: 01/01/2020,
+      Invoicing Frequency: Annual,
+      Invoicing Rule: On Time,
+      Invoice Due Day: 1,
+      Generation Date Rule: 30,
+      Calendar Save Button: click,
+      Calendar Back Button: click
+    },
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=AnnuallyInvoice'}
+}
+
+IssueActionTabMail: {
+  IssueActionTab: {
+    Address Line 1: '$<rx:Address\d{5}>',
+    Zip / Postal Code: '94596',
+    City: Walnut Creek,
+    State / Province: CA
+  }
+}
+BillingAccountTabWithCustomMonthlyCalendarOnTime: {
+  Select Action: 'Create New Account',
+    Create New Account:  {
+      Invoicing Calendar: 'contains=MonthlyInvoice'}
+}
+BillingAccountTabWithCustomAnnuallyExistingCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Invoicing Calendar: 'contains=AnnuallyInvoice' }
+
+}
+BillingAccountTabWithCustomMonthlyExistingCalendarOnTime: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Invoicing Calendar: 'contains=MonthlyInvoice' }
+}

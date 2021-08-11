@@ -1,0 +1,144 @@
+TestData_Group1: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+150lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+150_With_NC.xlsx>',
+    }
+  }
+}
+TestData_Group2: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+750lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+750_With_NC.xlsx>',
+    }
+  }
+}
+TestData_Group3: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+49lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+49_With_VOL.xlsx>',
+    }
+  }
+}
+TestData_Group4: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+250lives$<rx:\d{8}>',
+      File Upload:  '$<file:NVCensus.xlsx>',
+    }
+  }
+}
+TestData_Group5: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+75lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+75_With_VOL.xlsx>',
+    }
+  }
+}
+TestData_Group6: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+9lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+9_With_VOL.xlsx>',
+    }
+  }
+}
+TestData_Group7: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+50lives$<rx:\d{8}>',
+      File Upload: '$<file:Census+50.xlsx>',
+    }
+  }
+}
+TestData_Group8: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+60$<rx:\d{8}>',
+      File Upload: '$<file:Census+60.xlsx>',
+    }
+  }
+}
+TestData_Group9: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'RENRatingCensusFileAll_NJ(1)$<rx:\d{8}>',
+      File Upload: '$<file:Census+NJ_100.xlsx>',
+    }
+  }
+}
+TestData_Group10: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+60$<rx:\d{8}>',
+      File Upload: '$<file:Census+25_G10.xlsx>',
+    }
+  }
+}
+TestData: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'UploadedFile$<rx:\d{8}>',
+      File Upload: '$<file:REN_Rating_Census_Sample_File_latest.xlsx>',
+    }
+  }
+}
+TestData_Group4STD: {
+  FileIntakeManagementTab: {
+    Intake Profile Name: 'IntakeProfile$<rx:\d{8}>',
+    Effective Date: $<today-85d>,
+    File Type: 'Quote',
+    Record Type: 'Eligibility',
+    Upload File Dialog: {
+      File Name: 'Census+250lives$<rx:\d{8}>',
+      File Upload:  '$<file:Census+G4STD_250.xlsx>',
+    }
+  }
+}

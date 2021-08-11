@@ -1,0 +1,41 @@
+TestDataLife: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab1',
+  GBCommissionRuleTab: ['@Flat_CommissionRule']
+}
+TestDataDental: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab2',
+  GBCommissionRuleTab: ['@Flat_CommissionRule']
+}
+TestDataSTD: {
+  GBCommissionStrategyTab: '@GBCommissionStrategyTab3',
+  GBCommissionRuleTab: ['@Flat_CommissionRule']
+}
+
+GBCommissionStrategyTab1: {
+  Product Code-Name: 'GB_TL - Term Life Insurance',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab2: {
+  Product Code-Name: 'GB_DN - Group Dental',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+GBCommissionStrategyTab3: {
+  Product Code-Name: 'GB_DI_STD - Short Term Disability',
+  Effective Date: $<today>,
+  Determine Commission Rate By: 'Policy Effective Date'
+}
+Flat_CommissionRule: {
+  Commission Type: 'Flat',
+  AddCommissionRule: {
+    Sales Channel: 'Commission Group Channel',
+    Select Sales Channel: {
+      Commission Channel Group Name: ''
+    },
+    Geography Selection: 'Defined for All locations',
+    Coverages: [ALL],
+    Commission Rate: '10',
+    Compensation Types : 'Commission'
+  }
+}

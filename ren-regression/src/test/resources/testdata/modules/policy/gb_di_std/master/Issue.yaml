@@ -1,0 +1,86 @@
+TestData_Group1: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomMonthlyExistingCalendarOnTime'],
+}
+TestData_Group2: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomAnnuallyExistingCalendar'],
+}
+TestData_Group3: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomQuarterlyCalendar'],
+}
+TestData_Group4: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomAnnuallyExistingCalendar'],
+}
+TestData_Group5: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomSemiAnnuallyCalendar'],
+}
+TestData_Group6: {
+  PolicyInformationIssueActionTab: {},
+  PlanDefinitionIssueActionTab: {},
+  PremiumSummaryIssueActionTab: {},
+  BillingGroupsActionTab: '@BillingGroupsActionTab',
+  IssueActionTab: '@IssueActionTab',
+  BillingAccountTab: ['@BillingAccountTabWithCustomAnnuallyExistingCalendar'],
+}
+BillingGroupsActionTab: {
+  Allow Manual Setup of Billing Accounts: 'Yes'
+}
+IssueActionTab: {
+  Send To: Corporate Sponsor,
+  Corporate Sponsor Email: 'email$<rx:\d{8}>@test.com'
+}
+BillingAccountTabWithCustomMonthlyExistingCalendarOnTime: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Invoicing Calendar: 'contains=MonthlyInvoice'}
+}
+BillingAccountTabWithCustomAnnuallyExistingCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Invoicing Calendar: 'contains=AnnuallyInvoice' }
+
+}
+BillingAccountTabWithCustomQuarterlyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account:  {
+    Invoicing Calendar: 'contains=QuarterlyInArrears'}
+}
+
+BillingAccountTabWithCustomSemiAnnuallyCalendar: {
+  Select Action: 'Create New Account',
+  Create New Account: {
+    Draft Bill Required: true,
+    Invoicing Calendar: 'contains=SemiAnnuallyInvoice' }
+}
+IssueActionTabMail: {
+  IssueActionTab: {
+    Address Line 1: '$<rx:Address\d{5}>',
+    Zip / Postal Code: '94596',
+    City: Walnut Creek,
+    State / Province: CA
+  }
+}

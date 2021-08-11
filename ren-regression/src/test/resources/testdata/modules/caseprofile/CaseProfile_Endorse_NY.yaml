@@ -1,0 +1,38 @@
+TestData_PolicyCreationWithTwoPlans: {
+  CaseProfileDetailsTab: '@CaseProfileDetailsTab_NY',
+  ProductAndPlanManagementTab: '@ProductAndPlanManagementTabGBGB',
+  ClassificationManagementTab: ['@ClassificationManagementTabEmployment_AutoSubGroupClass1','@ClassificationManagementTabEmployment_AutoSubGroupClass2'],
+  LocationManagementTab: {},
+  FileIntakeManagementTab: []
+}
+CaseProfileDetailsTab_NY: {
+  Case Profile Name: 'DentalCaseProfile$<rx:\d{5}>',
+  Effective Date: $<today-85d>,
+  Group Domicile State: NY,
+  'Intake Profile Required?': 'true'
+}
+ProductAndPlanManagementTabGBGB: {
+  Product: Group Benefits
+}
+ClassificationManagementTabEmployment_AutoSubGroupClass1: {
+  Classification Group: {
+    Class Name: 'All FT Eligible Employees',
+    Class Number: 1,
+    Relationship Type: Employment
+  },
+  Group Details: {
+    'Create Sub-Groups?': 'Yes',
+    'Create Sub-Groups Automatically?': 'Yes'
+  }
+}
+ClassificationManagementTabEmployment_AutoSubGroupClass2: {
+  Classification Group: {
+    Class Name: 'COBRA',
+    Class Number: 2,
+    Relationship Type: Employment
+  },
+  Group Details: {
+    'Create Sub-Groups?': 'Yes',
+    'Create Sub-Groups Automatically?': 'Yes'
+  }
+}
